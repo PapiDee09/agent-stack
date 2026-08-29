@@ -59,7 +59,7 @@ jq -c '.repositories[]' "$REGISTRY" | while read -r repo; do
   # Query GitHub through GraphQL.
   # A genuinely missing repository returns repository=null without
   # confusing that condition with API/network/authentication failures.
-  if ! lookup="$(
+  lookup="$(
     gh api graphql \
       -f query='
         query($owner: String!, $name: String!) {
@@ -74,10 +74,12 @@ jq -c '.repositories[]' "$REGISTRY" | while read -r repo; do
       ' \
       -F owner="$OWNER" \
       -F name="$target_name" \
-      2>&1
-  )"; then
-    echo "ERROR    $name — GitHub lookup failed for $target"
-    echo "         $lookup"
+      2>/dev/null || true
+  )"
+
+  # Empty/invalid output means an actual API/network/auth failure.
+  if ! jq -e . >/dev/null 2>&1 <<<"$lookup"; then
+    echo "ERROR    $name — invalid GitHub response for $target"
     error_count=$((error_count + 1))
     continue
   fi
