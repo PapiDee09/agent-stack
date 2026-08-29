@@ -1,0 +1,861 @@
+{
+  "schema_version": "0.1",
+  "owner": "PapiDee09",
+  "intended_control_repo": "agent-stack",
+  "policy": {
+    "default": "fork_or_mirror_if_redistribution_allowed",
+    "preserve_upstream_history": true,
+    "preserve_license_and_notices": true,
+    "models": "code and weights tracked separately",
+    "restricted": "do not publicly mirror until terms verified",
+    "sync": "safe unmodified mirrors can auto-sync; modified/core mirrors require PR review"
+  },
+  "repositories": [
+    {
+      "name": "Codex",
+      "category": "agent-runtime",
+      "tier": "core",
+      "upstream": "https://github.com/openai/codex",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "verified": true
+    },
+    {
+      "name": "Claude Code",
+      "category": "agent-runtime",
+      "tier": "core",
+      "upstream": "https://github.com/anthropics/claude-code",
+      "license": "CHECK_UPSTREAM_TERMS",
+      "mirror_policy": "reference_only_until_verified",
+      "verified": false
+    },
+    {
+      "name": "Kimi Code",
+      "category": "agent-runtime",
+      "tier": "core",
+      "upstream": "https://github.com/MoonshotAI/kimi-code",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "verified": true
+    },
+    {
+      "name": "Kimi CLI Legacy",
+      "category": "agent-runtime",
+      "tier": "reference",
+      "upstream": "https://github.com/MoonshotAI/kimi-cli",
+      "license": "CHECK_UPSTREAM",
+      "mirror_policy": "fork_or_mirror_after_verify",
+      "verified": false
+    },
+    {
+      "name": "Anthropic Agent Skills",
+      "category": "agent-skills",
+      "tier": "core",
+      "upstream": "https://github.com/anthropics/skills",
+      "license": "MIXED_APACHE2_AND_SOURCE_AVAILABLE",
+      "mirror_policy": "selective_mirror_by_subtree",
+      "verified": true
+    },
+    {
+      "name": "Agent Skills Spec",
+      "category": "agent-skills",
+      "tier": "core",
+      "upstream": "https://github.com/agentskills/agentskills",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "verified": true
+    },
+    {
+      "name": "MengTo Skills",
+      "category": "agent-skills",
+      "tier": "core",
+      "upstream": "https://github.com/MengTo/Skills",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "verified": true
+    },
+    {
+      "name": "MCP Reference Servers",
+      "category": "agent-tools",
+      "tier": "core",
+      "upstream": "https://github.com/modelcontextprotocol/servers",
+      "license": "Apache-2.0_WITH_LEGACY_MIT",
+      "mirror_policy": "fork_or_mirror",
+      "verified": true
+    },
+    {
+      "name": "Next.js",
+      "category": "app-platform",
+      "tier": "core",
+      "upstream": "https://github.com/vercel/next.js",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "React",
+      "category": "app-platform",
+      "tier": "core",
+      "upstream": "https://github.com/facebook/react",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "Tailwind CSS",
+      "category": "app-platform",
+      "tier": "core",
+      "upstream": "https://github.com/tailwindlabs/tailwindcss",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "verified": true
+    },
+    {
+      "name": "Supabase",
+      "category": "data-platform",
+      "tier": "core",
+      "upstream": "https://github.com/supabase/supabase",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "FastAPI",
+      "category": "backend",
+      "tier": "core",
+      "upstream": "https://github.com/fastapi/fastapi",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "Medusa",
+      "category": "commerce",
+      "tier": "optional",
+      "upstream": "https://github.com/medusajs/medusa",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "Saleor",
+      "category": "commerce",
+      "tier": "optional",
+      "upstream": "https://github.com/saleor/saleor",
+      "license": "BSD-3-Clause",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "Three.js",
+      "category": "3d-web",
+      "tier": "core",
+      "upstream": "https://github.com/mrdoob/three.js",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "verified": true
+    },
+    {
+      "name": "ThreeUI",
+      "category": "3d-web",
+      "tier": "core",
+      "upstream": "https://github.com/MengTo/threeui",
+      "license": "MIT_COMMUNITY_CODE_WITH_ASSET_NOTICES",
+      "mirror_policy": "fork_or_mirror_preserve_notices",
+      "verified": true
+    },
+    {
+      "name": "Motion",
+      "category": "motion",
+      "tier": "core",
+      "upstream": "https://github.com/motiondivision/motion",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "Anime.js",
+      "category": "motion",
+      "tier": "core",
+      "upstream": "https://github.com/juliangarnier/anime",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "Remotion",
+      "category": "media",
+      "tier": "core",
+      "upstream": "https://github.com/remotion-dev/remotion",
+      "license": "CHECK_CURRENT_LICENSE",
+      "mirror_policy": "reference_only_until_verified",
+      "verified": false
+    },
+    {
+      "name": "glTF-Transform",
+      "category": "3d-pipeline",
+      "tier": "core",
+      "upstream": "https://github.com/donmccurdy/glTF-Transform",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "meshoptimizer",
+      "category": "3d-pipeline",
+      "tier": "core",
+      "upstream": "https://github.com/zeux/meshoptimizer",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "Draco",
+      "category": "3d-pipeline",
+      "tier": "optional",
+      "upstream": "https://github.com/google/draco",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "Basis Universal",
+      "category": "3d-pipeline",
+      "tier": "core",
+      "upstream": "https://github.com/BinomialLLC/basis_universal",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "wgpu",
+      "category": "gpu-web",
+      "tier": "reference",
+      "upstream": "https://github.com/gfx-rs/wgpu",
+      "license": "MIT_OR_APACHE-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "ComfyUI",
+      "category": "creative-media",
+      "tier": "core",
+      "upstream": "https://github.com/comfyanonymous/ComfyUI",
+      "license": "GPL-3.0",
+      "mirror_policy": "mirror_with_copyleft_review",
+      "verified": false
+    },
+    {
+      "name": "Whisper",
+      "category": "speech",
+      "tier": "core",
+      "upstream": "https://github.com/openai/whisper",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "FFmpeg",
+      "category": "media",
+      "tier": "core",
+      "upstream": "https://github.com/FFmpeg/FFmpeg",
+      "license": "LGPL-2.1_OR_GPL_DEPENDING_BUILD",
+      "mirror_policy": "mirror_with_license_notes",
+      "verified": false
+    },
+    {
+      "name": "LTX-Video",
+      "category": "creative-media",
+      "tier": "optional",
+      "upstream": "https://github.com/Lightricks/LTX-Video",
+      "license": "Apache-2.0_CODE_MODEL_TERMS_SEPARATE",
+      "mirror_policy": "code_mirror_only_weights_separate",
+      "verified": true
+    },
+    {
+      "name": "Real-ESRGAN",
+      "category": "restoration",
+      "tier": "core",
+      "upstream": "https://github.com/xinntao/Real-ESRGAN",
+      "license": "BSD-3-Clause",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "GFPGAN",
+      "category": "restoration",
+      "tier": "reference",
+      "upstream": "https://github.com/TencentARC/GFPGAN",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "CodeFormer",
+      "category": "restoration",
+      "tier": "reference",
+      "upstream": "https://github.com/sczhou/CodeFormer",
+      "license": "CHECK_UPSTREAM",
+      "mirror_policy": "fork_or_mirror_after_verify",
+      "verified": false
+    },
+    {
+      "name": "LivePortrait",
+      "category": "avatar",
+      "tier": "core",
+      "upstream": "https://github.com/KwaiVGI/LivePortrait",
+      "license": "CHECK_CODE_AND_MODEL_TERMS",
+      "mirror_policy": "code_mirror_only_after_verify",
+      "verified": false
+    },
+    {
+      "name": "MuseTalk",
+      "category": "avatar",
+      "tier": "core",
+      "upstream": "https://github.com/TMElyralab/MuseTalk",
+      "license": "CHECK_CODE_AND_MODEL_TERMS",
+      "mirror_policy": "code_mirror_only_after_verify",
+      "verified": false
+    },
+    {
+      "name": "LiveTalking",
+      "category": "avatar",
+      "tier": "optional",
+      "upstream": "https://github.com/lipku/LiveTalking",
+      "license": "CHECK_UPSTREAM",
+      "mirror_policy": "fork_or_mirror_after_verify",
+      "verified": false
+    },
+    {
+      "name": "OpenSeeFace",
+      "category": "face-tracking",
+      "tier": "core",
+      "upstream": "https://github.com/emilianavt/OpenSeeFace",
+      "license": "CHECK_UPSTREAM",
+      "mirror_policy": "fork_or_mirror_after_verify",
+      "verified": false
+    },
+    {
+      "name": "MediaPipe",
+      "category": "vision",
+      "tier": "core",
+      "upstream": "https://github.com/google-ai-edge/mediapipe",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "OpenCV",
+      "category": "vision",
+      "tier": "core",
+      "upstream": "https://github.com/opencv/opencv",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "3DDFA_V2",
+      "category": "face-tracking",
+      "tier": "optional",
+      "upstream": "https://github.com/cleardusk/3DDFA_V2",
+      "license": "CHECK_UPSTREAM",
+      "mirror_policy": "fork_or_mirror_after_verify",
+      "verified": false
+    },
+    {
+      "name": "SMIRK",
+      "category": "face-tracking",
+      "tier": "optional",
+      "upstream": "https://github.com/georgeretsi/smirk",
+      "license": "CHECK_UPSTREAM",
+      "mirror_policy": "fork_or_mirror_after_verify",
+      "verified": false
+    },
+    {
+      "name": "DECA",
+      "category": "face-tracking",
+      "tier": "reference",
+      "upstream": "https://github.com/YadiraF/DECA",
+      "license": "CHECK_UPSTREAM",
+      "mirror_policy": "fork_or_mirror_after_verify",
+      "verified": false
+    },
+    {
+      "name": "MICA",
+      "category": "face-tracking",
+      "tier": "reference",
+      "upstream": "https://github.com/Zielon/MICA",
+      "license": "CHECK_UPSTREAM",
+      "mirror_policy": "fork_or_mirror_after_verify",
+      "verified": false
+    },
+    {
+      "name": "MODNet",
+      "category": "segmentation",
+      "tier": "optional",
+      "upstream": "https://github.com/ZHKKKe/MODNet",
+      "license": "CHECK_UPSTREAM",
+      "mirror_policy": "fork_or_mirror_after_verify",
+      "verified": false
+    },
+    {
+      "name": "ONNX Runtime",
+      "category": "ml-runtime",
+      "tier": "core",
+      "upstream": "https://github.com/microsoft/onnxruntime",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "ncnn",
+      "category": "ml-runtime",
+      "tier": "optional",
+      "upstream": "https://github.com/Tencent/ncnn",
+      "license": "BSD-3-Clause",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "MarkItDown",
+      "category": "document-ingest",
+      "tier": "core",
+      "upstream": "https://github.com/microsoft/markitdown",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "n8n",
+      "category": "automation",
+      "tier": "core",
+      "upstream": "https://github.com/n8n-io/n8n",
+      "license": "SUSTAINABLE_USE_LICENSE_AND_ENTERPRISE_TERMS",
+      "mirror_policy": "reference_only_or_private_internal_copy_after_terms_review",
+      "verified": false
+    },
+    {
+      "name": "pgvector",
+      "category": "data",
+      "tier": "core",
+      "upstream": "https://github.com/pgvector/pgvector",
+      "license": "PostgreSQL",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "Qdrant",
+      "category": "data",
+      "tier": "optional",
+      "upstream": "https://github.com/qdrant/qdrant",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "Valkey",
+      "category": "cache",
+      "tier": "optional",
+      "upstream": "https://github.com/valkey-io/valkey",
+      "license": "BSD-3-Clause",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "RustFS",
+      "category": "object-storage",
+      "tier": "optional",
+      "upstream": "https://github.com/rustfs/rustfs",
+      "license": "CHECK_UPSTREAM",
+      "mirror_policy": "fork_or_mirror_after_verify",
+      "verified": false
+    },
+    {
+      "name": "Git LFS",
+      "category": "large-files",
+      "tier": "optional",
+      "upstream": "https://github.com/git-lfs/git-lfs",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "DVC",
+      "category": "data-versioning",
+      "tier": "optional",
+      "upstream": "https://github.com/iterative/dvc",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "lakeFS",
+      "category": "data-versioning",
+      "tier": "optional",
+      "upstream": "https://github.com/treeverse/lakeFS",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "vLLM",
+      "category": "gpu-serving",
+      "tier": "core-scale",
+      "upstream": "https://github.com/vllm-project/vllm",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "BentoML",
+      "category": "model-serving",
+      "tier": "core-scale",
+      "upstream": "https://github.com/bentoml/BentoML",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "Ray",
+      "category": "distributed-compute",
+      "tier": "optional-scale",
+      "upstream": "https://github.com/ray-project/ray",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "KServe",
+      "category": "gpu-serving",
+      "tier": "optional-scale",
+      "upstream": "https://github.com/kserve/kserve",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "NVIDIA k8s-device-plugin",
+      "category": "gpu-infra",
+      "tier": "optional-scale",
+      "upstream": "https://github.com/NVIDIA/k8s-device-plugin",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "Kubernetes",
+      "category": "orchestration",
+      "tier": "optional-scale",
+      "upstream": "https://github.com/kubernetes/kubernetes",
+      "license": "Apache-2.0",
+      "mirror_policy": "mirror_reference_not_daily_fork",
+      "verified": false
+    },
+    {
+      "name": "Pulumi",
+      "category": "iac",
+      "tier": "optional-scale",
+      "upstream": "https://github.com/pulumi/pulumi",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "Argo CD",
+      "category": "gitops",
+      "tier": "optional-scale",
+      "upstream": "https://github.com/argoproj/argo-cd",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "OpenBao",
+      "category": "secrets",
+      "tier": "optional-scale",
+      "upstream": "https://github.com/openbao/openbao",
+      "license": "MPL-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "NATS Server",
+      "category": "messaging",
+      "tier": "optional-scale",
+      "upstream": "https://github.com/nats-io/nats-server",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "tusd",
+      "category": "large-files",
+      "tier": "core-scale",
+      "upstream": "https://github.com/tus/tusd",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "SeaweedFS",
+      "category": "object-storage",
+      "tier": "optional-scale",
+      "upstream": "https://github.com/seaweedfs/seaweedfs",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "JuiceFS",
+      "category": "filesystem",
+      "tier": "optional-scale",
+      "upstream": "https://github.com/juicedata/juicefs",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "Kong Gateway",
+      "category": "api-gateway",
+      "tier": "optional-scale",
+      "upstream": "https://github.com/Kong/kong",
+      "license": "Apache-2.0_CORE",
+      "mirror_policy": "fork_or_mirror_core_only",
+      "verified": false
+    },
+    {
+      "name": "ZITADEL",
+      "category": "identity",
+      "tier": "optional-scale",
+      "upstream": "https://github.com/zitadel/zitadel",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "Locust",
+      "category": "load-testing",
+      "tier": "core-scale",
+      "upstream": "https://github.com/locustio/locust",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "Lago",
+      "category": "billing",
+      "tier": "optional-scale",
+      "upstream": "https://github.com/getlago/lago",
+      "license": "AGPL-3.0_OR_COMMERCIAL_COMPONENTS_CHECK",
+      "mirror_policy": "mirror_with_copyleft_review",
+      "verified": false
+    },
+    {
+      "name": "GrowthBook",
+      "category": "experimentation",
+      "tier": "optional",
+      "upstream": "https://github.com/growthbook/growthbook",
+      "license": "MIXED_OPEN_CORE_CHECK_COMPONENTS",
+      "mirror_policy": "selective_after_license_review",
+      "verified": false
+    },
+    {
+      "name": "PostHog",
+      "category": "analytics",
+      "tier": "optional",
+      "upstream": "https://github.com/PostHog/posthog",
+      "license": "MIXED_OPEN_SOURCE_AND_ENTERPRISE",
+      "mirror_policy": "reference_or_selective_after_review",
+      "verified": false
+    },
+    {
+      "name": "Unleash",
+      "category": "feature-flags",
+      "tier": "optional",
+      "upstream": "https://github.com/Unleash/unleash",
+      "license": "Apache-2.0_CORE_CHECK_ENTERPRISE",
+      "mirror_policy": "fork_or_mirror_core_only",
+      "verified": false
+    },
+    {
+      "name": "Playwright",
+      "category": "testing",
+      "tier": "core",
+      "upstream": "https://github.com/microsoft/playwright",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "Vitest",
+      "category": "testing",
+      "tier": "core",
+      "upstream": "https://github.com/vitest-dev/vitest",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "Storybook",
+      "category": "testing",
+      "tier": "optional",
+      "upstream": "https://github.com/storybookjs/storybook",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "Promptfoo",
+      "category": "ai-evals",
+      "tier": "core",
+      "upstream": "https://github.com/promptfoo/promptfoo",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "Langfuse",
+      "category": "llm-observability",
+      "tier": "optional",
+      "upstream": "https://github.com/langfuse/langfuse",
+      "license": "MIT_CORE_CHECK_ENTERPRISE",
+      "mirror_policy": "fork_or_mirror_core_only",
+      "verified": false
+    },
+    {
+      "name": "OpenTelemetry Collector",
+      "category": "observability",
+      "tier": "core",
+      "upstream": "https://github.com/open-telemetry/opentelemetry-collector",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "SigNoz",
+      "category": "observability",
+      "tier": "core",
+      "upstream": "https://github.com/SigNoz/signoz",
+      "license": "AGPL-3.0",
+      "mirror_policy": "mirror_with_copyleft_review",
+      "verified": false
+    },
+    {
+      "name": "Trivy",
+      "category": "security",
+      "tier": "core",
+      "upstream": "https://github.com/aquasecurity/trivy",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "Gitleaks",
+      "category": "security",
+      "tier": "core",
+      "upstream": "https://github.com/gitleaks/gitleaks",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "OWASP ZAP",
+      "category": "security",
+      "tier": "optional",
+      "upstream": "https://github.com/zaproxy/zaproxy",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "Temporal",
+      "category": "workflows",
+      "tier": "optional-scale",
+      "upstream": "https://github.com/temporalio/temporal",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "LiveKit",
+      "category": "realtime",
+      "tier": "core",
+      "upstream": "https://github.com/livekit/livekit",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "Discourse",
+      "category": "community",
+      "tier": "optional",
+      "upstream": "https://github.com/discourse/discourse",
+      "license": "GPL-2.0",
+      "mirror_policy": "mirror_with_copyleft_review",
+      "verified": false
+    },
+    {
+      "name": "Element Web",
+      "category": "community",
+      "tier": "optional",
+      "upstream": "https://github.com/element-hq/element-web",
+      "license": "AGPL-3.0",
+      "mirror_policy": "mirror_with_copyleft_review",
+      "verified": false
+    },
+    {
+      "name": "Matrix Synapse",
+      "category": "community",
+      "tier": "optional",
+      "upstream": "https://github.com/element-hq/synapse",
+      "license": "AGPL-3.0",
+      "mirror_policy": "mirror_with_copyleft_review",
+      "verified": false
+    },
+    {
+      "name": "Tauri",
+      "category": "desktop",
+      "tier": "optional",
+      "upstream": "https://github.com/tauri-apps/tauri",
+      "license": "MIT_OR_APACHE-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "Expo",
+      "category": "mobile",
+      "tier": "optional",
+      "upstream": "https://github.com/expo/expo",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "Kokoro TTS",
+      "category": "speech",
+      "tier": "optional",
+      "upstream": "https://github.com/hexgrad/kokoro",
+      "license": "CHECK_CODE_AND_MODEL_TERMS",
+      "mirror_policy": "code_mirror_only_after_verify",
+      "verified": false
+    },
+    {
+      "name": "CesiumJS",
+      "category": "geospatial",
+      "tier": "situational",
+      "upstream": "https://github.com/CesiumGS/cesium",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    },
+    {
+      "name": "Godot",
+      "category": "game-engine",
+      "tier": "core-specialist",
+      "upstream": "https://github.com/godotengine/godot",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "verified": false
+    }
+  ]
+}
