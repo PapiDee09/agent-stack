@@ -304,18 +304,18 @@
       "category": "avatar",
       "tier": "core",
       "upstream": "https://github.com/KwaiVGI/LivePortrait",
-      "license": "CHECK_CODE_AND_MODEL_TERMS",
-      "mirror_policy": "code_mirror_only_after_verify",
-      "verified": false
+      "license": "MIT_CODE_INSIGHTFACE_MODELS_NONCOMMERCIAL",
+      "mirror_policy": "fork_or_mirror",
+      "verified": true
     },
     {
       "name": "MuseTalk",
       "category": "avatar",
       "tier": "core",
       "upstream": "https://github.com/TMElyralab/MuseTalk",
-      "license": "CHECK_CODE_AND_MODEL_TERMS",
-      "mirror_policy": "code_mirror_only_after_verify",
-      "verified": false
+      "license": "MIT_CODE_MODEL_COMMERCIAL_THIRD_PARTY_TERMS_SEPARATE",
+      "mirror_policy": "fork_or_mirror",
+      "verified": true
     },
     {
       "name": "LiveTalking",
@@ -376,9 +376,9 @@
       "category": "face-tracking",
       "tier": "reference",
       "upstream": "https://github.com/YadiraF/DECA",
-      "license": "CHECK_UPSTREAM",
-      "mirror_policy": "fork_or_mirror_after_verify",
-      "verified": false
+      "license": "MAX_PLANCK_NONCOMMERCIAL_RESEARCH",
+      "mirror_policy": "reference_only_noncommercial",
+      "verified": true
     },
     {
       "name": "MICA",
