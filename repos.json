@@ -133,8 +133,8 @@
       "category": "commerce",
       "tier": "optional",
       "upstream": "https://github.com/medusajs/medusa",
-      "license": "MIT",
-      "mirror_policy": "fork_or_mirror",
+      "license": "MIT_CORE_WITH_PROPRIETARY_ENTERPRISE_MATERIALS",
+      "mirror_policy": "selective_mirror_by_subtree",
       "verified": false
     },
     {
@@ -144,7 +144,7 @@
       "upstream": "https://github.com/saleor/saleor",
       "license": "BSD-3-Clause",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "Three.js",
@@ -216,7 +216,7 @@
       "upstream": "https://github.com/google/draco",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "Basis Universal",
@@ -225,7 +225,7 @@
       "upstream": "https://github.com/BinomialLLC/basis_universal",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "wgpu",
@@ -234,7 +234,7 @@
       "upstream": "https://github.com/gfx-rs/wgpu",
       "license": "MIT_OR_APACHE-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "ComfyUI",
@@ -279,7 +279,7 @@
       "upstream": "https://github.com/xinntao/Real-ESRGAN",
       "license": "BSD-3-Clause",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "GFPGAN",
@@ -288,7 +288,7 @@
       "upstream": "https://github.com/TencentARC/GFPGAN",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "CodeFormer",
@@ -342,7 +342,7 @@
       "upstream": "https://github.com/google-ai-edge/mediapipe",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "OpenCV",
@@ -414,7 +414,7 @@
       "upstream": "https://github.com/Tencent/ncnn",
       "license": "BSD-3-Clause",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "MarkItDown",
@@ -423,7 +423,7 @@
       "upstream": "https://github.com/microsoft/markitdown",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "n8n",
@@ -441,7 +441,7 @@
       "upstream": "https://github.com/pgvector/pgvector",
       "license": "PostgreSQL",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "Qdrant",
@@ -459,7 +459,7 @@
       "upstream": "https://github.com/valkey-io/valkey",
       "license": "BSD-3-Clause",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "RustFS",
@@ -477,7 +477,7 @@
       "upstream": "https://github.com/git-lfs/git-lfs",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "DVC",
@@ -495,7 +495,7 @@
       "upstream": "https://github.com/treeverse/lakeFS",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "vLLM",
@@ -522,7 +522,7 @@
       "upstream": "https://github.com/ray-project/ray",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "KServe",
@@ -531,7 +531,7 @@
       "upstream": "https://github.com/kserve/kserve",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "NVIDIA k8s-device-plugin",
@@ -540,7 +540,7 @@
       "upstream": "https://github.com/NVIDIA/k8s-device-plugin",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "Kubernetes",
@@ -558,7 +558,7 @@
       "upstream": "https://github.com/pulumi/pulumi",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "Argo CD",
@@ -567,7 +567,7 @@
       "upstream": "https://github.com/argoproj/argo-cd",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "OpenBao",
@@ -585,7 +585,7 @@
       "upstream": "https://github.com/nats-io/nats-server",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "tusd",
@@ -594,7 +594,7 @@
       "upstream": "https://github.com/tus/tusd",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "SeaweedFS",
@@ -603,7 +603,7 @@
       "upstream": "https://github.com/seaweedfs/seaweedfs",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "JuiceFS",
@@ -612,7 +612,7 @@
       "upstream": "https://github.com/juicedata/juicefs",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "Kong Gateway",
@@ -628,8 +628,8 @@
       "category": "identity",
       "tier": "optional-scale",
       "upstream": "https://github.com/zitadel/zitadel",
-      "license": "Apache-2.0",
-      "mirror_policy": "fork_or_mirror",
+      "license": "AGPL-3.0_WITH_APACHE_MIT_EXCEPTIONS",
+      "mirror_policy": "mirror_with_copyleft_review",
       "verified": false
     },
     {
@@ -639,7 +639,7 @@
       "upstream": "https://github.com/locustio/locust",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "Lago",
@@ -729,7 +729,7 @@
       "upstream": "https://github.com/open-telemetry/opentelemetry-collector",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "SigNoz",
@@ -765,7 +765,7 @@
       "upstream": "https://github.com/zaproxy/zaproxy",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "Temporal",
@@ -774,7 +774,7 @@
       "upstream": "https://github.com/temporalio/temporal",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "LiveKit",
@@ -819,7 +819,7 @@
       "upstream": "https://github.com/tauri-apps/tauri",
       "license": "MIT_OR_APACHE-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "Expo",
@@ -828,7 +828,7 @@
       "upstream": "https://github.com/expo/expo",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "Kokoro TTS",
@@ -846,7 +846,7 @@
       "upstream": "https://github.com/CesiumGS/cesium",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "Godot",
