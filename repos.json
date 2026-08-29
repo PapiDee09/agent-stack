@@ -303,7 +303,7 @@
       "name": "LivePortrait",
       "category": "avatar",
       "tier": "core",
-      "upstream": "https://github.com/KwaiVGI/LivePortrait",
+      "upstream": "https://github.com/KlingAIResearch/LivePortrait",
       "license": "MIT_CODE_INSIGHTFACE_MODELS_NONCOMMERCIAL",
       "mirror_policy": "fork_or_mirror",
       "verified": true
