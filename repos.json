@@ -240,10 +240,10 @@
       "name": "ComfyUI",
       "category": "creative-media",
       "tier": "core",
-      "upstream": "https://github.com/comfyanonymous/ComfyUI",
+      "upstream": "https://github.com/Comfy-Org/ComfyUI",
       "license": "GPL-3.0",
       "mirror_policy": "mirror_with_copyleft_review",
-      "verified": false
+      "verified": true
     },
     {
       "name": "Whisper",
@@ -630,7 +630,7 @@
       "upstream": "https://github.com/zitadel/zitadel",
       "license": "AGPL-3.0_WITH_APACHE_MIT_EXCEPTIONS",
       "mirror_policy": "mirror_with_copyleft_review",
-      "verified": false
+      "verified": true
     },
     {
       "name": "Locust",
@@ -646,9 +646,9 @@
       "category": "billing",
       "tier": "optional-scale",
       "upstream": "https://github.com/getlago/lago",
-      "license": "AGPL-3.0_OR_COMMERCIAL_COMPONENTS_CHECK",
+      "license": "AGPL-3.0",
       "mirror_policy": "mirror_with_copyleft_review",
-      "verified": false
+      "verified": true
     },
     {
       "name": "GrowthBook",
@@ -673,9 +673,9 @@
       "category": "feature-flags",
       "tier": "optional",
       "upstream": "https://github.com/Unleash/unleash",
-      "license": "Apache-2.0_CORE_CHECK_ENTERPRISE",
-      "mirror_policy": "fork_or_mirror_core_only",
-      "verified": false
+      "license": "AGPL-3.0_SOURCE_V8_PLUS_DOCKER_IMAGES_APACHE-2.0",
+      "mirror_policy": "mirror_with_copyleft_review",
+      "verified": true
     },
     {
       "name": "Playwright",
@@ -736,9 +736,9 @@
       "category": "observability",
       "tier": "core",
       "upstream": "https://github.com/SigNoz/signoz",
-      "license": "AGPL-3.0",
-      "mirror_policy": "mirror_with_copyleft_review",
-      "verified": false
+      "license": "MIT_CORE_WITH_PROPRIETARY_ENTERPRISE_DIRS",
+      "mirror_policy": "selective_mirror_excluding_enterprise",
+      "verified": true
     },
     {
       "name": "Trivy",
@@ -790,27 +790,27 @@
       "category": "community",
       "tier": "optional",
       "upstream": "https://github.com/discourse/discourse",
-      "license": "GPL-2.0",
+      "license": "GPL-2.0-or-later",
       "mirror_policy": "mirror_with_copyleft_review",
-      "verified": false
+      "verified": true
     },
     {
       "name": "Element Web",
       "category": "community",
       "tier": "optional",
       "upstream": "https://github.com/element-hq/element-web",
-      "license": "AGPL-3.0",
+      "license": "AGPL-3.0_OR_GPL-3.0_OR_COMMERCIAL",
       "mirror_policy": "mirror_with_copyleft_review",
-      "verified": false
+      "verified": true
     },
     {
       "name": "Matrix Synapse",
       "category": "community",
       "tier": "optional",
       "upstream": "https://github.com/element-hq/synapse",
-      "license": "AGPL-3.0",
+      "license": "AGPL-3.0-or-later_OR_COMMERCIAL",
       "mirror_policy": "mirror_with_copyleft_review",
-      "verified": false
+      "verified": true
     },
     {
       "name": "Tauri",
