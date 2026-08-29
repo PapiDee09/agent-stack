@@ -207,7 +207,7 @@
       "upstream": "https://github.com/zeux/meshoptimizer",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "Draco",
@@ -483,10 +483,10 @@
       "name": "DVC",
       "category": "data-versioning",
       "tier": "optional",
-      "upstream": "https://github.com/iterative/dvc",
+      "upstream": "https://github.com/treeverse/dvc",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "lakeFS",
@@ -504,7 +504,7 @@
       "upstream": "https://github.com/vllm-project/vllm",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "BentoML",
@@ -513,7 +513,7 @@
       "upstream": "https://github.com/bentoml/BentoML",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "Ray",
@@ -756,7 +756,7 @@
       "upstream": "https://github.com/gitleaks/gitleaks",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "OWASP ZAP",
