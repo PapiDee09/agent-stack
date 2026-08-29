@@ -133,9 +133,9 @@
       "category": "commerce",
       "tier": "optional",
       "upstream": "https://github.com/medusajs/medusa",
-      "license": "MIT_CORE_WITH_PROPRIETARY_ENTERPRISE_MATERIALS",
+      "license": "MIT_CORE_WITH_PROPRIETARY_ENTERPRISE_PATHS",
       "mirror_policy": "selective_mirror_by_subtree",
-      "verified": false
+      "verified": true
     },
     {
       "name": "Saleor",
@@ -619,9 +619,9 @@
       "category": "api-gateway",
       "tier": "optional-scale",
       "upstream": "https://github.com/Kong/kong",
-      "license": "Apache-2.0_CORE",
-      "mirror_policy": "fork_or_mirror_core_only",
-      "verified": false
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "verified": true
     },
     {
       "name": "ZITADEL",
@@ -655,18 +655,18 @@
       "category": "experimentation",
       "tier": "optional",
       "upstream": "https://github.com/growthbook/growthbook",
-      "license": "MIXED_OPEN_CORE_CHECK_COMPONENTS",
+      "license": "MIT_CORE_WITH_COMMERCIAL_ENTERPRISE_DIRECTORIES",
       "mirror_policy": "selective_after_license_review",
-      "verified": false
+      "verified": true
     },
     {
       "name": "PostHog",
       "category": "analytics",
       "tier": "optional",
       "upstream": "https://github.com/PostHog/posthog",
-      "license": "MIXED_OPEN_SOURCE_AND_ENTERPRISE",
+      "license": "MIT_CORE_WITH_PROPRIETARY_EE_DIRECTORY",
       "mirror_policy": "reference_or_selective_after_review",
-      "verified": false
+      "verified": true
     },
     {
       "name": "Unleash",
@@ -718,9 +718,9 @@
       "category": "llm-observability",
       "tier": "optional",
       "upstream": "https://github.com/langfuse/langfuse",
-      "license": "MIT_CORE_CHECK_ENTERPRISE",
+      "license": "MIT_CORE_WITH_COMMERCIAL_EE_DIRECTORIES",
       "mirror_policy": "fork_or_mirror_core_only",
-      "verified": false
+      "verified": true
     },
     {
       "name": "OpenTelemetry Collector",
