@@ -51,8 +51,7 @@ jq -c '.repositories[]' "$REGISTRY" | while read -r repo; do
 
   if [[ "$DRY_RUN" == "0" ]]; then
     gh repo fork "$upstream_repo" \
-      --clone=false \
-      --remote=false
+      --clone=false
   fi
 done
 
