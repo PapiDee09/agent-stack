@@ -261,7 +261,7 @@
       "upstream": "https://github.com/FFmpeg/FFmpeg",
       "license": "LGPL-2.1_OR_GPL_DEPENDING_BUILD",
       "mirror_policy": "mirror_with_license_notes",
-      "verified": false
+      "verified": true
     },
     {
       "name": "LTX-Video",
@@ -322,9 +322,9 @@
       "category": "avatar",
       "tier": "optional",
       "upstream": "https://github.com/lipku/LiveTalking",
-      "license": "CHECK_UPSTREAM",
-      "mirror_policy": "fork_or_mirror_after_verify",
-      "verified": false
+      "license": "APACHE-2.0_WITH_PUBLIC_OUTPUT_WATERMARK_CONDITION",
+      "mirror_policy": "reference_only_special_usage_terms",
+      "verified": true
     },
     {
       "name": "OpenSeeFace",
@@ -430,9 +430,9 @@
       "category": "automation",
       "tier": "core",
       "upstream": "https://github.com/n8n-io/n8n",
-      "license": "SUSTAINABLE_USE_LICENSE_AND_ENTERPRISE_TERMS",
+      "license": "N8N_SUSTAINABLE_USE_PLUS_ENTERPRISE_LICENSE",
       "mirror_policy": "reference_only_or_private_internal_copy_after_terms_review",
-      "verified": false
+      "verified": true
     },
     {
       "name": "pgvector",
