@@ -90,7 +90,7 @@
       "upstream": "https://github.com/vercel/next.js",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "React",
@@ -99,7 +99,7 @@
       "upstream": "https://github.com/facebook/react",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "Tailwind CSS",
@@ -117,7 +117,7 @@
       "upstream": "https://github.com/supabase/supabase",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "FastAPI",
@@ -126,7 +126,7 @@
       "upstream": "https://github.com/fastapi/fastapi",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "Medusa",
@@ -171,7 +171,7 @@
       "upstream": "https://github.com/motiondivision/motion",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "Anime.js",
@@ -180,7 +180,7 @@
       "upstream": "https://github.com/juliangarnier/anime",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "Remotion",
@@ -198,7 +198,7 @@
       "upstream": "https://github.com/donmccurdy/glTF-Transform",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "meshoptimizer",
@@ -252,7 +252,7 @@
       "upstream": "https://github.com/openai/whisper",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "FFmpeg",
@@ -351,7 +351,7 @@
       "upstream": "https://github.com/opencv/opencv",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "3DDFA_V2",
@@ -405,7 +405,7 @@
       "upstream": "https://github.com/microsoft/onnxruntime",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "ncnn",
@@ -450,7 +450,7 @@
       "upstream": "https://github.com/qdrant/qdrant",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "Valkey",
@@ -549,7 +549,7 @@
       "upstream": "https://github.com/kubernetes/kubernetes",
       "license": "Apache-2.0",
       "mirror_policy": "mirror_reference_not_daily_fork",
-      "verified": false
+      "verified": true
     },
     {
       "name": "Pulumi",
@@ -684,7 +684,7 @@
       "upstream": "https://github.com/microsoft/playwright",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "Vitest",
@@ -693,7 +693,7 @@
       "upstream": "https://github.com/vitest-dev/vitest",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "Storybook",
@@ -702,7 +702,7 @@
       "upstream": "https://github.com/storybookjs/storybook",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "Promptfoo",
@@ -711,7 +711,7 @@
       "upstream": "https://github.com/promptfoo/promptfoo",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "Langfuse",
@@ -783,7 +783,7 @@
       "upstream": "https://github.com/livekit/livekit",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "Discourse",
@@ -855,7 +855,7 @@
       "upstream": "https://github.com/godotengine/godot",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     }
   ]
 }
