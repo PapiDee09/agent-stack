@@ -575,8 +575,8 @@
       "tier": "optional-scale",
       "upstream": "https://github.com/openbao/openbao",
       "license": "MPL-2.0",
-      "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "mirror_policy": "mirror_with_copyleft_review",
+      "verified": true
     },
     {
       "name": "NATS Server",
@@ -747,7 +747,7 @@
       "upstream": "https://github.com/aquasecurity/trivy",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": false
+      "verified": true
     },
     {
       "name": "Gitleaks",
