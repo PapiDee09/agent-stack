@@ -96,7 +96,7 @@
       "name": "React",
       "category": "app-platform",
       "tier": "core",
-      "upstream": "https://github.com/facebook/react",
+      "upstream": "https://github.com/react/react",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
       "verified": true

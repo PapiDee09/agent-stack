@@ -88,7 +88,10 @@ jq -c '.repositories[]' "$REGISTRY" | while read -r repo; do
     is_fork="$(jq -r '.data.repository.isFork' <<<"$lookup")"
     parent="$(jq -r '.data.repository.parent.nameWithOwner // empty' <<<"$lookup")"
 
-    if [[ "$is_fork" == "true" && "${parent,,}" == "${upstream_repo,,}" ]]; then
+    parent_lower="$(printf '%s' "$parent" | tr '[:upper:]' '[:lower:]')"
+    upstream_lower="$(printf '%s' "$upstream_repo" | tr '[:upper:]' '[:lower:]')"
+
+    if [[ "$is_fork" == "true" && "$parent_lower" == "$upstream_lower" ]]; then
       echo "EXISTS   $name — $target ← $parent"
       exists_count=$((exists_count + 1))
       continue
