@@ -295,9 +295,9 @@
       "category": "restoration",
       "tier": "reference",
       "upstream": "https://github.com/sczhou/CodeFormer",
-      "license": "CHECK_UPSTREAM",
-      "mirror_policy": "fork_or_mirror_after_verify",
-      "verified": false
+      "license": "S-LAB-1.0_NONCOMMERCIAL",
+      "mirror_policy": "reference_only_noncommercial",
+      "verified": true
     },
     {
       "name": "LivePortrait",
@@ -331,9 +331,9 @@
       "category": "face-tracking",
       "tier": "core",
       "upstream": "https://github.com/emilianavt/OpenSeeFace",
-      "license": "CHECK_UPSTREAM",
-      "mirror_policy": "fork_or_mirror_after_verify",
-      "verified": false
+      "license": "BSD-2-Clause",
+      "mirror_policy": "fork_or_mirror",
+      "verified": true
     },
     {
       "name": "MediaPipe",
@@ -358,18 +358,18 @@
       "category": "face-tracking",
       "tier": "optional",
       "upstream": "https://github.com/cleardusk/3DDFA_V2",
-      "license": "CHECK_UPSTREAM",
-      "mirror_policy": "fork_or_mirror_after_verify",
-      "verified": false
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "verified": true
     },
     {
       "name": "SMIRK",
       "category": "face-tracking",
       "tier": "optional",
       "upstream": "https://github.com/georgeretsi/smirk",
-      "license": "CHECK_UPSTREAM",
-      "mirror_policy": "fork_or_mirror_after_verify",
-      "verified": false
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "verified": true
     },
     {
       "name": "DECA",
@@ -385,18 +385,18 @@
       "category": "face-tracking",
       "tier": "reference",
       "upstream": "https://github.com/Zielon/MICA",
-      "license": "CHECK_UPSTREAM",
-      "mirror_policy": "fork_or_mirror_after_verify",
-      "verified": false
+      "license": "MAX_PLANCK_NONCOMMERCIAL_NO_REDISTRIBUTION",
+      "mirror_policy": "reference_only_no_redistribution",
+      "verified": true
     },
     {
       "name": "MODNet",
       "category": "segmentation",
       "tier": "optional",
       "upstream": "https://github.com/ZHKKKe/MODNet",
-      "license": "CHECK_UPSTREAM",
-      "mirror_policy": "fork_or_mirror_after_verify",
-      "verified": false
+      "license": "Apache-2.0_CODE_MODELS_EXCEPT_DOC_GIF",
+      "mirror_policy": "fork_or_mirror_preserve_notices",
+      "verified": true
     },
     {
       "name": "ONNX Runtime",
