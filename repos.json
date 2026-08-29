@@ -25,9 +25,9 @@
       "category": "agent-runtime",
       "tier": "core",
       "upstream": "https://github.com/anthropics/claude-code",
-      "license": "CHECK_UPSTREAM_TERMS",
-      "mirror_policy": "reference_only_until_verified",
-      "verified": false
+      "license": "PROPRIETARY_ANTHROPIC_COMMERCIAL_TERMS",
+      "mirror_policy": "reference_only",
+      "verified": true
     },
     {
       "name": "Kimi Code",
@@ -43,9 +43,9 @@
       "category": "agent-runtime",
       "tier": "reference",
       "upstream": "https://github.com/MoonshotAI/kimi-cli",
-      "license": "CHECK_UPSTREAM",
-      "mirror_policy": "fork_or_mirror_after_verify",
-      "verified": false
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "verified": true
     },
     {
       "name": "Anthropic Agent Skills",
@@ -187,9 +187,9 @@
       "category": "media",
       "tier": "core",
       "upstream": "https://github.com/remotion-dev/remotion",
-      "license": "CHECK_CURRENT_LICENSE",
-      "mirror_policy": "reference_only_until_verified",
-      "verified": false
+      "license": "CUSTOM_FREE_AND_COMPANY_LICENSE",
+      "mirror_policy": "reference_only",
+      "verified": true
     },
     {
       "name": "glTF-Transform",
@@ -466,9 +466,9 @@
       "category": "object-storage",
       "tier": "optional",
       "upstream": "https://github.com/rustfs/rustfs",
-      "license": "CHECK_UPSTREAM",
-      "mirror_policy": "fork_or_mirror_after_verify",
-      "verified": false
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "verified": true
     },
     {
       "name": "Git LFS",
@@ -835,9 +835,9 @@
       "category": "speech",
       "tier": "optional",
       "upstream": "https://github.com/hexgrad/kokoro",
-      "license": "CHECK_CODE_AND_MODEL_TERMS",
-      "mirror_policy": "code_mirror_only_after_verify",
-      "verified": false
+      "license": "Apache-2.0_CODE_MODEL_TERMS_SEPARATE",
+      "mirror_policy": "fork_or_mirror",
+      "verified": true
     },
     {
       "name": "CesiumJS",
