@@ -1,0 +1,757 @@
+{
+  "schema_version": 1,
+  "repositories": {
+    "Codex": {
+      "upstream": "openai/codex",
+      "tier": "core",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "b8c86376a258e55efc8e5ecfbabc21c16c07d814",
+      "license_hashes": {}
+    },
+    "Claude Code": {
+      "upstream": "anthropics/claude-code",
+      "tier": "core",
+      "license": "PROPRIETARY_ANTHROPIC_COMMERCIAL_TERMS",
+      "mirror_policy": "reference_only",
+      "upstream_commit": "f1af9b1f4b1fd4c776135381606edada82ef638e",
+      "license_hashes": {}
+    },
+    "Kimi Code": {
+      "upstream": "MoonshotAI/kimi-code",
+      "tier": "core",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "961927739ef34819d67d76fa5870cbe4ba7a01ff",
+      "license_hashes": {}
+    },
+    "Kimi CLI Legacy": {
+      "upstream": "MoonshotAI/kimi-cli",
+      "tier": "reference",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "cbc15c076d17f70fec9f89c90c0502e68657f505",
+      "license_hashes": {}
+    },
+    "Anthropic Agent Skills": {
+      "upstream": "anthropics/skills",
+      "tier": "core",
+      "license": "MIXED_APACHE2_AND_SOURCE_AVAILABLE",
+      "mirror_policy": "selective_mirror_by_subtree",
+      "upstream_commit": "3b3fad96af16a10759d930941b4520ba0c40edae",
+      "license_hashes": {}
+    },
+    "Agent Skills Spec": {
+      "upstream": "agentskills/agentskills",
+      "tier": "core",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "69ef37e9424c0a7ea9dd2293b559e43ec8176379",
+      "license_hashes": {}
+    },
+    "MengTo Skills": {
+      "upstream": "MengTo/Skills",
+      "tier": "core",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "321c769739b823de5eb94eb3a52aa1974fe783a2",
+      "license_hashes": {}
+    },
+    "MCP Reference Servers": {
+      "upstream": "modelcontextprotocol/servers",
+      "tier": "core",
+      "license": "Apache-2.0_WITH_LEGACY_MIT",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "cda92bdaacd558192fedf1a60d2bb27510792388",
+      "license_hashes": {}
+    },
+    "Next.js": {
+      "upstream": "vercel/next.js",
+      "tier": "core",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "2fe6f962a1982594bdda96a7de16c594677266d2",
+      "license_hashes": {}
+    },
+    "React": {
+      "upstream": "react/react",
+      "tier": "core",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "2dc7da790d6388b95b83198ca9b588b2ad5f5c0b",
+      "license_hashes": {}
+    },
+    "Tailwind CSS": {
+      "upstream": "tailwindlabs/tailwindcss",
+      "tier": "core",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "90f8ff41c8e2a4d17bc76921e23e9d672123da76",
+      "license_hashes": {}
+    },
+    "Supabase": {
+      "upstream": "supabase/supabase",
+      "tier": "core",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "86c813ec03e340ffbe4aeb97cd0c5bee7a0ead94",
+      "license_hashes": {}
+    },
+    "FastAPI": {
+      "upstream": "fastapi/fastapi",
+      "tier": "core",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "49033471594ea5d99a80abdf1043231b7791ee49",
+      "license_hashes": {}
+    },
+    "Medusa": {
+      "upstream": "medusajs/medusa",
+      "tier": "optional",
+      "license": "MIT_CORE_WITH_PROPRIETARY_ENTERPRISE_PATHS",
+      "mirror_policy": "selective_mirror_by_subtree",
+      "upstream_commit": "f7317903600e5b64f06c21c29a73e0e569d2fe3a",
+      "license_hashes": {}
+    },
+    "Saleor": {
+      "upstream": "saleor/saleor",
+      "tier": "optional",
+      "license": "BSD-3-Clause",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "8c7815d83922bd0f98bc678c31af4a34fd0a007b",
+      "license_hashes": {}
+    },
+    "Three.js": {
+      "upstream": "mrdoob/three.js",
+      "tier": "core",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "ad005397bbd15b0a9fcd5159c782eba56e1cba2a",
+      "license_hashes": {}
+    },
+    "ThreeUI": {
+      "upstream": "MengTo/threeui",
+      "tier": "core",
+      "license": "MIT_COMMUNITY_CODE_WITH_ASSET_NOTICES",
+      "mirror_policy": "fork_or_mirror_preserve_notices",
+      "upstream_commit": "326580429881c2abe7893bee53c62cbb31b6ee49",
+      "license_hashes": {}
+    },
+    "Motion": {
+      "upstream": "motiondivision/motion",
+      "tier": "core",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "1b037b0032578b52af94b06ff3920bfa0aaa5e36",
+      "license_hashes": {}
+    },
+    "Anime.js": {
+      "upstream": "juliangarnier/anime",
+      "tier": "core",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "01b81be1df6843ccfe0a71c0699a746bf740dd77",
+      "license_hashes": {}
+    },
+    "Remotion": {
+      "upstream": "remotion-dev/remotion",
+      "tier": "core",
+      "license": "CUSTOM_FREE_AND_COMPANY_LICENSE",
+      "mirror_policy": "reference_only",
+      "upstream_commit": "a1011d63c6aed4dd76f203bb58d5fb1b38209382",
+      "license_hashes": {}
+    },
+    "glTF-Transform": {
+      "upstream": "donmccurdy/glTF-Transform",
+      "tier": "core",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "1bdeacbe125e722a5215299e6f1386c584622f8f",
+      "license_hashes": {}
+    },
+    "meshoptimizer": {
+      "upstream": "zeux/meshoptimizer",
+      "tier": "core",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "d4c713f2e6a701fecb559d73e32241ccd2040f8a",
+      "license_hashes": {}
+    },
+    "Draco": {
+      "upstream": "google/draco",
+      "tier": "optional",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "052a31124c75e64dfbf4f9bc0df066e626aeef41",
+      "license_hashes": {}
+    },
+    "Basis Universal": {
+      "upstream": "BinomialLLC/basis_universal",
+      "tier": "core",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "f9ebbd80ae6ec82d3a4ec5543d03e356720c1f83",
+      "license_hashes": {}
+    },
+    "wgpu": {
+      "upstream": "gfx-rs/wgpu",
+      "tier": "reference",
+      "license": "MIT_OR_APACHE-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "fae070bf21fa5b1ea46e6621d035afaa6cbb9673",
+      "license_hashes": {}
+    },
+    "ComfyUI": {
+      "upstream": "Comfy-Org/ComfyUI",
+      "tier": "core",
+      "license": "GPL-3.0",
+      "mirror_policy": "mirror_with_copyleft_review",
+      "upstream_commit": "5bdcb5f4edd70412e12fb04f357766cb4504e0fa",
+      "license_hashes": {}
+    },
+    "Whisper": {
+      "upstream": "openai/whisper",
+      "tier": "core",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "5f86d1d86363843179951550570367b37c5d6f78",
+      "license_hashes": {}
+    },
+    "FFmpeg": {
+      "upstream": "FFmpeg/FFmpeg",
+      "tier": "core",
+      "license": "LGPL-2.1_OR_GPL_DEPENDING_BUILD",
+      "mirror_policy": "mirror_with_license_notes",
+      "upstream_commit": "3386acd2f91d4a59be20eddf6d26abad682f4ca0",
+      "license_hashes": {}
+    },
+    "LTX-Video": {
+      "upstream": "Lightricks/LTX-Video",
+      "tier": "optional",
+      "license": "Apache-2.0_CODE_MODEL_TERMS_SEPARATE",
+      "mirror_policy": "code_mirror_only_weights_separate",
+      "upstream_commit": "4b2d053057623ddd4d0a1d3e9cd28890e9ef487f",
+      "license_hashes": {}
+    },
+    "Real-ESRGAN": {
+      "upstream": "xinntao/Real-ESRGAN",
+      "tier": "core",
+      "license": "BSD-3-Clause",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "a4abfb2979a7bbff3f69f58f58ae324608821e27",
+      "license_hashes": {}
+    },
+    "GFPGAN": {
+      "upstream": "TencentARC/GFPGAN",
+      "tier": "reference",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "7552a7791caad982045a7bbe5634bbf1cd5c8679",
+      "license_hashes": {}
+    },
+    "CodeFormer": {
+      "upstream": "sczhou/CodeFormer",
+      "tier": "reference",
+      "license": "S-LAB-1.0_NONCOMMERCIAL",
+      "mirror_policy": "reference_only_noncommercial",
+      "upstream_commit": "b33cc7d639d6545bfcccc7e0bc6ae51f24e79c2b",
+      "license_hashes": {}
+    },
+    "LivePortrait": {
+      "upstream": "KlingAIResearch/LivePortrait",
+      "tier": "core",
+      "license": "MIT_CODE_INSIGHTFACE_MODELS_NONCOMMERCIAL",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "9b294b3d0536135442ea73cb01e6cb3ca7029dd3",
+      "license_hashes": {}
+    },
+    "MuseTalk": {
+      "upstream": "TMElyralab/MuseTalk",
+      "tier": "core",
+      "license": "MIT_CODE_MODEL_COMMERCIAL_THIRD_PARTY_TERMS_SEPARATE",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "0a89dec45a0192b824e3cf4daf96c239440c5ed8",
+      "license_hashes": {}
+    },
+    "LiveTalking": {
+      "upstream": "lipku/LiveTalking",
+      "tier": "optional",
+      "license": "APACHE-2.0_WITH_PUBLIC_OUTPUT_WATERMARK_CONDITION",
+      "mirror_policy": "reference_only_special_usage_terms",
+      "upstream_commit": "9bf6a204500e87634551919bebd31959e7a5434b",
+      "license_hashes": {}
+    },
+    "OpenSeeFace": {
+      "upstream": "emilianavt/OpenSeeFace",
+      "tier": "core",
+      "license": "BSD-2-Clause",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "85aa70fc67582d046e771ea73625182a0d8f7475",
+      "license_hashes": {}
+    },
+    "MediaPipe": {
+      "upstream": "google-ai-edge/mediapipe",
+      "tier": "core",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "251c0cb9687230682929a64d413751f1a4f8a6d5",
+      "license_hashes": {}
+    },
+    "OpenCV": {
+      "upstream": "opencv/opencv",
+      "tier": "core",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "390c4fdcb9fea6e58fb635bf88277f2a51e8d4b3",
+      "license_hashes": {}
+    },
+    "3DDFA_V2": {
+      "upstream": "cleardusk/3DDFA_V2",
+      "tier": "optional",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "1b6c67601abffc1e9f248b291708aef0e43b55ae",
+      "license_hashes": {}
+    },
+    "SMIRK": {
+      "upstream": "georgeretsi/smirk",
+      "tier": "optional",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "c7de404c4389f073906a6db1adabf62efcea3f35",
+      "license_hashes": {}
+    },
+    "DECA": {
+      "upstream": "YadiraF/DECA",
+      "tier": "reference",
+      "license": "MAX_PLANCK_NONCOMMERCIAL_RESEARCH",
+      "mirror_policy": "reference_only_noncommercial",
+      "upstream_commit": "a11554ae2a2b0f3998cf1fa94dd4db03babb34a2",
+      "license_hashes": {}
+    },
+    "MICA": {
+      "upstream": "Zielon/MICA",
+      "tier": "reference",
+      "license": "MAX_PLANCK_NONCOMMERCIAL_NO_REDISTRIBUTION",
+      "mirror_policy": "reference_only_no_redistribution",
+      "upstream_commit": "af22e7a5810d474bc28a1433db533723d6bd2b07",
+      "license_hashes": {}
+    },
+    "MODNet": {
+      "upstream": "ZHKKKe/MODNet",
+      "tier": "optional",
+      "license": "Apache-2.0_CODE_MODELS_EXCEPT_DOC_GIF",
+      "mirror_policy": "fork_or_mirror_preserve_notices",
+      "upstream_commit": "28165a451e4610c9d77cfdf925a94610bb2810fb",
+      "license_hashes": {}
+    },
+    "ONNX Runtime": {
+      "upstream": "microsoft/onnxruntime",
+      "tier": "core",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "e79a40aa7d80a99764b9384f256a855abb4171ee",
+      "license_hashes": {}
+    },
+    "ncnn": {
+      "upstream": "Tencent/ncnn",
+      "tier": "optional",
+      "license": "BSD-3-Clause",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "2130e00c6efd910d3e926867ca94a2d96eaf9d31",
+      "license_hashes": {}
+    },
+    "MarkItDown": {
+      "upstream": "microsoft/markitdown",
+      "tier": "core",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "9dc0d6579b8739c9d0671ff205e071e3053c7df1",
+      "license_hashes": {}
+    },
+    "n8n": {
+      "upstream": "n8n-io/n8n",
+      "tier": "core",
+      "license": "N8N_SUSTAINABLE_USE_PLUS_ENTERPRISE_LICENSE",
+      "mirror_policy": "reference_only_or_private_internal_copy_after_terms_review",
+      "upstream_commit": "d3900d81afab6e0d1e085f3d1b2047199ba08305",
+      "license_hashes": {}
+    },
+    "pgvector": {
+      "upstream": "pgvector/pgvector",
+      "tier": "core",
+      "license": "PostgreSQL",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "e48241b4dcc045b18902914f668d03d1d399dfbe",
+      "license_hashes": {}
+    },
+    "Qdrant": {
+      "upstream": "qdrant/qdrant",
+      "tier": "optional",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "74f3e85b9473c62560006c043e13737ce6b48412",
+      "license_hashes": {}
+    },
+    "Valkey": {
+      "upstream": "valkey-io/valkey",
+      "tier": "optional",
+      "license": "BSD-3-Clause",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "11a74cf243f006d1a22cc832ea2251c24e0a855f",
+      "license_hashes": {}
+    },
+    "RustFS": {
+      "upstream": "rustfs/rustfs",
+      "tier": "optional",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "ff3ad30f0c537e6feba3180d713cea46b246200b",
+      "license_hashes": {}
+    },
+    "Git LFS": {
+      "upstream": "git-lfs/git-lfs",
+      "tier": "optional",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "aece9221f8c09221a14395d964806b956289bc07",
+      "license_hashes": {}
+    },
+    "DVC": {
+      "upstream": "treeverse/dvc",
+      "tier": "optional",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "56e59829512ff134aa269099a2099587b810b4dd",
+      "license_hashes": {}
+    },
+    "lakeFS": {
+      "upstream": "treeverse/lakeFS",
+      "tier": "optional",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "4bb11638e95637e853d9680abf072b14f09e32fb",
+      "license_hashes": {}
+    },
+    "vLLM": {
+      "upstream": "vllm-project/vllm",
+      "tier": "core-scale",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "680e2177e473ed8dfaa9773f7ead185b369cab46",
+      "license_hashes": {}
+    },
+    "BentoML": {
+      "upstream": "bentoml/BentoML",
+      "tier": "core-scale",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "add7dd5897a4680cd8fdf985da9a27a8239d980f",
+      "license_hashes": {}
+    },
+    "Ray": {
+      "upstream": "ray-project/ray",
+      "tier": "optional-scale",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "3281306dd05f033016e152339137760c0b14c524",
+      "license_hashes": {}
+    },
+    "KServe": {
+      "upstream": "kserve/kserve",
+      "tier": "optional-scale",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "5df5f5999b18fb59c772aaa9627dc0ff8111b720",
+      "license_hashes": {}
+    },
+    "NVIDIA k8s-device-plugin": {
+      "upstream": "NVIDIA/k8s-device-plugin",
+      "tier": "optional-scale",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "5a3b3d85a44ec0e493684c713218eaea07675601",
+      "license_hashes": {}
+    },
+    "Kubernetes": {
+      "upstream": "kubernetes/kubernetes",
+      "tier": "optional-scale",
+      "license": "Apache-2.0",
+      "mirror_policy": "mirror_reference_not_daily_fork",
+      "upstream_commit": "e72c2715ade37738aa5c029e8de5285cbe1c9441",
+      "license_hashes": {}
+    },
+    "Pulumi": {
+      "upstream": "pulumi/pulumi",
+      "tier": "optional-scale",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "ec3841d51d5d2dcdd8c94f10e7e02e6469407aca",
+      "license_hashes": {}
+    },
+    "Argo CD": {
+      "upstream": "argoproj/argo-cd",
+      "tier": "optional-scale",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "b642d5f6d5eba8cd644b3ca65b217e7a718645cd",
+      "license_hashes": {}
+    },
+    "OpenBao": {
+      "upstream": "openbao/openbao",
+      "tier": "optional-scale",
+      "license": "MPL-2.0",
+      "mirror_policy": "mirror_with_copyleft_review",
+      "upstream_commit": "5647ca4fc7f9cf4192f0cc8c256ef7c34e85cdac",
+      "license_hashes": {}
+    },
+    "NATS Server": {
+      "upstream": "nats-io/nats-server",
+      "tier": "optional-scale",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "6f3d85d56d708a7fc816666d1fa70819e4ee462f",
+      "license_hashes": {}
+    },
+    "tusd": {
+      "upstream": "tus/tusd",
+      "tier": "core-scale",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "ad7fb31344e0629cb8a5af67bb1e630f90507890",
+      "license_hashes": {}
+    },
+    "SeaweedFS": {
+      "upstream": "seaweedfs/seaweedfs",
+      "tier": "optional-scale",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "9bafeb613933fdb0979037d20ee28c0da3655233",
+      "license_hashes": {}
+    },
+    "JuiceFS": {
+      "upstream": "juicedata/juicefs",
+      "tier": "optional-scale",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "4cbf9715ef83b99b9d5a06d620d443097862a4ac",
+      "license_hashes": {}
+    },
+    "Kong Gateway": {
+      "upstream": "Kong/kong",
+      "tier": "optional-scale",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "fa9c3b695af72668f135cb17bbb84a8b4dc511d2",
+      "license_hashes": {}
+    },
+    "ZITADEL": {
+      "upstream": "zitadel/zitadel",
+      "tier": "optional-scale",
+      "license": "AGPL-3.0_WITH_APACHE_MIT_EXCEPTIONS",
+      "mirror_policy": "mirror_with_copyleft_review",
+      "upstream_commit": "8de625dc4867ab01cab0753bc2e2a8ecf57f7747",
+      "license_hashes": {}
+    },
+    "Locust": {
+      "upstream": "locustio/locust",
+      "tier": "core-scale",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "f391a716e12c2c712e80b5835e877b7933397453",
+      "license_hashes": {}
+    },
+    "Lago": {
+      "upstream": "getlago/lago",
+      "tier": "optional-scale",
+      "license": "AGPL-3.0",
+      "mirror_policy": "mirror_with_copyleft_review",
+      "upstream_commit": "02a4bc8d9c0ab4201875d8615a09c48a2f2a4d31",
+      "license_hashes": {}
+    },
+    "GrowthBook": {
+      "upstream": "growthbook/growthbook",
+      "tier": "optional",
+      "license": "MIT_CORE_WITH_COMMERCIAL_ENTERPRISE_DIRECTORIES",
+      "mirror_policy": "selective_after_license_review",
+      "upstream_commit": "de4ff6b5256c13764239f9ed3560e281c5728592",
+      "license_hashes": {}
+    },
+    "PostHog": {
+      "upstream": "PostHog/posthog",
+      "tier": "optional",
+      "license": "MIT_CORE_WITH_PROPRIETARY_EE_DIRECTORY",
+      "mirror_policy": "reference_or_selective_after_review",
+      "upstream_commit": "68974dcaf788b0844dd322235943758860270832",
+      "license_hashes": {}
+    },
+    "Unleash": {
+      "upstream": "Unleash/unleash",
+      "tier": "optional",
+      "license": "AGPL-3.0_SOURCE_V8_PLUS_DOCKER_IMAGES_APACHE-2.0",
+      "mirror_policy": "mirror_with_copyleft_review",
+      "upstream_commit": "3ce087b005fd8a3d1a612a8cba69e390d79de3e4",
+      "license_hashes": {}
+    },
+    "Playwright": {
+      "upstream": "microsoft/playwright",
+      "tier": "core",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "de214f440b7e34937fe4886f046b78b757136087",
+      "license_hashes": {}
+    },
+    "Vitest": {
+      "upstream": "vitest-dev/vitest",
+      "tier": "core",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "d4fe1986fe334d22940039e815ccdbcc907baa6a",
+      "license_hashes": {}
+    },
+    "Storybook": {
+      "upstream": "storybookjs/storybook",
+      "tier": "optional",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "8256cee6c95cf35dc8113cf179c9b7bea487f327",
+      "license_hashes": {}
+    },
+    "Promptfoo": {
+      "upstream": "promptfoo/promptfoo",
+      "tier": "core",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "4fb96412eff44ced9c47293238d3db0450a39353",
+      "license_hashes": {}
+    },
+    "Langfuse": {
+      "upstream": "langfuse/langfuse",
+      "tier": "optional",
+      "license": "MIT_CORE_WITH_COMMERCIAL_EE_DIRECTORIES",
+      "mirror_policy": "fork_or_mirror_core_only",
+      "upstream_commit": "f6e56cbb6c6c001805e90c263efca995a3fd33ba",
+      "license_hashes": {}
+    },
+    "OpenTelemetry Collector": {
+      "upstream": "open-telemetry/opentelemetry-collector",
+      "tier": "core",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "a183c9cc604a9921c75b2eda0bf8fbb0bb9833b5",
+      "license_hashes": {}
+    },
+    "SigNoz": {
+      "upstream": "SigNoz/signoz",
+      "tier": "core",
+      "license": "MIT_CORE_WITH_PROPRIETARY_ENTERPRISE_DIRS",
+      "mirror_policy": "selective_mirror_excluding_enterprise",
+      "upstream_commit": "da9b4644dfc26e4bf81658edd3bc015df8897c4a",
+      "license_hashes": {}
+    },
+    "Trivy": {
+      "upstream": "aquasecurity/trivy",
+      "tier": "core",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "5ae0bb10645f08e6ec81fc257d4dc7e51c15ba69",
+      "license_hashes": {}
+    },
+    "Gitleaks": {
+      "upstream": "gitleaks/gitleaks",
+      "tier": "core",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "b58d3f102cf3a2c84cb7f923d05c25c9b1aed84b",
+      "license_hashes": {}
+    },
+    "OWASP ZAP": {
+      "upstream": "zaproxy/zaproxy",
+      "tier": "optional",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "cc12d7ccffd71a4ef19efeb4ee08e55cd86a70c3",
+      "license_hashes": {}
+    },
+    "Temporal": {
+      "upstream": "temporalio/temporal",
+      "tier": "optional-scale",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "c044bf16b1cc47a4db80669a987484dba6145331",
+      "license_hashes": {}
+    },
+    "LiveKit": {
+      "upstream": "livekit/livekit",
+      "tier": "core",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "c934aa29b75cf47fc83110d4b44c4055dd4f48d9",
+      "license_hashes": {}
+    },
+    "Discourse": {
+      "upstream": "discourse/discourse",
+      "tier": "optional",
+      "license": "GPL-2.0-or-later",
+      "mirror_policy": "mirror_with_copyleft_review",
+      "upstream_commit": "768a4ed1cd8e6742fe1c1340a9c4ab01318285ec",
+      "license_hashes": {}
+    },
+    "Element Web": {
+      "upstream": "element-hq/element-web",
+      "tier": "optional",
+      "license": "AGPL-3.0_OR_GPL-3.0_OR_COMMERCIAL",
+      "mirror_policy": "mirror_with_copyleft_review",
+      "upstream_commit": "a664fabc563afba905239e2cc59a7a142f01532d",
+      "license_hashes": {}
+    },
+    "Matrix Synapse": {
+      "upstream": "element-hq/synapse",
+      "tier": "optional",
+      "license": "AGPL-3.0-or-later_OR_COMMERCIAL",
+      "mirror_policy": "mirror_with_copyleft_review",
+      "upstream_commit": "30355721f64c6e7654e7dd755ad2a679fd479b9c",
+      "license_hashes": {}
+    },
+    "Tauri": {
+      "upstream": "tauri-apps/tauri",
+      "tier": "optional",
+      "license": "MIT_OR_APACHE-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "dd6befda925845fc74ca595d6d42de6c49580dd8",
+      "license_hashes": {}
+    },
+    "Expo": {
+      "upstream": "expo/expo",
+      "tier": "optional",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "f1882313ed8455baa8ca31e5e52d7cf5aff27771",
+      "license_hashes": {}
+    },
+    "Kokoro TTS": {
+      "upstream": "hexgrad/kokoro",
+      "tier": "optional",
+      "license": "Apache-2.0_CODE_MODEL_TERMS_SEPARATE",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "dfb907a02bba8152ca444717ca5d78747ccb4bec",
+      "license_hashes": {}
+    },
+    "CesiumJS": {
+      "upstream": "CesiumGS/cesium",
+      "tier": "situational",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "93c82442d0733002e48c2dfde7b1a43d75da57dc",
+      "license_hashes": {}
+    },
+    "Godot": {
+      "upstream": "godotengine/godot",
+      "tier": "core-specialist",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "5ec4857b340b6284a18b49b2eda462bd250f219a",
+      "license_hashes": {}
+    }
+  }
+}
