@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "name": "Skillry",
+      "category": "agent-skill-marketplace",
+      "url": "https://skillry.dev/",
+      "tier": "source",
+      "ownership": "hosted_proprietary",
+      "usage": "discover and evaluate individual reusable agent skills"
+    },
+    {
+      "name": "AppKittie",
+      "category": "mobile-product-intelligence",
+      "url": "https://www.appkittie.com/",
+      "tier": "core-optional-source",
+      "ownership": "hosted_proprietary",
+      "usage": "mobile market, competitor, onboarding, ads and ASO intelligence"
+    },
+    {
+      "name": "Jiro",
+      "category": "design-reference",
+      "url": "https://jiro.build/",
+      "tier": "source",
+      "ownership": "hosted",
+      "usage": "design prompts and implementation reference"
+    },
+    {
+      "name": "Anim8",
+      "category": "motion-production",
+      "url": "https://tryanim8.com/",
+      "tier": "situational-source",
+      "ownership": "hosted_proprietary",
+      "usage": "video to editable vector, SVG and Lottie workflows"
+    },
+    {
+      "name": "Annnimate",
+      "category": "motion-reference",
+      "url": "https://annnimate.com/",
+      "tier": "source",
+      "ownership": "hosted_proprietary",
+      "usage": "production motion component and GSAP reference"
+    },
+    {
+      "name": "Raylight",
+      "category": "creative-production",
+      "url": "https://raylight.io/",
+      "tier": "situational-source",
+      "ownership": "hosted_proprietary",
+      "usage": "browser motion and video production"
+    },
+    {
+      "name": "Motion.so",
+      "category": "creative-production-reference",
+      "url": "https://motion.so/",
+      "tier": "reference",
+      "ownership": "hosted_proprietary",
+      "usage": "autonomous motion-design workflow reference"
+    }
+  ]
+}
