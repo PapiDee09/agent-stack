@@ -38,7 +38,10 @@
       "upstream": "https://github.com/openai/codex",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "Claude Code",
@@ -47,7 +50,10 @@
       "upstream": "https://github.com/anthropics/claude-code",
       "license": "PROPRIETARY_ANTHROPIC_COMMERCIAL_TERMS",
       "mirror_policy": "reference_only",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "reference_only",
+      "sync_policy": "none"
     },
     {
       "name": "Kimi Code",
@@ -56,7 +62,10 @@
       "upstream": "https://github.com/MoonshotAI/kimi-code",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "Kimi CLI Legacy",
@@ -65,7 +74,10 @@
       "upstream": "https://github.com/MoonshotAI/kimi-cli",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "Anthropic Agent Skills",
@@ -74,7 +86,10 @@
       "upstream": "https://github.com/anthropics/skills",
       "license": "MIXED_APACHE2_AND_SOURCE_AVAILABLE",
       "mirror_policy": "selective_mirror_by_subtree",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "selective",
+      "sync_policy": "review"
     },
     {
       "name": "Agent Skills Spec",
@@ -83,7 +98,10 @@
       "upstream": "https://github.com/agentskills/agentskills",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "MengTo Skills",
@@ -92,7 +110,10 @@
       "upstream": "https://github.com/MengTo/Skills",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "MCP Reference Servers",
@@ -101,7 +122,10 @@
       "upstream": "https://github.com/modelcontextprotocol/servers",
       "license": "Apache-2.0_WITH_LEGACY_MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "Next.js",
@@ -110,7 +134,10 @@
       "upstream": "https://github.com/vercel/next.js",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "React",
@@ -119,7 +146,10 @@
       "upstream": "https://github.com/react/react",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "Tailwind CSS",
@@ -128,7 +158,10 @@
       "upstream": "https://github.com/tailwindlabs/tailwindcss",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "Supabase",
@@ -137,7 +170,10 @@
       "upstream": "https://github.com/supabase/supabase",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "FastAPI",
@@ -146,7 +182,10 @@
       "upstream": "https://github.com/fastapi/fastapi",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "Medusa",
@@ -155,7 +194,10 @@
       "upstream": "https://github.com/medusajs/medusa",
       "license": "MIT_CORE_WITH_PROPRIETARY_ENTERPRISE_PATHS",
       "mirror_policy": "selective_mirror_by_subtree",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "selective",
+      "sync_policy": "review"
     },
     {
       "name": "Saleor",
@@ -164,7 +206,10 @@
       "upstream": "https://github.com/saleor/saleor",
       "license": "BSD-3-Clause",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "Three.js",
@@ -173,7 +218,10 @@
       "upstream": "https://github.com/mrdoob/three.js",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "ThreeUI",
@@ -182,7 +230,10 @@
       "upstream": "https://github.com/MengTo/threeui",
       "license": "MIT_COMMUNITY_CODE_WITH_ASSET_NOTICES",
       "mirror_policy": "fork_or_mirror_preserve_notices",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "Motion",
@@ -191,7 +242,10 @@
       "upstream": "https://github.com/motiondivision/motion",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "Anime.js",
@@ -200,7 +254,10 @@
       "upstream": "https://github.com/juliangarnier/anime",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "Remotion",
@@ -209,7 +266,10 @@
       "upstream": "https://github.com/remotion-dev/remotion",
       "license": "CUSTOM_FREE_AND_COMPANY_LICENSE",
       "mirror_policy": "reference_only",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "reference_only",
+      "sync_policy": "none"
     },
     {
       "name": "glTF-Transform",
@@ -218,7 +278,10 @@
       "upstream": "https://github.com/donmccurdy/glTF-Transform",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "meshoptimizer",
@@ -227,7 +290,10 @@
       "upstream": "https://github.com/zeux/meshoptimizer",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "Draco",
@@ -236,7 +302,10 @@
       "upstream": "https://github.com/google/draco",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "Basis Universal",
@@ -245,7 +314,10 @@
       "upstream": "https://github.com/BinomialLLC/basis_universal",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "wgpu",
@@ -254,7 +326,10 @@
       "upstream": "https://github.com/gfx-rs/wgpu",
       "license": "MIT_OR_APACHE-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "ComfyUI",
@@ -263,7 +338,10 @@
       "upstream": "https://github.com/Comfy-Org/ComfyUI",
       "license": "GPL-3.0",
       "mirror_policy": "mirror_with_copyleft_review",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
     },
     {
       "name": "Whisper",
@@ -272,7 +350,10 @@
       "upstream": "https://github.com/openai/whisper",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "FFmpeg",
@@ -281,7 +362,10 @@
       "upstream": "https://github.com/FFmpeg/FFmpeg",
       "license": "LGPL-2.1_OR_GPL_DEPENDING_BUILD",
       "mirror_policy": "mirror_with_license_notes",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
     },
     {
       "name": "LTX-Video",
@@ -290,7 +374,10 @@
       "upstream": "https://github.com/Lightricks/LTX-Video",
       "license": "Apache-2.0_CODE_MODEL_TERMS_SEPARATE",
       "mirror_policy": "code_mirror_only_weights_separate",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "selective",
+      "sync_policy": "review"
     },
     {
       "name": "Real-ESRGAN",
@@ -299,7 +386,10 @@
       "upstream": "https://github.com/xinntao/Real-ESRGAN",
       "license": "BSD-3-Clause",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "GFPGAN",
@@ -308,7 +398,10 @@
       "upstream": "https://github.com/TencentARC/GFPGAN",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "CodeFormer",
@@ -317,7 +410,10 @@
       "upstream": "https://github.com/sczhou/CodeFormer",
       "license": "S-LAB-1.0_NONCOMMERCIAL",
       "mirror_policy": "reference_only_noncommercial",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "reference_only",
+      "sync_policy": "none"
     },
     {
       "name": "LivePortrait",
@@ -326,7 +422,10 @@
       "upstream": "https://github.com/KlingAIResearch/LivePortrait",
       "license": "MIT_CODE_INSIGHTFACE_MODELS_NONCOMMERCIAL",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
     },
     {
       "name": "MuseTalk",
@@ -335,7 +434,10 @@
       "upstream": "https://github.com/TMElyralab/MuseTalk",
       "license": "MIT_CODE_MODEL_COMMERCIAL_THIRD_PARTY_TERMS_SEPARATE",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
     },
     {
       "name": "LiveTalking",
@@ -344,7 +446,10 @@
       "upstream": "https://github.com/lipku/LiveTalking",
       "license": "APACHE-2.0_WITH_PUBLIC_OUTPUT_WATERMARK_CONDITION",
       "mirror_policy": "reference_only_special_usage_terms",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "reference_only",
+      "sync_policy": "none"
     },
     {
       "name": "OpenSeeFace",
@@ -353,7 +458,10 @@
       "upstream": "https://github.com/emilianavt/OpenSeeFace",
       "license": "BSD-2-Clause",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "MediaPipe",
@@ -362,7 +470,10 @@
       "upstream": "https://github.com/google-ai-edge/mediapipe",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "OpenCV",
@@ -371,7 +482,10 @@
       "upstream": "https://github.com/opencv/opencv",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "3DDFA_V2",
@@ -380,7 +494,10 @@
       "upstream": "https://github.com/cleardusk/3DDFA_V2",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "SMIRK",
@@ -389,7 +506,10 @@
       "upstream": "https://github.com/georgeretsi/smirk",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "DECA",
@@ -398,7 +518,10 @@
       "upstream": "https://github.com/YadiraF/DECA",
       "license": "MAX_PLANCK_NONCOMMERCIAL_RESEARCH",
       "mirror_policy": "reference_only_noncommercial",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "reference_only",
+      "sync_policy": "none"
     },
     {
       "name": "MICA",
@@ -407,7 +530,10 @@
       "upstream": "https://github.com/Zielon/MICA",
       "license": "MAX_PLANCK_NONCOMMERCIAL_NO_REDISTRIBUTION",
       "mirror_policy": "reference_only_no_redistribution",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "reference_only",
+      "sync_policy": "none"
     },
     {
       "name": "MODNet",
@@ -416,7 +542,10 @@
       "upstream": "https://github.com/ZHKKKe/MODNet",
       "license": "Apache-2.0_CODE_MODELS_EXCEPT_DOC_GIF",
       "mirror_policy": "fork_or_mirror_preserve_notices",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "ONNX Runtime",
@@ -425,7 +554,10 @@
       "upstream": "https://github.com/microsoft/onnxruntime",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "ncnn",
@@ -434,7 +566,10 @@
       "upstream": "https://github.com/Tencent/ncnn",
       "license": "BSD-3-Clause",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "MarkItDown",
@@ -443,7 +578,10 @@
       "upstream": "https://github.com/microsoft/markitdown",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "n8n",
@@ -452,7 +590,10 @@
       "upstream": "https://github.com/n8n-io/n8n",
       "license": "N8N_SUSTAINABLE_USE_PLUS_ENTERPRISE_LICENSE",
       "mirror_policy": "reference_only_or_private_internal_copy_after_terms_review",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "reference_only",
+      "sync_policy": "none"
     },
     {
       "name": "pgvector",
@@ -461,7 +602,10 @@
       "upstream": "https://github.com/pgvector/pgvector",
       "license": "PostgreSQL",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "Qdrant",
@@ -470,7 +614,10 @@
       "upstream": "https://github.com/qdrant/qdrant",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "Valkey",
@@ -479,7 +626,10 @@
       "upstream": "https://github.com/valkey-io/valkey",
       "license": "BSD-3-Clause",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "RustFS",
@@ -488,7 +638,10 @@
       "upstream": "https://github.com/rustfs/rustfs",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "Git LFS",
@@ -497,7 +650,10 @@
       "upstream": "https://github.com/git-lfs/git-lfs",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "DVC",
@@ -506,7 +662,10 @@
       "upstream": "https://github.com/treeverse/dvc",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "lakeFS",
@@ -515,7 +674,10 @@
       "upstream": "https://github.com/treeverse/lakeFS",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "vLLM",
@@ -524,7 +686,10 @@
       "upstream": "https://github.com/vllm-project/vllm",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "BentoML",
@@ -533,7 +698,10 @@
       "upstream": "https://github.com/bentoml/BentoML",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "Ray",
@@ -542,7 +710,10 @@
       "upstream": "https://github.com/ray-project/ray",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "KServe",
@@ -551,7 +722,10 @@
       "upstream": "https://github.com/kserve/kserve",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "NVIDIA k8s-device-plugin",
@@ -560,7 +734,10 @@
       "upstream": "https://github.com/NVIDIA/k8s-device-plugin",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "Kubernetes",
@@ -569,7 +746,10 @@
       "upstream": "https://github.com/kubernetes/kubernetes",
       "license": "Apache-2.0",
       "mirror_policy": "mirror_reference_not_daily_fork",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "manual"
     },
     {
       "name": "Pulumi",
@@ -578,7 +758,10 @@
       "upstream": "https://github.com/pulumi/pulumi",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "Argo CD",
@@ -587,7 +770,10 @@
       "upstream": "https://github.com/argoproj/argo-cd",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "OpenBao",
@@ -596,7 +782,10 @@
       "upstream": "https://github.com/openbao/openbao",
       "license": "MPL-2.0",
       "mirror_policy": "mirror_with_copyleft_review",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
     },
     {
       "name": "NATS Server",
@@ -605,7 +794,10 @@
       "upstream": "https://github.com/nats-io/nats-server",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "tusd",
@@ -614,7 +806,10 @@
       "upstream": "https://github.com/tus/tusd",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "SeaweedFS",
@@ -623,7 +818,10 @@
       "upstream": "https://github.com/seaweedfs/seaweedfs",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "JuiceFS",
@@ -632,7 +830,10 @@
       "upstream": "https://github.com/juicedata/juicefs",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "Kong Gateway",
@@ -641,7 +842,10 @@
       "upstream": "https://github.com/Kong/kong",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "ZITADEL",
@@ -650,7 +854,10 @@
       "upstream": "https://github.com/zitadel/zitadel",
       "license": "AGPL-3.0_WITH_APACHE_MIT_EXCEPTIONS",
       "mirror_policy": "mirror_with_copyleft_review",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
     },
     {
       "name": "Locust",
@@ -659,7 +866,10 @@
       "upstream": "https://github.com/locustio/locust",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "Lago",
@@ -668,7 +878,10 @@
       "upstream": "https://github.com/getlago/lago",
       "license": "AGPL-3.0",
       "mirror_policy": "mirror_with_copyleft_review",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
     },
     {
       "name": "GrowthBook",
@@ -677,7 +890,10 @@
       "upstream": "https://github.com/growthbook/growthbook",
       "license": "MIT_CORE_WITH_COMMERCIAL_ENTERPRISE_DIRECTORIES",
       "mirror_policy": "selective_after_license_review",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "selective",
+      "sync_policy": "review"
     },
     {
       "name": "PostHog",
@@ -686,7 +902,10 @@
       "upstream": "https://github.com/PostHog/posthog",
       "license": "MIT_CORE_WITH_PROPRIETARY_EE_DIRECTORY",
       "mirror_policy": "reference_or_selective_after_review",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "selective",
+      "sync_policy": "review"
     },
     {
       "name": "Unleash",
@@ -695,7 +914,10 @@
       "upstream": "https://github.com/Unleash/unleash",
       "license": "AGPL-3.0_SOURCE_V8_PLUS_DOCKER_IMAGES_APACHE-2.0",
       "mirror_policy": "mirror_with_copyleft_review",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
     },
     {
       "name": "Playwright",
@@ -704,7 +926,10 @@
       "upstream": "https://github.com/microsoft/playwright",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "Vitest",
@@ -713,7 +938,10 @@
       "upstream": "https://github.com/vitest-dev/vitest",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "Storybook",
@@ -722,7 +950,10 @@
       "upstream": "https://github.com/storybookjs/storybook",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "Promptfoo",
@@ -731,7 +962,10 @@
       "upstream": "https://github.com/promptfoo/promptfoo",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "Langfuse",
@@ -740,7 +974,10 @@
       "upstream": "https://github.com/langfuse/langfuse",
       "license": "MIT_CORE_WITH_COMMERCIAL_EE_DIRECTORIES",
       "mirror_policy": "fork_or_mirror_core_only",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "selective",
+      "sync_policy": "review"
     },
     {
       "name": "OpenTelemetry Collector",
@@ -749,7 +986,10 @@
       "upstream": "https://github.com/open-telemetry/opentelemetry-collector",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "SigNoz",
@@ -758,7 +998,10 @@
       "upstream": "https://github.com/SigNoz/signoz",
       "license": "MIT_CORE_WITH_PROPRIETARY_ENTERPRISE_DIRS",
       "mirror_policy": "selective_mirror_excluding_enterprise",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "selective",
+      "sync_policy": "review"
     },
     {
       "name": "Trivy",
@@ -767,7 +1010,10 @@
       "upstream": "https://github.com/aquasecurity/trivy",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "Gitleaks",
@@ -776,7 +1022,10 @@
       "upstream": "https://github.com/gitleaks/gitleaks",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "OWASP ZAP",
@@ -785,7 +1034,10 @@
       "upstream": "https://github.com/zaproxy/zaproxy",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "Temporal",
@@ -794,7 +1046,10 @@
       "upstream": "https://github.com/temporalio/temporal",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "LiveKit",
@@ -803,7 +1058,10 @@
       "upstream": "https://github.com/livekit/livekit",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "Discourse",
@@ -812,7 +1070,10 @@
       "upstream": "https://github.com/discourse/discourse",
       "license": "GPL-2.0-or-later",
       "mirror_policy": "mirror_with_copyleft_review",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
     },
     {
       "name": "Element Web",
@@ -821,7 +1082,10 @@
       "upstream": "https://github.com/element-hq/element-web",
       "license": "AGPL-3.0_OR_GPL-3.0_OR_COMMERCIAL",
       "mirror_policy": "mirror_with_copyleft_review",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
     },
     {
       "name": "Matrix Synapse",
@@ -830,7 +1094,10 @@
       "upstream": "https://github.com/element-hq/synapse",
       "license": "AGPL-3.0-or-later_OR_COMMERCIAL",
       "mirror_policy": "mirror_with_copyleft_review",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
     },
     {
       "name": "Tauri",
@@ -839,7 +1106,10 @@
       "upstream": "https://github.com/tauri-apps/tauri",
       "license": "MIT_OR_APACHE-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "Expo",
@@ -848,7 +1118,10 @@
       "upstream": "https://github.com/expo/expo",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "Kokoro TTS",
@@ -857,7 +1130,10 @@
       "upstream": "https://github.com/hexgrad/kokoro",
       "license": "Apache-2.0_CODE_MODEL_TERMS_SEPARATE",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
     },
     {
       "name": "CesiumJS",
@@ -866,7 +1142,10 @@
       "upstream": "https://github.com/CesiumGS/cesium",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "Godot",
@@ -875,7 +1154,10 @@
       "upstream": "https://github.com/godotengine/godot",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "verified": true
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     },
     {
       "name": "VoltAgent",
