@@ -1266,6 +1266,54 @@
       "mirror_eligibility": "legal",
       "dependency_policy": "safe_default",
       "sync_policy": "auto"
+    },
+    {
+      "name": "OpenCode",
+      "category": "agent-runtime",
+      "tier": "candidate",
+      "upstream": "https://github.com/sst/opencode",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
+    },
+    {
+      "name": "OpenHands",
+      "category": "agent-runtime",
+      "tier": "candidate",
+      "upstream": "https://github.com/All-Hands-AI/OpenHands",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
+    },
+    {
+      "name": "Aider",
+      "category": "agent-runtime",
+      "tier": "specialist",
+      "upstream": "https://github.com/Aider-AI/aider",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
+    },
+    {
+      "name": "mini-SWE-agent",
+      "category": "agent-runtime",
+      "tier": "specialist",
+      "upstream": "https://github.com/SWE-agent/mini-swe-agent",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "verified": true,
+      "dependency_policy": "safe_default",
+      "mirror_eligibility": "legal",
+      "sync_policy": "auto"
     }
   ]
 }

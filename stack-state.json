@@ -753,5 +753,81 @@
       "upstream_commit": "5ec4857b340b6284a18b49b2eda462bd250f219a",
       "license_hashes": {}
     }
+  },
+  "agent_runtimes": {
+    "codex": {
+      "state": "EXECUTION_READY",
+      "role": "primary implementation runtime",
+      "installed": true,
+      "execution_ready": true
+    },
+    "antigravity": {
+      "state": "UNSAFE",
+      "role": "architecture/review/research candidate",
+      "installed": true,
+      "execution_ready": false,
+      "reason": "headless permission model not yet safe"
+    },
+    "kimi": {
+      "state": "AUTH_REQUIRED",
+      "role": "long-context ACP runtime",
+      "installed": true,
+      "execution_ready": false
+    },
+    "claude": {
+      "state": "AUTH_REQUIRED",
+      "role": "architecture/review runtime",
+      "installed": true,
+      "execution_ready": false
+    },
+    "opencode": {
+      "state": "CANDIDATE",
+      "role": "provider-neutral developer runtime",
+      "installed": false,
+      "execution_ready": false
+    },
+    "openhands": {
+      "state": "CANDIDATE",
+      "role": "autonomous execution runtime",
+      "installed": false,
+      "execution_ready": false
+    },
+    "aider": {
+      "state": "CANDIDATE",
+      "role": "precision repo editing runtime",
+      "installed": false,
+      "execution_ready": false
+    },
+    "mini-swe": {
+      "state": "CANDIDATE",
+      "role": "issue repair and debugging runtime",
+      "installed": false,
+      "execution_ready": false
+    }
+  },
+  "agent_control_plane": {
+    "version": "v1",
+    "status": "foundation_complete",
+    "capabilities": [
+      "runtime_registry",
+      "runtime_capability_routing",
+      "specialist_team_builder",
+      "project_memory",
+      "decision_journal",
+      "canonical_artifact_cache",
+      "adaptive_context_acquisition",
+      "permission_profiles",
+      "workspace_containment",
+      "secret_isolation",
+      "budget_governor",
+      "structured_handoffs",
+      "bounded_remediation",
+      "independent_evaluation",
+      "task_certification"
+    ],
+    "offline_test_status": {
+      "passed": 140,
+      "deselected_integration": 2
+    }
   }
 }
