@@ -2,6 +2,11 @@
 
 Control plane for the reusable builder/agent stack.
 
+## Runtime update comparisons
+
+- [3 September 2026: Codex, Claude Code, and Kimi Code](comparisons/2026-09-03-agent-runtimes.md)
+  — source/fit review complete; runtime promotion held pending live acceptance evidence.
+
 ## Census
 
 - Repository entries: **94**

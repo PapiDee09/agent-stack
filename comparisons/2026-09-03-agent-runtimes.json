@@ -1,0 +1,196 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-09-03",
+  "control_repository": "PapiDee09/agent-stack",
+  "baseline_commit": "9efa5bca197e7e5d4f473fb104823ddebe6cac0b",
+  "scope": "Comparison intake only; no runtime, mirror, active policy, or tested pin promotion",
+  "gate_semantics": {
+    "source_verified": "Official stable release and tagged top-level license inspected; not a full dependency/security audit",
+    "fit_pass": "Reviewer assessment against existing lean core-runtime strategy",
+    "hold": "Required live or migration evidence missing; not a tested regression failure",
+    "promotion": "Requires version-bound evidence for all required checks; static review alone cannot promote"
+  },
+  "execution_environment": {
+    "cli_on_path": {
+      "codex": false,
+      "claude": false,
+      "kimi": false
+    },
+    "live_tests_run": 0,
+    "mac_access": false
+  },
+  "candidates": [
+    {
+      "name": "Codex",
+      "runtime_key": "codex",
+      "candidate_tag": "rust-v0.153.0",
+      "published_at": "2026-09-03T01:37:38Z",
+      "release_url": "https://github.com/openai/codex/releases/tag/rust-v0.153.0",
+      "release_is_prerelease": false,
+      "registry_policy": {
+        "tier": "core",
+        "license": "Apache-2.0",
+        "dependency_policy": "safe_default",
+        "mirror_policy": "fork_or_mirror",
+        "mirror_eligibility": "legal",
+        "sync_policy": "auto"
+      },
+      "baseline_observed_upstream_commit": "b8c86376a258e55efc8e5ecfbabc21c16c07d814",
+      "baseline_runtime_state": "EXECUTION_READY",
+      "baseline_installed_version": null,
+      "license_evidence": {
+        "url": "https://github.com/openai/codex/blob/rust-v0.153.0/LICENSE",
+        "git_blob_sha": "4606e72e042564097e8780d66c1d4dcb611869bd",
+        "scope": "top-level file at candidate tag"
+      },
+      "source_review": "PASS",
+      "stack_fit_review": "PASS",
+      "promotion_status": "HOLD",
+      "promoted": false,
+      "fit_reasons": [
+        "MCP account-bound approvals and recovery are useful to the existing primary runtime."
+      ],
+      "required_checks": [
+        {
+          "name": "macOS relative MCP launch and account-switch approval isolation",
+          "status": "NOT_RUN",
+          "evidence": null
+        },
+        {
+          "name": "resume/compaction/reconnect preserves policy and avoids duplicate execution",
+          "status": "NOT_RUN",
+          "evidence": null
+        },
+        {
+          "name": "portable project instructions and skills; representative task quality and usage",
+          "status": "NOT_RUN",
+          "evidence": null
+        }
+      ],
+      "rollout_conditions": [
+        "Keep experimental context management disabled in the portable baseline.",
+        "Retain sandbox and explicit approvals; Full Access changes review behavior."
+      ]
+    },
+    {
+      "name": "Claude Code",
+      "runtime_key": "claude",
+      "candidate_tag": "v2.1.259",
+      "published_at": "2026-09-02T22:33:51Z",
+      "release_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.259",
+      "release_is_prerelease": false,
+      "registry_policy": {
+        "tier": "core",
+        "license": "PROPRIETARY_ANTHROPIC_COMMERCIAL_TERMS",
+        "dependency_policy": "review_required",
+        "mirror_policy": "reference_only",
+        "mirror_eligibility": "reference_only",
+        "sync_policy": "none"
+      },
+      "baseline_observed_upstream_commit": "f1af9b1f4b1fd4c776135381606edada82ef638e",
+      "baseline_runtime_state": "AUTH_REQUIRED",
+      "baseline_installed_version": null,
+      "license_evidence": {
+        "url": "https://github.com/anthropics/claude-code/blob/v2.1.259/LICENSE.md",
+        "git_blob_sha": "645a5d67c6d1e16437bec850dad5bd3b6c81f77c",
+        "scope": "top-level file at candidate tag"
+      },
+      "source_review": "PASS",
+      "stack_fit_review": "PASS",
+      "promotion_status": "HOLD",
+      "promoted": false,
+      "fit_reasons": [
+        "Unattended deny behavior and stop/resume fixes fit background workflow requirements."
+      ],
+      "required_checks": [
+        {
+          "name": "authenticate an entitled test session",
+          "status": "NOT_RUN",
+          "evidence": null
+        },
+        {
+          "name": "denied dummy-secret reads including indirect shell paths; no unattended prompt hang",
+          "status": "NOT_RUN",
+          "evidence": null
+        },
+        {
+          "name": "managed/user MCP allow/deny migration and malformed-policy refusal",
+          "status": "NOT_RUN",
+          "evidence": null
+        },
+        {
+          "name": "stop/resume and concurrent sessions without duplicate agents or config loss",
+          "status": "NOT_RUN",
+          "evidence": null
+        }
+      ],
+      "rollout_conditions": [
+        "Remain reference_only, review_required, and sync_policy none.",
+        "Audit managed MCP exclusions before rollout."
+      ]
+    },
+    {
+      "name": "Kimi Code",
+      "runtime_key": "kimi",
+      "candidate_tag": "@moonshot-ai/kimi-code@0.40.1",
+      "published_at": "2026-09-02T09:20:44Z",
+      "release_url": "https://github.com/MoonshotAI/kimi-code/releases/tag/%40moonshot-ai/kimi-code%400.40.1",
+      "release_is_prerelease": false,
+      "registry_policy": {
+        "tier": "core",
+        "license": "MIT",
+        "dependency_policy": "safe_default",
+        "mirror_policy": "fork_or_mirror",
+        "mirror_eligibility": "legal",
+        "sync_policy": "auto"
+      },
+      "baseline_observed_upstream_commit": "961927739ef34819d67d76fa5870cbe4ba7a01ff",
+      "baseline_runtime_state": "AUTH_REQUIRED",
+      "baseline_installed_version": null,
+      "license_evidence": {
+        "url": "https://github.com/MoonshotAI/kimi-code/blob/@moonshot-ai/kimi-code@0.40.1/LICENSE",
+        "git_blob_sha": "6102a1bc7949a169f10d823a86d4ad161c26b960",
+        "scope": "top-level file at candidate tag"
+      },
+      "source_review": "PASS",
+      "stack_fit_review": "PASS",
+      "promotion_status": "HOLD",
+      "promoted": false,
+      "fit_reasons": [
+        "Guard and configuration fixes are useful, but routing and working-directory defaults require validation."
+      ],
+      "required_checks": [
+        {
+          "name": "identify modern kimi-code versus legacy kimi-cli and authenticate",
+          "status": "NOT_RUN",
+          "evidence": null
+        },
+        {
+          "name": "ACP default-engine compatibility and portable instruction/skill loading",
+          "status": "NOT_RUN",
+          "evidence": null
+        },
+        {
+          "name": "external sandbox containment despite Bash cwd restriction removal",
+          "status": "NOT_RUN",
+          "evidence": null
+        },
+        {
+          "name": "secondary model routing and cost baseline with explicit opt-out",
+          "status": "NOT_RUN",
+          "evidence": null
+        },
+        {
+          "name": "dangerous-command policy and folder-trust behavior",
+          "status": "NOT_RUN",
+          "evidence": null
+        }
+      ],
+      "rollout_conditions": [
+        "Keep dangerous-command guard enabled; command filtering is not a sandbox.",
+        "Opt out of secondary-model pool until routing/cost tests pass.",
+        "Retain Kimi CLI Legacy as a separate reference entry; do not silently migrate it."
+      ]
+    }
+  ]
+}
