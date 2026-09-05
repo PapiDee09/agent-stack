@@ -104,6 +104,18 @@
       "sync_policy": "auto"
     },
     {
+      "name": "Catalyst Agent Skills",
+      "category": "agent-skills",
+      "tier": "optional",
+      "upstream": "https://github.com/catalystbyzoho/agent-skills",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "verified": true,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
+    },
+    {
       "name": "MengTo Skills",
       "category": "agent-skills",
       "tier": "core",

@@ -4,14 +4,18 @@ Control plane for the reusable builder/agent stack.
 
 ## Runtime update comparisons
 
+- [5 September 2026: admission decisions and latest runtime candidates](comparisons/2026-09-05-stack-admission.md)
+  — Catalyst skills admitted as optional/review-required; runtime promotion held pending live evidence.
 - [3 September 2026: Codex, Claude Code, and Kimi Code](comparisons/2026-09-03-agent-runtimes.md)
   — source/fit review complete; runtime promotion held pending live acceptance evidence.
 
+The standing intake and promotion rules are in [ADMISSION_POLICY.md](ADMISSION_POLICY.md).
+
 ## Census
 
-- Repository entries: **94**
-- Verified in this first research pass: **10**
-- Pending canonical/license verification: **84**
+- Repository entries: **108**
+- Verified entries: **108**
+- Pending canonical/license verification: **0**
 - Target owner: **PapiDee09**
 - Intended control repo: **PapiDee09/agent-stack**
 
@@ -33,13 +37,12 @@ Each upstream stays in its own fork/mirror. This control repo stores upstream UR
 
 ## Verified in this pass
 
-Codex (Apache-2.0), Kimi Code (MIT), MengTo Skills (MIT), Agent Skills spec (Apache-2.0), Anthropic Skills (mixed: many Apache-2.0 plus source-available document skills), MCP reference servers (Apache-2.0/new contributions with legacy MIT), ThreeUI Community (MIT code with asset/font notices), Three.js (MIT), Tailwind CSS (MIT), and LTX-Video code (Apache-2.0; model terms separate).
+Codex (Apache-2.0), Kimi Code (MIT), Catalyst Agent Skills (Apache-2.0; optional/review-required), MengTo Skills (MIT), Agent Skills spec (Apache-2.0), Anthropic Skills (mixed: many Apache-2.0 plus source-available document skills), MCP reference servers (Apache-2.0/new contributions with legacy MIT), ThreeUI Community (MIT code with asset/font notices), Three.js (MIT), Tailwind CSS (MIT), and LTX-Video code (Apache-2.0; model terms separate).
 
 ## Next pass
 
-1. Verify every pending entry against current LICENSE/NOTICE.
-2. Resolve all mixed/open-core/research/model terms.
-3. Add `default_branch`, `latest_tag`, `pinned_commit`, `last_verified_at`.
-4. Create/fork safe repos under the GitHub owner.
-5. Add upstream remotes and weekly drift checks.
-6. Smoke-test the core repos and pin known-good revisions.
+1. Resolve all mixed/open-core/research/model terms when they change.
+2. Add `default_branch`, `latest_tag`, `pinned_commit`, `last_verified_at`.
+3. Create/fork safe repos under the GitHub owner.
+4. Add upstream remotes and weekly drift checks.
+5. Smoke-test the core repos and pin known-good revisions.

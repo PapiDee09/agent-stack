@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-09-05",
+  "control_repository": "PapiDee09/agent-stack",
+  "baseline_commit": "9f05275b0b9797f035fa046092a22f10df78670c",
+  "scope": "Registry admission and comparison update; no install, credential, MCP, deployment, mirror, active runtime, or tested-pin change",
+  "decisions": [
+    {
+      "name": "Codex",
+      "candidate_tag": "rust-v0.153.4",
+      "published_at": "2026-09-04T23:25:48Z",
+      "registry_status": "EXISTS",
+      "promotion_status": "HOLD",
+      "reason": "Bundled default-model behavior changed; explicit model pin and live regression evidence are required.",
+      "release_url": "https://github.com/openai/codex/releases/tag/rust-v0.153.4",
+      "license": "Apache-2.0",
+      "license_blob_sha": "4606e72e042564097e8780d66c1d4dcb611869bd",
+      "required_checks": [
+        "record and explicitly pin the baseline model",
+        "account-switch MCP approval isolation",
+        "resume/compaction/reconnect without duplicate execution",
+        "portable instruction/skill loading and representative task cost"
+      ]
+    },
+    {
+      "name": "Claude Code",
+      "candidate_tag": "v2.1.261",
+      "published_at": "2026-09-04T19:58:10Z",
+      "registry_status": "EXISTS",
+      "promotion_status": "HOLD",
+      "reason": "Authenticated permission, MCP-policy, resume, interrupt, and unattended tests are not run.",
+      "release_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.261",
+      "license": "PROPRIETARY_ANTHROPIC_COMMERCIAL_TERMS",
+      "license_blob_sha": "645a5d67c6d1e16437bec850dad5bd3b6c81f77c",
+      "required_checks": [
+        "2.1.260 denied-path, malformed-rule, indirect-read, shell-substitution, and nested-skill matrix",
+        "managed and user MCP allow/deny migration",
+        "stop/resume and early interrupt without duplicate work",
+        "skill-doctor context-cost review"
+      ]
+    },
+    {
+      "name": "Kimi Code",
+      "candidate_tag": "@moonshot-ai/kimi-code@0.41.0",
+      "published_at": "2026-09-04T11:01:07Z",
+      "registry_status": "EXISTS",
+      "promotion_status": "HOLD",
+      "reason": "Auto permission mode no longer blocks dangerous or statically unanalyzable commands.",
+      "release_url": "https://github.com/MoonshotAI/kimi-code/releases/tag/%40moonshot-ai/kimi-code%400.41.0",
+      "license": "MIT",
+      "license_blob_sha": "6102a1bc7949a169f10d823a86d4ad161c26b960",
+      "required_checks": [
+        "external filesystem and process containment in every permission mode",
+        "print-mode telemetry opt-out and error transcript retention",
+        "persisted subagent resume under current permission rules",
+        "file-history and compaction recovery",
+        "Tower remains disabled in portable baseline"
+      ]
+    },
+    {
+      "name": "Catalyst Agent Skills",
+      "candidate_commit": "a720b7b629f7d2736a999a76683291de4f9d5a99",
+      "registry_status": "READY",
+      "registry_change": {
+        "tier": "optional",
+        "dependency_policy": "review_required",
+        "mirror_eligibility": "legal",
+        "mirror_policy": "fork_or_mirror",
+        "sync_policy": "review"
+      },
+      "activation_status": "HOLD",
+      "reason": "Source, license, portability, and fit pass; provider overlap and privileged MCP/deployment operations require project-scoped opt-in and live tests.",
+      "upstream_url": "https://github.com/catalystbyzoho/agent-skills",
+      "license": "Apache-2.0",
+      "license_blob_sha": "89ed7dce60fe5f43c4646b1056316ebe2f34f631",
+      "observed_skill_files": 16,
+      "required_checks": [
+        "project-scoped install of only required skill subtree",
+        "independent no-MCP architecture task",
+        "vendor eval plus independent deployment-output verification",
+        "development-only MCP least privilege and destructive-action denial",
+        "Nigeria account, region, pricing, and exit-cost verification before platform use"
+      ]
+    },
+    {
+      "name": "Zoho Catalyst platform",
+      "registry_status": "SKIP_CORE_WATCH_REFERENCE",
+      "activation_status": "NOT_ADDED",
+      "reason": "Proprietary platform overlaps current data, hosting, and observability capabilities; deployment-specific evidence is missing."
+    }
+  ],
+  "live_tests_run": 0,
+  "promoted": false
+}
