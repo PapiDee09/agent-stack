@@ -26,12 +26,18 @@ Status: **review pending**. This document records isolated upstream update branc
 
 GitHub Actions started automatically for SeaweedFS, Next.js and Vitest. Some upstream workflows do not automatically run in their forks or require fork-specific permissions/secrets; absence of a run is not a pass.
 
-The SeaweedFS dependency-review and telemetry workflows initially failed while the broader matrix remained queued or running. Their logs must be classified as either a real regression or a fork-permission/environment limitation before merge.
+SeaweedFS CI produced two distinct blockers:
+
+- **Dependency Review — repository configuration:** GitHub reports that dependency review is unsupported because the fork's dependency graph is disabled. This is not a code regression, but the security gate is unavailable until that setting is enabled.
+- **Telemetry Integration Test — code/build:** the Go 1.26 build of `telemetry/server` reports that `go.mod` requires `go mod tidy`, so the integration test never starts. This is a merge blocker until the module diff is reviewed and the job passes.
+
+The remaining SeaweedFS matrix and the queued Next.js/Vitest workflows are still pending. Neither SeaweedFS failure was rerun because neither is transient.
 
 ## Next decisions
 
-1. Classify all CI failures and rerun only transient or corrected jobs.
-2. Run reusable-stack smoke tests against Codex, Next.js stable, Vitest and Kimi Code.
-3. Test SeaweedFS and Ray security behavior in representative Linux environments.
-4. If a component passes, open a separate control-registry PR that records its tested tag, pinned commit, verification date and rollback commit.
-5. If it fails, keep the current pin and document the blocker in its draft PR.
+1. Review and correct SeaweedFS module metadata, then rerun its telemetry job.
+2. Enable the SeaweedFS fork's dependency graph before relying on dependency review.
+3. Run reusable-stack smoke tests against Codex, Next.js stable, Vitest and Kimi Code.
+4. Test SeaweedFS and Ray security behavior in representative Linux environments.
+5. If a component passes, open a separate control-registry PR that records its tested tag, pinned commit, verification date and rollback commit.
+6. If it fails, keep the current pin and document the blocker in its draft PR.
