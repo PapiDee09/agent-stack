@@ -1326,6 +1326,114 @@
       "dependency_policy": "safe_default",
       "mirror_eligibility": "legal",
       "sync_policy": "auto"
+    },
+    {
+      "name": "Agentic Inbox",
+      "upstream": "https://github.com/cloudflare/agentic-inbox",
+      "category": "agent-communications",
+      "tier": "optional",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "mirror_eligibility": "legal",
+      "dependency_policy": "review_required",
+      "sync_policy": "review",
+      "verified": true
+    },
+    {
+      "name": "VoxCPM",
+      "upstream": "https://github.com/OpenBMB/VoxCPM",
+      "category": "media-voice",
+      "tier": "optional",
+      "license": "Apache-2.0",
+      "mirror_policy": "code_mirror_only_weights_separate",
+      "mirror_eligibility": "selective",
+      "dependency_policy": "review_required",
+      "sync_policy": "review",
+      "verified": true
+    },
+    {
+      "name": "Flowsint",
+      "upstream": "https://github.com/reconurge/flowsint",
+      "category": "research-intelligence",
+      "tier": "optional",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "mirror_eligibility": "legal",
+      "dependency_policy": "review_required",
+      "sync_policy": "review",
+      "verified": true
+    },
+    {
+      "name": "LongCat-Video",
+      "upstream": "https://github.com/meituan-longcat/LongCat-Video",
+      "category": "media-video",
+      "tier": "optional",
+      "license": "MIT",
+      "mirror_policy": "code_mirror_only_weights_separate",
+      "mirror_eligibility": "selective",
+      "dependency_policy": "review_required",
+      "sync_policy": "review",
+      "verified": true
+    },
+    {
+      "name": "Magnitude Browser Agent",
+      "upstream": "https://github.com/magnitudedev/browser-agent",
+      "category": "browser-agent",
+      "tier": "optional",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "mirror_eligibility": "legal",
+      "dependency_policy": "review_required",
+      "sync_policy": "review",
+      "verified": true
+    },
+    {
+      "name": "Anthropic Commerce Agents",
+      "upstream": "https://github.com/anthropics/commerce-agents",
+      "category": "commerce-agent",
+      "tier": "optional",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "mirror_eligibility": "legal",
+      "dependency_policy": "review_required",
+      "sync_policy": "review",
+      "verified": true
+    },
+    {
+      "name": "Agent Reach",
+      "upstream": "https://github.com/Panniantong/Agent-Reach",
+      "category": "research-internet-access",
+      "tier": "optional",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "mirror_eligibility": "legal",
+      "dependency_policy": "review_required",
+      "sync_policy": "review",
+      "verified": true
+    },
+    {
+      "name": "Video Shotcraft",
+      "upstream": "https://github.com/Vincentwei1021/video-shotcraft",
+      "category": "media-video-production",
+      "tier": "optional",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "mirror_eligibility": "legal",
+      "dependency_policy": "review_required",
+      "sync_policy": "review",
+      "verified": true
+    },
+    {
+      "name": "TradingAgents",
+      "upstream": "https://github.com/TauricResearch/TradingAgents",
+      "category": "research-finance-agents",
+      "tier": "optional",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "mirror_eligibility": "legal",
+      "dependency_policy": "review_required",
+      "sync_policy": "manual",
+      "verified": true
     }
   ]
 }
