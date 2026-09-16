@@ -9,6 +9,7 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 REGISTRY = Path("repos.json")
+TARGET_OVERRIDES = Path("scripts/target-overrides.json")
 SAFE_AUTO_POLICIES = {"fork_or_mirror"}
 MAX_WORKERS = 8
 
@@ -47,11 +48,17 @@ def repo_name_from_slug(slug):
     return slug.split("/")[-1]
 
 
-def status_for(repo, owner):
+def load_target_overrides():
+    if not TARGET_OVERRIDES.exists():
+        return {}
+    return json.loads(TARGET_OVERRIDES.read_text())
+
+
+def status_for(repo, owner, target_overrides):
     name = repo["name"]
     policy = repo.get("mirror_policy", "")
     upstream = upstream_slug(repo["upstream"])
-    target_name = repo_name_from_slug(upstream)
+    target_name = target_overrides.get(name, repo_name_from_slug(upstream))
     target = f"{owner}/{target_name}"
 
     if policy not in SAFE_AUTO_POLICIES:
@@ -148,6 +155,7 @@ def main():
     args = parser.parse_args()
 
     data = json.loads(REGISTRY.read_text())
+    target_overrides = load_target_overrides()
 
     repos = [
         repo
@@ -169,7 +177,12 @@ def main():
     ) as executor:
 
         futures = {
-            executor.submit(status_for, repo, args.owner): repo
+            executor.submit(
+                status_for,
+                repo,
+                args.owner,
+                target_overrides,
+            ): repo
             for repo in repos
         }
 
