@@ -1,0 +1,80 @@
+{
+  "date": "2026-09-16",
+  "status": "staged_for_controlled_intake",
+  "promotion_authorized": false,
+  "default_dependency_policy": "review_required",
+  "candidates": [
+    {
+      "name": "Sona UI",
+      "category": "ui-components",
+      "tier": "optional",
+      "upstream": "https://github.com/Dinil-Thilakarathne/sona-ui",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "mirror_eligibility": "legal",
+      "dependency_policy": "review_required",
+      "sync_policy": "review",
+      "why": "React 19 + Tailwind CSS 4 + Motion component source with accessibility and reduced-motion support; copy-owned component model fits the builder stack."
+    },
+    {
+      "name": "AICSS",
+      "category": "agent-ui",
+      "tier": "optional",
+      "upstream": "https://github.com/kvnkld/aicss",
+      "license": "MIT_PUBLIC_REPO_ONLY",
+      "mirror_policy": "fork_or_mirror_public_oss_only",
+      "mirror_eligibility": "selective",
+      "dependency_policy": "review_required",
+      "sync_policy": "review",
+      "why": "Reusable React agent-conversation components and CLI; public source is MIT while Pro/private components remain excluded."
+    },
+    {
+      "name": "Transitions.dev",
+      "category": "motion-skill",
+      "tier": "optional",
+      "upstream": "https://github.com/Jakubantalik/transitions.dev",
+      "license": "MIT_PUBLIC_REPO_ONLY",
+      "mirror_policy": "fork_or_mirror_public_oss_only",
+      "mirror_eligibility": "selective",
+      "dependency_policy": "review_required",
+      "sync_policy": "review",
+      "why": "Portable CSS transition recipes plus an installable agent skill and refinement workflow; authenticated premium content stays outside the mirror."
+    },
+    {
+      "name": "Brand Skills",
+      "category": "agent-skills",
+      "tier": "optional",
+      "upstream": "https://github.com/cofoundy/brand-skills",
+      "license": "MIT_WITH_NOTICE",
+      "mirror_policy": "fork_or_mirror_preserve_notice",
+      "mirror_eligibility": "legal",
+      "dependency_policy": "review_required",
+      "sync_policy": "review",
+      "why": "Portable branding, naming, identity and brand-book skills that persist structured brand packages and work across agent runtimes."
+    },
+    {
+      "name": "Hummingbot",
+      "category": "agent-architecture-reference",
+      "tier": "reference",
+      "upstream": "https://github.com/hummingbot/hummingbot",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "mirror_eligibility": "legal",
+      "dependency_policy": "review_required",
+      "sync_policy": "review",
+      "why": "Useful modular agent/trading architecture reference; credentials and live trading remain disabled by default and require explicit approval."
+    },
+    {
+      "name": "ArchiveBox",
+      "category": "research-provenance",
+      "tier": "optional",
+      "upstream": "https://github.com/ArchiveBox/ArchiveBox",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "mirror_eligibility": "legal",
+      "dependency_policy": "review_required",
+      "sync_policy": "review",
+      "why": "Durable evidence capture for research/monitoring workflows with native AGENTS.md and agent-skill compatibility."
+    }
+  ]
+}
