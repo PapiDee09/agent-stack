@@ -46,7 +46,7 @@
       "tier": "optional",
       "upstream": "https://github.com/cofoundy/brand-skills",
       "license": "MIT_WITH_NOTICE",
-      "mirror_policy": "fork_or_mirror_preserve_notice",
+      "mirror_policy": "fork_or_mirror_preserve_notices",
       "mirror_eligibility": "legal",
       "dependency_policy": "review_required",
       "sync_policy": "review",
@@ -75,6 +75,18 @@
       "dependency_policy": "review_required",
       "sync_policy": "review",
       "why": "Durable evidence capture for research/monitoring workflows with native AGENTS.md and agent-skill compatibility."
+    },
+    {
+      "name": "AutoSocial",
+      "category": "distribution-automation",
+      "tier": "optional",
+      "upstream": "https://github.com/Katzca/AutoSocial",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "mirror_eligibility": "legal",
+      "dependency_policy": "review_required",
+      "sync_policy": "review",
+      "why": "Local Node/Playwright social distribution specialist with queue, scheduling and dashboard workflows; authenticated sessions and autonomous publishing stay disabled by default."
     }
   ]
 }

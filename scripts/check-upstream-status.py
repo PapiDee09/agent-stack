@@ -16,12 +16,7 @@ MAX_WORKERS = 8
 
 def run(cmd, timeout=20):
     try:
-        result = subprocess.run(
-            cmd,
-            text=True,
-            capture_output=True,
-            timeout=timeout,
-        )
+        result = subprocess.run(cmd, text=True, capture_output=True, timeout=timeout)
         return result.returncode, result.stdout.strip(), result.stderr.strip()
     except subprocess.TimeoutExpired:
         return 124, "", "timeout"
@@ -29,10 +24,8 @@ def run(cmd, timeout=20):
 
 def gh_json(args):
     code, out, err = run(["gh", *args])
-
     if code != 0:
         return None, err or out
-
     try:
         return json.loads(out), None
     except json.JSONDecodeError:
@@ -57,79 +50,45 @@ def load_target_overrides():
 def status_for(repo, owner, target_overrides):
     name = repo["name"]
     policy = repo.get("mirror_policy", "")
+    sync_policy = repo.get("sync_policy", "")
     upstream = upstream_slug(repo["upstream"])
     target_name = target_overrides.get(name, repo_name_from_slug(upstream))
     target = f"{owner}/{target_name}"
 
-    if policy not in SAFE_AUTO_POLICIES:
+    if policy not in SAFE_AUTO_POLICIES or sync_policy != "auto":
         return {
             "name": name,
             "status": "REVIEW_REQUIRED",
-            "detail": policy,
+            "detail": f"mirror={policy} sync={sync_policy or 'unset'}",
         }
 
     target_data, error = gh_json(["api", f"repos/{target}"])
     if error:
-        return {
-            "name": name,
-            "status": "BROKEN",
-            "detail": f"target unavailable: {error}",
-        }
+        return {"name": name, "status": "BROKEN", "detail": f"target unavailable: {error}"}
 
     if not target_data.get("fork"):
-        return {
-            "name": name,
-            "status": "BROKEN",
-            "detail": "target is not a fork",
-        }
+        return {"name": name, "status": "BROKEN", "detail": "target is not a fork"}
 
     parent = (target_data.get("parent") or {}).get("full_name")
     if not parent:
-        return {
-            "name": name,
-            "status": "BROKEN",
-            "detail": "fork parent unavailable",
-        }
+        return {"name": name, "status": "BROKEN", "detail": "fork parent unavailable"}
 
     if parent.lower() != upstream.lower():
-        return {
-            "name": name,
-            "status": "BROKEN",
-            "detail": f"parent mismatch: {parent}",
-        }
+        return {"name": name, "status": "BROKEN", "detail": f"parent mismatch: {parent}"}
 
     fork_branch = target_data.get("default_branch")
     parent_data, error = gh_json(["api", f"repos/{upstream}"])
-
     if error:
-        return {
-            "name": name,
-            "status": "BROKEN",
-            "detail": f"upstream unavailable: {error}",
-        }
+        return {"name": name, "status": "BROKEN", "detail": f"upstream unavailable: {error}"}
 
     upstream_branch = parent_data.get("default_branch")
-
     if not fork_branch or not upstream_branch:
-        return {
-            "name": name,
-            "status": "BROKEN",
-            "detail": "missing default branch",
-        }
+        return {"name": name, "status": "BROKEN", "detail": "missing default branch"}
 
-    compare = (
-        f"repos/{upstream}/compare/"
-        f"{upstream_branch}...{owner}:{fork_branch}"
-    )
-
+    compare = f"repos/{upstream}/compare/{upstream_branch}...{owner}:{fork_branch}"
     comparison, error = gh_json(["api", compare])
-
     if error:
-        return {
-            "name": name,
-            "status": "BROKEN",
-            "detail": f"compare failed: {error}",
-        }
+        return {"name": name, "status": "BROKEN", "detail": f"compare failed: {error}"}
 
     ahead = int(comparison.get("ahead_by", 0))
     behind = int(comparison.get("behind_by", 0))
@@ -141,11 +100,7 @@ def status_for(repo, owner, target_overrides):
     else:
         status = "DIVERGED"
 
-    return {
-        "name": name,
-        "status": status,
-        "detail": f"ahead={ahead} behind={behind}",
-    }
+    return {"name": name, "status": status, "detail": f"ahead={ahead} behind={behind}"}
 
 
 def main():
@@ -163,7 +118,10 @@ def main():
         if repo.get("verified")
         and (
             args.all
-            or repo.get("mirror_policy") in SAFE_AUTO_POLICIES
+            or (
+                repo.get("mirror_policy") in SAFE_AUTO_POLICIES
+                and repo.get("sync_policy") == "auto"
+            )
         )
     ]
 
@@ -171,47 +129,24 @@ def main():
     print()
 
     results = []
-
-    with concurrent.futures.ThreadPoolExecutor(
-        max_workers=MAX_WORKERS
-    ) as executor:
-
+    with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         futures = {
-            executor.submit(
-                status_for,
-                repo,
-                args.owner,
-                target_overrides,
-            ): repo
+            executor.submit(status_for, repo, args.owner, target_overrides): repo
             for repo in repos
         }
-
         for future in concurrent.futures.as_completed(futures):
             result = future.result()
             results.append(result)
-
-            print(
-                f"{result['status']:<12} "
-                f"{result['name']:<32} "
-                f"{result['detail']}"
-            )
+            print(f"{result['status']:<12} {result['name']:<32} {result['detail']}")
 
     counts = {}
-
     for result in results:
         counts[result["status"]] = counts.get(result["status"], 0) + 1
 
     print()
     print("SUMMARY")
     print("=" * 50)
-
-    for status in (
-        "CURRENT",
-        "BEHIND",
-        "DIVERGED",
-        "BROKEN",
-        "REVIEW_REQUIRED",
-    ):
+    for status in ("CURRENT", "BEHIND", "DIVERGED", "BROKEN", "REVIEW_REQUIRED"):
         print(f"{status:<16} {counts.get(status, 0)}")
 
     if counts.get("DIVERGED", 0) or counts.get("BROKEN", 0):
