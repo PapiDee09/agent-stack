@@ -1434,6 +1434,90 @@
       "dependency_policy": "review_required",
       "sync_policy": "manual",
       "verified": true
+    },
+    {
+      "name": "Sona UI",
+      "category": "ui-components",
+      "tier": "optional",
+      "upstream": "https://github.com/Dinil-Thilakarathne/sona-ui",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "verified": true,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
+    },
+    {
+      "name": "AICSS",
+      "category": "agent-ui",
+      "tier": "optional",
+      "upstream": "https://github.com/kvnkld/aicss",
+      "license": "MIT_PUBLIC_REPO_ONLY",
+      "mirror_policy": "fork_or_mirror_public_oss_only",
+      "verified": true,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "selective",
+      "sync_policy": "review"
+    },
+    {
+      "name": "Transitions.dev",
+      "category": "motion-skill",
+      "tier": "optional",
+      "upstream": "https://github.com/Jakubantalik/transitions.dev",
+      "license": "MIT_PUBLIC_REPO_ONLY",
+      "mirror_policy": "fork_or_mirror_public_oss_only",
+      "verified": true,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "selective",
+      "sync_policy": "review"
+    },
+    {
+      "name": "Brand Skills",
+      "category": "agent-skills",
+      "tier": "optional",
+      "upstream": "https://github.com/cofoundy/brand-skills",
+      "license": "MIT_WITH_NOTICE",
+      "mirror_policy": "fork_or_mirror_preserve_notices",
+      "verified": true,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
+    },
+    {
+      "name": "Hummingbot",
+      "category": "agent-architecture-reference",
+      "tier": "reference",
+      "upstream": "https://github.com/hummingbot/hummingbot",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "verified": true,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
+    },
+    {
+      "name": "ArchiveBox",
+      "category": "research-provenance",
+      "tier": "optional",
+      "upstream": "https://github.com/ArchiveBox/ArchiveBox",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "verified": true,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
+    },
+    {
+      "name": "AutoSocial",
+      "category": "distribution-automation",
+      "tier": "optional",
+      "upstream": "https://github.com/Katzca/AutoSocial",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "verified": true,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
     }
   ]
 }

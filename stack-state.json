@@ -6,7 +6,7 @@
       "tier": "core",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "b8c86376a258e55efc8e5ecfbabc21c16c07d814",
+      "upstream_commit": "fd346b8dbaa24573a0244bc917811849d27c4cf4",
       "license_hashes": {}
     },
     "Claude Code": {
@@ -14,7 +14,7 @@
       "tier": "core",
       "license": "PROPRIETARY_ANTHROPIC_COMMERCIAL_TERMS",
       "mirror_policy": "reference_only",
-      "upstream_commit": "f1af9b1f4b1fd4c776135381606edada82ef638e",
+      "upstream_commit": "b782847db9a18667f00918ea341197f201b22bb4",
       "license_hashes": {}
     },
     "Kimi Code": {
@@ -22,7 +22,7 @@
       "tier": "core",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "961927739ef34819d67d76fa5870cbe4ba7a01ff",
+      "upstream_commit": "bd06178913d2cc4ebd229ecee6714081105e5ae1",
       "license_hashes": {}
     },
     "Kimi CLI Legacy": {
@@ -30,7 +30,7 @@
       "tier": "reference",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "cbc15c076d17f70fec9f89c90c0502e68657f505",
+      "upstream_commit": "86f136422a0aae6b217ea49e7ea1d2e8a1defcd2",
       "license_hashes": {}
     },
     "Anthropic Agent Skills": {
@@ -38,7 +38,7 @@
       "tier": "core",
       "license": "MIXED_APACHE2_AND_SOURCE_AVAILABLE",
       "mirror_policy": "selective_mirror_by_subtree",
-      "upstream_commit": "3b3fad96af16a10759d930941b4520ba0c40edae",
+      "upstream_commit": "34040c9c568585f6929bedeaad110ad08f079624",
       "license_hashes": {}
     },
     "Agent Skills Spec": {
@@ -49,12 +49,20 @@
       "upstream_commit": "69ef37e9424c0a7ea9dd2293b559e43ec8176379",
       "license_hashes": {}
     },
+    "Catalyst Agent Skills": {
+      "upstream": "catalystbyzoho/agent-skills",
+      "tier": "optional",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "4a64353651cef3d9e2fddc84ee5588cf5d74794c",
+      "license_hashes": {}
+    },
     "MengTo Skills": {
       "upstream": "MengTo/Skills",
       "tier": "core",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "321c769739b823de5eb94eb3a52aa1974fe783a2",
+      "upstream_commit": "9fb3bfb96c6917cb401bcb7dd063faa880a2bb01",
       "license_hashes": {}
     },
     "MCP Reference Servers": {
@@ -62,7 +70,7 @@
       "tier": "core",
       "license": "Apache-2.0_WITH_LEGACY_MIT",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "cda92bdaacd558192fedf1a60d2bb27510792388",
+      "upstream_commit": "d73f99efbfd40c3aa1b61e88728b3d49fb52608f",
       "license_hashes": {}
     },
     "Next.js": {
@@ -70,7 +78,7 @@
       "tier": "core",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "2fe6f962a1982594bdda96a7de16c594677266d2",
+      "upstream_commit": "93bb22ad0c112b743c59267f588511d10769fc1e",
       "license_hashes": {}
     },
     "React": {
@@ -78,7 +86,7 @@
       "tier": "core",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "2dc7da790d6388b95b83198ca9b588b2ad5f5c0b",
+      "upstream_commit": "2b19aecd0e9111b774fad0fad9862e50bcb5bc8a",
       "license_hashes": {}
     },
     "Tailwind CSS": {
@@ -86,7 +94,7 @@
       "tier": "core",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "90f8ff41c8e2a4d17bc76921e23e9d672123da76",
+      "upstream_commit": "41d9cae8e53378d16087fcf359eb785c2fd42ce4",
       "license_hashes": {}
     },
     "Supabase": {
@@ -94,7 +102,7 @@
       "tier": "core",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "86c813ec03e340ffbe4aeb97cd0c5bee7a0ead94",
+      "upstream_commit": "8dc9206f569e823e715cbc391f25cb53f9938782",
       "license_hashes": {}
     },
     "FastAPI": {
@@ -102,7 +110,7 @@
       "tier": "core",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "49033471594ea5d99a80abdf1043231b7791ee49",
+      "upstream_commit": "50113da16fec53b66b80d75e80a89296de4fa5a5",
       "license_hashes": {}
     },
     "Medusa": {
@@ -110,7 +118,7 @@
       "tier": "optional",
       "license": "MIT_CORE_WITH_PROPRIETARY_ENTERPRISE_PATHS",
       "mirror_policy": "selective_mirror_by_subtree",
-      "upstream_commit": "f7317903600e5b64f06c21c29a73e0e569d2fe3a",
+      "upstream_commit": "da9be14fbb59801707650b865db0051fe9898dd3",
       "license_hashes": {}
     },
     "Saleor": {
@@ -118,7 +126,7 @@
       "tier": "optional",
       "license": "BSD-3-Clause",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "8c7815d83922bd0f98bc678c31af4a34fd0a007b",
+      "upstream_commit": "941b565c6b8dd2483842d357b019fd42db2a609f",
       "license_hashes": {}
     },
     "Three.js": {
@@ -126,7 +134,7 @@
       "tier": "core",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "ad005397bbd15b0a9fcd5159c782eba56e1cba2a",
+      "upstream_commit": "5e79fd97f640a83797eddf1249969e43a22606df",
       "license_hashes": {}
     },
     "ThreeUI": {
@@ -134,7 +142,7 @@
       "tier": "core",
       "license": "MIT_COMMUNITY_CODE_WITH_ASSET_NOTICES",
       "mirror_policy": "fork_or_mirror_preserve_notices",
-      "upstream_commit": "326580429881c2abe7893bee53c62cbb31b6ee49",
+      "upstream_commit": "68802d5428071ada5c20db8094b1649e6bb770ed",
       "license_hashes": {}
     },
     "Motion": {
@@ -142,7 +150,7 @@
       "tier": "core",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "1b037b0032578b52af94b06ff3920bfa0aaa5e36",
+      "upstream_commit": "a6ea2f9289e8bdace16b25b8142b9b53d37284a9",
       "license_hashes": {}
     },
     "Anime.js": {
@@ -158,7 +166,7 @@
       "tier": "core",
       "license": "CUSTOM_FREE_AND_COMPANY_LICENSE",
       "mirror_policy": "reference_only",
-      "upstream_commit": "a1011d63c6aed4dd76f203bb58d5fb1b38209382",
+      "upstream_commit": "7a2a85d16aff002a3de18d4324e8189ab894119d",
       "license_hashes": {}
     },
     "glTF-Transform": {
@@ -166,7 +174,7 @@
       "tier": "core",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "1bdeacbe125e722a5215299e6f1386c584622f8f",
+      "upstream_commit": "a5d768b87efaae1fa65ddd17cd551a45b57abd70",
       "license_hashes": {}
     },
     "meshoptimizer": {
@@ -174,7 +182,7 @@
       "tier": "core",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "d4c713f2e6a701fecb559d73e32241ccd2040f8a",
+      "upstream_commit": "84907d6243e2e44181aec4a9ae0bc70267109338",
       "license_hashes": {}
     },
     "Draco": {
@@ -190,7 +198,7 @@
       "tier": "core",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "f9ebbd80ae6ec82d3a4ec5543d03e356720c1f83",
+      "upstream_commit": "99f52d63aa6799cbdaecfe977111dc5ec3b31d47",
       "license_hashes": {}
     },
     "wgpu": {
@@ -198,7 +206,7 @@
       "tier": "reference",
       "license": "MIT_OR_APACHE-2.0",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "fae070bf21fa5b1ea46e6621d035afaa6cbb9673",
+      "upstream_commit": "0aee018d25ccd39f73668bf86d05cc2b03833f7a",
       "license_hashes": {}
     },
     "ComfyUI": {
@@ -206,7 +214,7 @@
       "tier": "core",
       "license": "GPL-3.0",
       "mirror_policy": "mirror_with_copyleft_review",
-      "upstream_commit": "5bdcb5f4edd70412e12fb04f357766cb4504e0fa",
+      "upstream_commit": "7a0b5eede3f9721c8faab290689893f36edc6d66",
       "license_hashes": {}
     },
     "Whisper": {
@@ -214,7 +222,7 @@
       "tier": "core",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "5f86d1d86363843179951550570367b37c5d6f78",
+      "upstream_commit": "86098128c0b4f24f0e2aa2994de830614b474227",
       "license_hashes": {}
     },
     "FFmpeg": {
@@ -222,7 +230,7 @@
       "tier": "core",
       "license": "LGPL-2.1_OR_GPL_DEPENDING_BUILD",
       "mirror_policy": "mirror_with_license_notes",
-      "upstream_commit": "3386acd2f91d4a59be20eddf6d26abad682f4ca0",
+      "upstream_commit": "9cf34b031f489dcecad5c579d0a22a956918cf36",
       "license_hashes": {}
     },
     "LTX-Video": {
@@ -278,7 +286,7 @@
       "tier": "optional",
       "license": "APACHE-2.0_WITH_PUBLIC_OUTPUT_WATERMARK_CONDITION",
       "mirror_policy": "reference_only_special_usage_terms",
-      "upstream_commit": "9bf6a204500e87634551919bebd31959e7a5434b",
+      "upstream_commit": "b3e7490a20e7a6330492f8a6ea8200a5d50279d1",
       "license_hashes": {}
     },
     "OpenSeeFace": {
@@ -286,7 +294,7 @@
       "tier": "core",
       "license": "BSD-2-Clause",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "85aa70fc67582d046e771ea73625182a0d8f7475",
+      "upstream_commit": "520572e9ab4e957d1320dfa848d348cb6ef60729",
       "license_hashes": {}
     },
     "MediaPipe": {
@@ -294,7 +302,7 @@
       "tier": "core",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "251c0cb9687230682929a64d413751f1a4f8a6d5",
+      "upstream_commit": "4e0918204c227535a31e8a577377f394674eabbc",
       "license_hashes": {}
     },
     "OpenCV": {
@@ -302,7 +310,7 @@
       "tier": "core",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "390c4fdcb9fea6e58fb635bf88277f2a51e8d4b3",
+      "upstream_commit": "d28b36000412a433958be9e7ba6e0b83cdbe9741",
       "license_hashes": {}
     },
     "3DDFA_V2": {
@@ -350,7 +358,7 @@
       "tier": "core",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "e79a40aa7d80a99764b9384f256a855abb4171ee",
+      "upstream_commit": "29874882a5dd0b33eec42595ad04411c8cb23900",
       "license_hashes": {}
     },
     "ncnn": {
@@ -358,7 +366,7 @@
       "tier": "optional",
       "license": "BSD-3-Clause",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "2130e00c6efd910d3e926867ca94a2d96eaf9d31",
+      "upstream_commit": "44ada84b98e21b5191dfb69e3bef0c09cdfe9a9c",
       "license_hashes": {}
     },
     "MarkItDown": {
@@ -366,7 +374,7 @@
       "tier": "core",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "9dc0d6579b8739c9d0671ff205e071e3053c7df1",
+      "upstream_commit": "945314a45ddbe02935f2fd287b797dc0ba4a01e4",
       "license_hashes": {}
     },
     "n8n": {
@@ -374,7 +382,7 @@
       "tier": "core",
       "license": "N8N_SUSTAINABLE_USE_PLUS_ENTERPRISE_LICENSE",
       "mirror_policy": "reference_only_or_private_internal_copy_after_terms_review",
-      "upstream_commit": "d3900d81afab6e0d1e085f3d1b2047199ba08305",
+      "upstream_commit": "f960330ecb34b208ce8669c98ecf145fe7c589a8",
       "license_hashes": {}
     },
     "pgvector": {
@@ -382,7 +390,7 @@
       "tier": "core",
       "license": "PostgreSQL",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "e48241b4dcc045b18902914f668d03d1d399dfbe",
+      "upstream_commit": "efa08fda9ec485d80292d0487a77939c087dedcc",
       "license_hashes": {}
     },
     "Qdrant": {
@@ -390,7 +398,7 @@
       "tier": "optional",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "74f3e85b9473c62560006c043e13737ce6b48412",
+      "upstream_commit": "6ab21cac18ebb6f4ae29102c7f8f5cc11affd5de",
       "license_hashes": {}
     },
     "Valkey": {
@@ -398,7 +406,7 @@
       "tier": "optional",
       "license": "BSD-3-Clause",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "11a74cf243f006d1a22cc832ea2251c24e0a855f",
+      "upstream_commit": "122ec7e1623c0fad925f93799ef3dcd40a8a3e79",
       "license_hashes": {}
     },
     "RustFS": {
@@ -406,7 +414,7 @@
       "tier": "optional",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "ff3ad30f0c537e6feba3180d713cea46b246200b",
+      "upstream_commit": "87ab95770cbd1b1523900eab7a1b8478ab7b98d7",
       "license_hashes": {}
     },
     "Git LFS": {
@@ -414,7 +422,7 @@
       "tier": "optional",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "aece9221f8c09221a14395d964806b956289bc07",
+      "upstream_commit": "f0bffc4fe998fe5cb004dbca9e8951ea662ff66b",
       "license_hashes": {}
     },
     "DVC": {
@@ -438,7 +446,7 @@
       "tier": "core-scale",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "680e2177e473ed8dfaa9773f7ead185b369cab46",
+      "upstream_commit": "1085b64425a9e6f5ca52876ad32e55fda5665f4e",
       "license_hashes": {}
     },
     "BentoML": {
@@ -446,7 +454,7 @@
       "tier": "core-scale",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "add7dd5897a4680cd8fdf985da9a27a8239d980f",
+      "upstream_commit": "517b343b81aeb0b01bbd908e58e53ad9c12ef7eb",
       "license_hashes": {}
     },
     "Ray": {
@@ -454,7 +462,7 @@
       "tier": "optional-scale",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "3281306dd05f033016e152339137760c0b14c524",
+      "upstream_commit": "1337a835a1bb15af52c7aee3e3bed541945a1983",
       "license_hashes": {}
     },
     "KServe": {
@@ -462,7 +470,7 @@
       "tier": "optional-scale",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "5df5f5999b18fb59c772aaa9627dc0ff8111b720",
+      "upstream_commit": "cee4cc0612ad05619cba701bf22a0ba47baa18ed",
       "license_hashes": {}
     },
     "NVIDIA k8s-device-plugin": {
@@ -470,7 +478,7 @@
       "tier": "optional-scale",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "5a3b3d85a44ec0e493684c713218eaea07675601",
+      "upstream_commit": "6256903afd0952f7b694d4e194fe88dd084adb87",
       "license_hashes": {}
     },
     "Kubernetes": {
@@ -478,7 +486,7 @@
       "tier": "optional-scale",
       "license": "Apache-2.0",
       "mirror_policy": "mirror_reference_not_daily_fork",
-      "upstream_commit": "e72c2715ade37738aa5c029e8de5285cbe1c9441",
+      "upstream_commit": "a255808f6c0deb6e75ce031b5804e722306e46a8",
       "license_hashes": {}
     },
     "Pulumi": {
@@ -486,7 +494,7 @@
       "tier": "optional-scale",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "ec3841d51d5d2dcdd8c94f10e7e02e6469407aca",
+      "upstream_commit": "68609fd76dd2be12dabf3aa40784f34204b7f5be",
       "license_hashes": {}
     },
     "Argo CD": {
@@ -494,7 +502,7 @@
       "tier": "optional-scale",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "b642d5f6d5eba8cd644b3ca65b217e7a718645cd",
+      "upstream_commit": "bcfc8ec3a03d3190ede3c80c02b97a4e838ca195",
       "license_hashes": {}
     },
     "OpenBao": {
@@ -502,7 +510,7 @@
       "tier": "optional-scale",
       "license": "MPL-2.0",
       "mirror_policy": "mirror_with_copyleft_review",
-      "upstream_commit": "5647ca4fc7f9cf4192f0cc8c256ef7c34e85cdac",
+      "upstream_commit": "47f5c5559ef674a130a87a023c026cd34b3da88c",
       "license_hashes": {}
     },
     "NATS Server": {
@@ -510,7 +518,7 @@
       "tier": "optional-scale",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "6f3d85d56d708a7fc816666d1fa70819e4ee462f",
+      "upstream_commit": "8a5b1a8a87a5ceb97e628455d93efdeaf2de19ee",
       "license_hashes": {}
     },
     "tusd": {
@@ -518,7 +526,7 @@
       "tier": "core-scale",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "ad7fb31344e0629cb8a5af67bb1e630f90507890",
+      "upstream_commit": "388a27cb81c33b2349e0308b5e97e23797e86fd9",
       "license_hashes": {}
     },
     "SeaweedFS": {
@@ -526,7 +534,7 @@
       "tier": "optional-scale",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "9bafeb613933fdb0979037d20ee28c0da3655233",
+      "upstream_commit": "def25ca84ddce325dfdf1086b6e735937e2faf8b",
       "license_hashes": {}
     },
     "JuiceFS": {
@@ -534,7 +542,7 @@
       "tier": "optional-scale",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "4cbf9715ef83b99b9d5a06d620d443097862a4ac",
+      "upstream_commit": "999359455de47e697106b6620b02ceabc2c9e78c",
       "license_hashes": {}
     },
     "Kong Gateway": {
@@ -542,7 +550,7 @@
       "tier": "optional-scale",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "fa9c3b695af72668f135cb17bbb84a8b4dc511d2",
+      "upstream_commit": "3091de006da341d5f289d446a3d73875a14560e0",
       "license_hashes": {}
     },
     "ZITADEL": {
@@ -550,7 +558,7 @@
       "tier": "optional-scale",
       "license": "AGPL-3.0_WITH_APACHE_MIT_EXCEPTIONS",
       "mirror_policy": "mirror_with_copyleft_review",
-      "upstream_commit": "8de625dc4867ab01cab0753bc2e2a8ecf57f7747",
+      "upstream_commit": "ceba26f4344307968809b9d8a89d6e1f03b3ec5e",
       "license_hashes": {}
     },
     "Locust": {
@@ -558,7 +566,7 @@
       "tier": "core-scale",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "f391a716e12c2c712e80b5835e877b7933397453",
+      "upstream_commit": "a9d20d6f4b918e7aa3a757139815c3f79c1fd1a4",
       "license_hashes": {}
     },
     "Lago": {
@@ -566,7 +574,7 @@
       "tier": "optional-scale",
       "license": "AGPL-3.0",
       "mirror_policy": "mirror_with_copyleft_review",
-      "upstream_commit": "02a4bc8d9c0ab4201875d8615a09c48a2f2a4d31",
+      "upstream_commit": "2fd8e8beb6c3cc5d4245a16ccc1593cc7d18c016",
       "license_hashes": {}
     },
     "GrowthBook": {
@@ -574,7 +582,7 @@
       "tier": "optional",
       "license": "MIT_CORE_WITH_COMMERCIAL_ENTERPRISE_DIRECTORIES",
       "mirror_policy": "selective_after_license_review",
-      "upstream_commit": "de4ff6b5256c13764239f9ed3560e281c5728592",
+      "upstream_commit": "3f0333fb99286c1e491d95f94b80e59a6787cb7b",
       "license_hashes": {}
     },
     "PostHog": {
@@ -582,7 +590,7 @@
       "tier": "optional",
       "license": "MIT_CORE_WITH_PROPRIETARY_EE_DIRECTORY",
       "mirror_policy": "reference_or_selective_after_review",
-      "upstream_commit": "68974dcaf788b0844dd322235943758860270832",
+      "upstream_commit": "47c86593c1b5442353cac5136717ab8fe84d2246",
       "license_hashes": {}
     },
     "Unleash": {
@@ -590,7 +598,7 @@
       "tier": "optional",
       "license": "AGPL-3.0_SOURCE_V8_PLUS_DOCKER_IMAGES_APACHE-2.0",
       "mirror_policy": "mirror_with_copyleft_review",
-      "upstream_commit": "3ce087b005fd8a3d1a612a8cba69e390d79de3e4",
+      "upstream_commit": "7c727bba7bb880b42dd23a6c12e29b2b6f9d2e79",
       "license_hashes": {}
     },
     "Playwright": {
@@ -598,7 +606,7 @@
       "tier": "core",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "de214f440b7e34937fe4886f046b78b757136087",
+      "upstream_commit": "49d290ae3574241db1dc9e79cc3f4a7c6bc8d3cb",
       "license_hashes": {}
     },
     "Vitest": {
@@ -606,7 +614,7 @@
       "tier": "core",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "d4fe1986fe334d22940039e815ccdbcc907baa6a",
+      "upstream_commit": "0780a8e5b7967a4168173599e9c74fb79aab2483",
       "license_hashes": {}
     },
     "Storybook": {
@@ -614,7 +622,7 @@
       "tier": "optional",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "8256cee6c95cf35dc8113cf179c9b7bea487f327",
+      "upstream_commit": "4f66ceeb2410de4bcefe3ba3919267495cc40f37",
       "license_hashes": {}
     },
     "Promptfoo": {
@@ -622,7 +630,7 @@
       "tier": "core",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "4fb96412eff44ced9c47293238d3db0450a39353",
+      "upstream_commit": "811092a5b2a06a93574ce8aa02cfb2575aa7de2a",
       "license_hashes": {}
     },
     "Langfuse": {
@@ -630,7 +638,7 @@
       "tier": "optional",
       "license": "MIT_CORE_WITH_COMMERCIAL_EE_DIRECTORIES",
       "mirror_policy": "fork_or_mirror_core_only",
-      "upstream_commit": "f6e56cbb6c6c001805e90c263efca995a3fd33ba",
+      "upstream_commit": "53640f4ca74ba7d13a3bed0d4b1c88006609b0f5",
       "license_hashes": {}
     },
     "OpenTelemetry Collector": {
@@ -638,7 +646,7 @@
       "tier": "core",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "a183c9cc604a9921c75b2eda0bf8fbb0bb9833b5",
+      "upstream_commit": "12548e5d9680a50c2716b93a644de0a7f624316a",
       "license_hashes": {}
     },
     "SigNoz": {
@@ -646,7 +654,7 @@
       "tier": "core",
       "license": "MIT_CORE_WITH_PROPRIETARY_ENTERPRISE_DIRS",
       "mirror_policy": "selective_mirror_excluding_enterprise",
-      "upstream_commit": "da9b4644dfc26e4bf81658edd3bc015df8897c4a",
+      "upstream_commit": "0fe45e71144686ce2c735d5599d7d4b90fefaaa2",
       "license_hashes": {}
     },
     "Trivy": {
@@ -654,7 +662,7 @@
       "tier": "core",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "5ae0bb10645f08e6ec81fc257d4dc7e51c15ba69",
+      "upstream_commit": "e97dfcc1bd777cdc85a2aedb52b761ea543b9ae0",
       "license_hashes": {}
     },
     "Gitleaks": {
@@ -670,7 +678,7 @@
       "tier": "optional",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "cc12d7ccffd71a4ef19efeb4ee08e55cd86a70c3",
+      "upstream_commit": "f4cb5fd8cbc430d89b3e539784877718096e5f86",
       "license_hashes": {}
     },
     "Temporal": {
@@ -678,7 +686,7 @@
       "tier": "optional-scale",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "c044bf16b1cc47a4db80669a987484dba6145331",
+      "upstream_commit": "c5dc0050d1515458b21f409fa04ac5d35585df4d",
       "license_hashes": {}
     },
     "LiveKit": {
@@ -686,7 +694,7 @@
       "tier": "core",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "c934aa29b75cf47fc83110d4b44c4055dd4f48d9",
+      "upstream_commit": "48700da3f3f2c3b514f673308bed861ec09fd729",
       "license_hashes": {}
     },
     "Discourse": {
@@ -694,7 +702,7 @@
       "tier": "optional",
       "license": "GPL-2.0-or-later",
       "mirror_policy": "mirror_with_copyleft_review",
-      "upstream_commit": "768a4ed1cd8e6742fe1c1340a9c4ab01318285ec",
+      "upstream_commit": "837f9e81e026ff170694c7e38d0b2e7c4a8df665",
       "license_hashes": {}
     },
     "Element Web": {
@@ -702,7 +710,7 @@
       "tier": "optional",
       "license": "AGPL-3.0_OR_GPL-3.0_OR_COMMERCIAL",
       "mirror_policy": "mirror_with_copyleft_review",
-      "upstream_commit": "a664fabc563afba905239e2cc59a7a142f01532d",
+      "upstream_commit": "5477ee888fe632e15a7ad0c7c90232c478ff5ffa",
       "license_hashes": {}
     },
     "Matrix Synapse": {
@@ -710,7 +718,7 @@
       "tier": "optional",
       "license": "AGPL-3.0-or-later_OR_COMMERCIAL",
       "mirror_policy": "mirror_with_copyleft_review",
-      "upstream_commit": "30355721f64c6e7654e7dd755ad2a679fd479b9c",
+      "upstream_commit": "82aff09c4770b6252129372316700963f94e4801",
       "license_hashes": {}
     },
     "Tauri": {
@@ -718,7 +726,7 @@
       "tier": "optional",
       "license": "MIT_OR_APACHE-2.0",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "dd6befda925845fc74ca595d6d42de6c49580dd8",
+      "upstream_commit": "990f77eb2f16b431dd5fd8b1059e6112647cca7a",
       "license_hashes": {}
     },
     "Expo": {
@@ -726,7 +734,7 @@
       "tier": "optional",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "f1882313ed8455baa8ca31e5e52d7cf5aff27771",
+      "upstream_commit": "6d1313ae7b4c7abd343993812dcd15c3aee5b95d",
       "license_hashes": {}
     },
     "Kokoro TTS": {
@@ -742,7 +750,7 @@
       "tier": "situational",
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "93c82442d0733002e48c2dfde7b1a43d75da57dc",
+      "upstream_commit": "08a0d8db4bb800664e447002e7af7d85bade3c29",
       "license_hashes": {}
     },
     "Godot": {
@@ -750,84 +758,240 @@
       "tier": "core-specialist",
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
-      "upstream_commit": "5ec4857b340b6284a18b49b2eda462bd250f219a",
+      "upstream_commit": "603d005102a3d595cbe8fe870437370216670c8f",
       "license_hashes": {}
-    }
-  },
-  "agent_runtimes": {
-    "codex": {
-      "state": "EXECUTION_READY",
-      "role": "primary implementation runtime",
-      "installed": true,
-      "execution_ready": true
     },
-    "antigravity": {
-      "state": "UNSAFE",
-      "role": "architecture/review/research candidate",
-      "installed": true,
-      "execution_ready": false,
-      "reason": "headless permission model not yet safe"
+    "VoltAgent": {
+      "upstream": "VoltAgent/voltagent",
+      "tier": "optional",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "44b4c8e4998ce56095b2f0e4eaf1a988f5e6d0de",
+      "license_hashes": {}
     },
-    "kimi": {
-      "state": "AUTH_REQUIRED",
-      "role": "long-context ACP runtime",
-      "installed": true,
-      "execution_ready": false
+    "Codebase Memory MCP": {
+      "upstream": "DeusData/codebase-memory-mcp",
+      "tier": "core",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "59a05eb1bf9e11deb060d782cd7d3a29f2ae2866",
+      "license_hashes": {}
     },
-    "claude": {
-      "state": "AUTH_REQUIRED",
-      "role": "architecture/review runtime",
-      "installed": true,
-      "execution_ready": false
+    "Orca": {
+      "upstream": "stablyai/orca",
+      "tier": "core-specialist",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "a28085adbfb65d3f27393cc7a0d78cfa2b4ff07e",
+      "license_hashes": {}
     },
-    "opencode": {
-      "state": "CANDIDATE",
-      "role": "provider-neutral developer runtime",
-      "installed": false,
-      "execution_ready": false
+    "Agency Agents": {
+      "upstream": "msitarzewski/agency-agents",
+      "tier": "situational",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "ad9264e309bd5e5422c04784372d7841b1e5d604",
+      "license_hashes": {}
     },
-    "openhands": {
-      "state": "CANDIDATE",
-      "role": "autonomous execution runtime",
-      "installed": false,
-      "execution_ready": false
+    "Google Maps Scraper": {
+      "upstream": "omkarcloud/google-maps-scraper",
+      "tier": "situational",
+      "license": "MIT_WITH_USAGE_COMPLIANCE_NOTICE",
+      "mirror_policy": "fork_or_mirror_preserve_notices",
+      "upstream_commit": "80b891e87ca731785ec20baf635bd43597d71d40",
+      "license_hashes": {}
     },
-    "aider": {
-      "state": "CANDIDATE",
-      "role": "precision repo editing runtime",
-      "installed": false,
-      "execution_ready": false
+    "Emil Kowalski Skills": {
+      "upstream": "emilkowalski/skills",
+      "tier": "core",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "85e8e2363b713506e1d5b6e07a0eb2da66be1bc3",
+      "license_hashes": {}
     },
-    "mini-swe": {
-      "state": "CANDIDATE",
-      "role": "issue repair and debugging runtime",
-      "installed": false,
-      "execution_ready": false
-    }
-  },
-  "agent_control_plane": {
-    "version": "v1",
-    "status": "foundation_complete",
-    "capabilities": [
-      "runtime_registry",
-      "runtime_capability_routing",
-      "specialist_team_builder",
-      "project_memory",
-      "decision_journal",
-      "canonical_artifact_cache",
-      "adaptive_context_acquisition",
-      "permission_profiles",
-      "workspace_containment",
-      "secret_isolation",
-      "budget_governor",
-      "structured_handoffs",
-      "bounded_remediation",
-      "independent_evaluation",
-      "task_certification"
-    ],
-    "offline_test_status": {
-      "passed": 140,
-      "deselected_integration": 2
+    "video-use": {
+      "upstream": "browser-use/video-use",
+      "tier": "core-specialist",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "9575612f066aa517354790a645fd90f9f95a743b",
+      "license_hashes": {}
+    },
+    "Diffusion Studio Editor": {
+      "upstream": "diffusionstudio/editor",
+      "tier": "optional",
+      "license": "MPL-2.0_WITH_PROPRIETARY_BRAND_ASSETS",
+      "mirror_policy": "mirror_with_copyleft_review_exclude_brand_assets",
+      "upstream_commit": "b31741213f334219ba8e72afe3679b02c95353fb",
+      "license_hashes": {}
+    },
+    "OpenDesign": {
+      "upstream": "vustudio/opendesign",
+      "tier": "core-specialist",
+      "license": "Apache-2.0_WITH_BUNDLED_MIT_SKILLS",
+      "mirror_policy": "fork_or_mirror_preserve_notices",
+      "upstream_commit": "b4e69ac61b50576298f9f564603e5a4beb27417f",
+      "license_hashes": {}
+    },
+    "OpenCode": {
+      "upstream": "anomalyco/opencode",
+      "tier": "candidate",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "2e018f70f2d13080de3dd5fda8720acf77ebd296",
+      "license_hashes": {}
+    },
+    "OpenHands": {
+      "upstream": "OpenHands/OpenHands",
+      "tier": "candidate",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "b06a05dc928c91199e3fa7a0b8a95c75bfc382e8",
+      "license_hashes": {}
+    },
+    "Aider": {
+      "upstream": "Aider-AI/aider",
+      "tier": "specialist",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
+      "license_hashes": {}
+    },
+    "mini-SWE-agent": {
+      "upstream": "SWE-agent/mini-swe-agent",
+      "tier": "specialist",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "04d809ceab9df28f9adaed044884180159172930",
+      "license_hashes": {}
+    },
+    "Agentic Inbox": {
+      "upstream": "cloudflare/agentic-inbox",
+      "tier": "optional",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "48039bb6785af34e592c2966f87cde2b255c4c80",
+      "license_hashes": {}
+    },
+    "VoxCPM": {
+      "upstream": "OpenBMB/VoxCPM",
+      "tier": "optional",
+      "license": "Apache-2.0",
+      "mirror_policy": "code_mirror_only_weights_separate",
+      "upstream_commit": "f772e498a45fbb5fb8e13fbf9b9c48be9fe33e69",
+      "license_hashes": {}
+    },
+    "Flowsint": {
+      "upstream": "reconurge/flowsint",
+      "tier": "optional",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "182056979b12f86d495dd962b627ac6e065b4f02",
+      "license_hashes": {}
+    },
+    "LongCat-Video": {
+      "upstream": "meituan-longcat/LongCat-Video",
+      "tier": "optional",
+      "license": "MIT",
+      "mirror_policy": "code_mirror_only_weights_separate",
+      "upstream_commit": "6b3f4b8582a8bc3f20f795735f5383716c4ba794",
+      "license_hashes": {}
+    },
+    "Magnitude Browser Agent": {
+      "upstream": "magnitudedev/browser-agent",
+      "tier": "optional",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "f1b587c4173d8242bdb551991de54e70c4d2faf3",
+      "license_hashes": {}
+    },
+    "Anthropic Commerce Agents": {
+      "upstream": "anthropics/commerce-agents",
+      "tier": "optional",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "fd4d59224ab96b43c6dc6888207c67b3bd5a24cf",
+      "license_hashes": {}
+    },
+    "Agent Reach": {
+      "upstream": "Panniantong/Agent-Reach",
+      "tier": "optional",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "a19a171fa980a0785849596492e0af4db800c82f",
+      "license_hashes": {}
+    },
+    "Video Shotcraft": {
+      "upstream": "Vincentwei1021/video-shotcraft",
+      "tier": "optional",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "5e71af35a2daee492dd3ea93e5e8903f32dcd13c",
+      "license_hashes": {}
+    },
+    "TradingAgents": {
+      "upstream": "TauricResearch/TradingAgents",
+      "tier": "optional",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "be952b8eccb49720509af544c6675233bc1f10d0",
+      "license_hashes": {}
+    },
+    "Sona UI": {
+      "upstream": "Dinil-Thilakarathne/sona-ui",
+      "tier": "optional",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "160307e108cfc60b0ce3e01932293b1c3f390e6b",
+      "license_hashes": {}
+    },
+    "AICSS": {
+      "upstream": "kvnkld/aicss",
+      "tier": "optional",
+      "license": "MIT_PUBLIC_REPO_ONLY",
+      "mirror_policy": "fork_or_mirror_public_oss_only",
+      "upstream_commit": "a78d3c308d10972e5196331162c5c2c870b1a69f",
+      "license_hashes": {}
+    },
+    "Transitions.dev": {
+      "upstream": "Jakubantalik/transitions.dev",
+      "tier": "optional",
+      "license": "MIT_PUBLIC_REPO_ONLY",
+      "mirror_policy": "fork_or_mirror_public_oss_only",
+      "upstream_commit": "598d3d6ad89dabb4bdf742fd2e887ca53914a888",
+      "license_hashes": {}
+    },
+    "Brand Skills": {
+      "upstream": "cofoundy/brand-skills",
+      "tier": "optional",
+      "license": "MIT_WITH_NOTICE",
+      "mirror_policy": "fork_or_mirror_preserve_notices",
+      "upstream_commit": "c50d6c9988e22b39031266924ae7d87f643e34bf",
+      "license_hashes": {}
+    },
+    "Hummingbot": {
+      "upstream": "hummingbot/hummingbot",
+      "tier": "reference",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "2bfaccc48dd49e71a5b6d9b3011808e127dd00cd",
+      "license_hashes": {}
+    },
+    "ArchiveBox": {
+      "upstream": "ArchiveBox/ArchiveBox",
+      "tier": "optional",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "3a32fe94040221a4062f49b494d136f1cc4fba8e",
+      "license_hashes": {}
+    },
+    "AutoSocial": {
+      "upstream": "Katzca/AutoSocial",
+      "tier": "optional",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror",
+      "upstream_commit": "6deb560ee58ea1e6a040e1ee8e6ca269bd1576b5",
+      "license_hashes": {}
     }
   }
 }
