@@ -20,17 +20,22 @@ Baseline: `agent-stack` reports 117 repository entries / 117 verified / 0 canoni
 | Brand Skills | `cofoundy/brand-skills` | MIT with NOTICE; portable agent skills and git-tracked brand package | Optional, review_required; preserve NOTICE |
 | Hummingbot | `hummingbot/hummingbot` | Apache-2.0; strong modular trading-agent architecture reference, not a default product dependency | Reference/optional, review_required; no credentials/live trading by default |
 | ArchiveBox | `ArchiveBox/ArchiveBox` | MIT; durable web evidence capture, AGENTS.md/skills present | Optional research/provenance infra, review_required |
+| AutoSocial | `Katzca/AutoSocial` | MIT; local Node/Playwright multi-account posting dashboard for TikTok/Instagram/YouTube | Optional specialist distribution layer, review_required; no credentials or autonomous posting by default |
+
+## READY as reference / install-at-use, not owned mirror
+
+| Candidate | Canonical source | Reason |
+|---|---|---|
+| Canvas UI | `DavidHDev/canvas-ui` | MIT + Commons Clause permits use in our apps but restricts reselling/redistributing the component library itself. Keep as reference/install-at-use; do not mirror components into a public owned distribution repo. |
+| Lovart Skill | `lovartai/lovart-skill` | Official Lovart OpenAPI skill for image/video/visual generation. Treat as provider skill/reference with credentials kept external; do not rely on community Lovart clones. |
 
 ## HOLD — do not mirror yet
 
 | Candidate | Reason |
 |---|---|
-| Canvas UI | Exact intended upstream is ambiguous. `DavidHDev/canvas-ui` uses MIT + Commons Clause restricting resale/redistribution of components; `canvas-ui/*` projects include AGPL/commercial dual licensing. Resolve target and redistribution model first. |
-| Lovart / OpenLovart | Search surfaces community clones/implementations rather than a clearly canonical open Lovart upstream. Provenance and licensing must be resolved before mirroring. |
-| changedetection.io | Strong fit for monitoring and has Apache-2.0 source, but upstream also ships `COMMERCIAL_LICENCE.md` and resale/commercial wording. Reconcile those terms before owned redistribution. |
-| Video Talkcraft | PolyForm Noncommercial 1.0.0; commercial toolkit use requires authorization. Keep reference-only until permission/terms change. |
-| Infinite | Canonical repo not yet uniquely resolved in this audit. Hold until exact upstream, license and distinct job are verified. |
-| AutoSocial | Canonical repo not yet uniquely resolved in this audit. Hold until exact upstream, license and credential/posting boundaries are verified. |
+| changedetection.io | Strong fit for monitoring and Apache-2.0 is present, but upstream also publishes commercial-license/resale wording that is currently ambiguous. Keep HOLD until redistribution/commercial terms are reconciled. |
+| Video Talkcraft | PolyForm Noncommercial 1.0.0; commercial use of the toolkit requires prior authorization. Reference-only unless permission/terms change. |
+| Infinite | Exact historical target remains unresolved. `InfiniteRoomLabs/agent-ops` is a plausible MIT agent/skills architecture candidate, while `polyuiislab/infiAgent` is a distinct GPL-3.0 long-horizon runtime. Do not guess which one the backlog item referred to; resolve target before intake. |
 
 ## METADATA / REFERENCE ONLY — not fork targets
 
@@ -43,12 +48,13 @@ Baseline: `agent-stack` reports 117 repository entries / 117 verified / 0 canoni
 ## Queue after reconciliation
 
 - 3 backlog items are already mirrored: Magnitude/browser-agent, commerce-agents, Shotcraft/video-shotcraft.
-- 6 candidates are source/license-fit READY for controlled intake: Sona UI, AICSS, Transitions.dev, Brand Skills, Hummingbot, ArchiveBox.
-- 6 candidates remain HOLD pending provenance/license/canonical verification: Canvas UI, Lovart, changedetection.io, Video Talkcraft, Infinite, AutoSocial.
+- 7 candidates are source/license-fit READY for controlled owned intake: Sona UI, AICSS, Transitions.dev, Brand Skills, Hummingbot, ArchiveBox, AutoSocial.
+- 2 candidates are READY for reference/install-at-use but should not become owned public mirrors: Canvas UI, official Lovart Skill.
+- 3 candidates remain HOLD: changedetection.io, Video Talkcraft, Infinite.
 - 3 items are metadata/reference-only rather than fork targets: GPT-6 Astra, Lyria 3.5, Grokbot.dev.
 
 The counts overlap the historical 16-item wave because ArchiveBox and changedetection.io were added later and the historical list contained metadata/reference items that were never intended to become forks.
 
 ## Promotion rule
 
-Mirroring is not core promotion. New mirrors enter `optional` / `review_required`. Promotion requires reproducible live tests, rollback, sanitized evidence, and an independently verified result. No trading credentials, social-posting credentials, production deployment, or destructive actions are authorized by this audit.
+Mirroring is not core promotion. New mirrors enter `optional` / `review_required`. Promotion requires reproducible live tests, rollback, sanitized evidence, and an independently verified result. No trading credentials, social-posting credentials, provider secrets, production deployment, or destructive actions are authorized by this audit.
