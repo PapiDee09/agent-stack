@@ -8,6 +8,7 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 REGISTRY = Path("repos.json")
+TARGET_OVERRIDES = Path("scripts/target-overrides.json")
 SAFE_POLICIES = {"fork_or_mirror"}
 
 
@@ -40,10 +41,16 @@ def slug(url):
     return parsed.path.strip("/").removesuffix(".git")
 
 
-def inspect(repo, owner):
+def load_target_overrides():
+    if not TARGET_OVERRIDES.exists():
+        return {}
+    return json.loads(TARGET_OVERRIDES.read_text())
+
+
+def inspect(repo, owner, target_overrides):
     name = repo["name"]
     upstream = slug(repo["upstream"])
-    target_repo = upstream.split("/")[-1]
+    target_repo = target_overrides.get(name, upstream.split("/")[-1])
     target = f"{owner}/{target_repo}"
 
     target_data, err = gh_json(["api", f"repos/{target}"])
@@ -156,6 +163,7 @@ def main():
     args = parser.parse_args()
 
     data = json.loads(REGISTRY.read_text())
+    target_overrides = load_target_overrides()
 
     repos = [
         repo
@@ -173,7 +181,7 @@ def main():
     results = []
 
     for repo in repos:
-        item = inspect(repo, args.owner)
+        item = inspect(repo, args.owner, target_overrides)
         results.append(item)
 
         if item["state"] != "CURRENT":

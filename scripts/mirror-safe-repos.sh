@@ -5,6 +5,7 @@ set -euo pipefail
 DRY_RUN="${DRY_RUN:-1}"
 OWNER="${OWNER:-PapiDee09}"
 REGISTRY="${REGISTRY:-repos.json}"
+TARGET_OVERRIDES="${TARGET_OVERRIDES:-scripts/target-overrides.json}"
 
 command -v gh >/dev/null 2>&1 || {
   echo "GitHub CLI (gh) required"
@@ -15,6 +16,11 @@ command -v jq >/dev/null 2>&1 || {
   echo "jq required"
   exit 1
 }
+
+if [[ ! -f "$TARGET_OVERRIDES" ]]; then
+  echo '{}' > /tmp/agent-stack-target-overrides.json
+  TARGET_OVERRIDES=/tmp/agent-stack-target-overrides.json
+fi
 
 gh auth status
 
@@ -37,7 +43,9 @@ jq -c '.repositories[]' "$REGISTRY" | while read -r repo; do
   upstream_repo="${upstream_repo%.git}"
 
   upstream_owner="${upstream_repo%%/*}"
-  target_name="${upstream_repo##*/}"
+  default_target_name="${upstream_repo##*/}"
+  override_target_name="$(jq -r --arg name "$name" '.[$name] // empty' "$TARGET_OVERRIDES")"
+  target_name="${override_target_name:-$default_target_name}"
   target="${OWNER}/${target_name}"
 
   case "$policy" in
@@ -56,9 +64,6 @@ jq -c '.repositories[]' "$REGISTRY" | while read -r repo; do
     continue
   fi
 
-  # Query GitHub through GraphQL.
-  # A genuinely missing repository returns repository=null without
-  # confusing that condition with API/network/authentication failures.
   lookup="$(
     gh api graphql \
       -f query='
@@ -77,7 +82,6 @@ jq -c '.repositories[]' "$REGISTRY" | while read -r repo; do
       2>/dev/null || true
   )"
 
-  # Empty/invalid output means an actual API/network/auth failure.
   if ! jq -e . >/dev/null 2>&1 <<<"$lookup"; then
     echo "ERROR    $name — invalid GitHub response for $target"
     error_count=$((error_count + 1))
@@ -116,7 +120,12 @@ jq -c '.repositories[]' "$REGISTRY" | while read -r repo; do
   ready_count=$((ready_count + 1))
 
   if [[ "$DRY_RUN" == "0" ]]; then
-    if gh repo fork "$upstream_repo" --clone=false; then
+    fork_args=(repo fork "$upstream_repo" --clone=false)
+    if [[ "$target_name" != "$default_target_name" ]]; then
+      fork_args+=(--fork-name "$target_name")
+    fi
+
+    if gh "${fork_args[@]}"; then
       echo "CREATED  $name — $target"
     else
       echo "FAILED   $name — could not fork $upstream_repo"
