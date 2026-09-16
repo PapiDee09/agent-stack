@@ -13,8 +13,8 @@ The standing intake and promotion rules are in [ADMISSION_POLICY.md](ADMISSION_P
 
 ## Census
 
-- Repository entries: **108**
-- Verified entries: **108**
+- Repository entries: **117**
+- Verified entries: **117**
 - Pending canonical/license verification: **0**
 - Target owner: **PapiDee09**
 - Intended control repo: **PapiDee09/agent-stack**
