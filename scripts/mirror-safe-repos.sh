@@ -42,14 +42,13 @@ jq -c '.repositories[]' "$REGISTRY" | while read -r repo; do
   upstream_repo="${upstream#https://github.com/}"
   upstream_repo="${upstream_repo%.git}"
 
-  upstream_owner="${upstream_repo%%/*}"
   default_target_name="${upstream_repo##*/}"
   override_target_name="$(jq -r --arg name "$name" '.[$name] // empty' "$TARGET_OVERRIDES")"
   target_name="${override_target_name:-$default_target_name}"
   target="${OWNER}/${target_name}"
 
   case "$policy" in
-    fork_or_mirror|fork_or_mirror_preserve_notices)
+    fork_or_mirror|fork_or_mirror_preserve_notices|fork_or_mirror_preserve_notice|fork_or_mirror_public_oss_only)
       ;;
     *)
       echo "SKIP     $name — $policy"
