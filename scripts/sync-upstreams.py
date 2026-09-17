@@ -8,6 +8,7 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 REGISTRY = Path("repos.json")
+TARGET_OVERRIDES = Path("scripts/target-overrides.json")
 SAFE_POLICIES = {"fork_or_mirror"}
 
 
@@ -40,73 +41,42 @@ def slug(url):
     return parsed.path.strip("/").removesuffix(".git")
 
 
-def inspect(repo, owner):
+def load_target_overrides():
+    if not TARGET_OVERRIDES.exists():
+        return {}
+    return json.loads(TARGET_OVERRIDES.read_text())
+
+
+def inspect(repo, owner, target_overrides):
     name = repo["name"]
     upstream = slug(repo["upstream"])
-    target_repo = upstream.split("/")[-1]
+    target_repo = target_overrides.get(name, upstream.split("/")[-1])
     target = f"{owner}/{target_repo}"
 
     target_data, err = gh_json(["api", f"repos/{target}"])
     if err:
-        return {
-            "name": name,
-            "target": target,
-            "state": "BROKEN",
-            "detail": err,
-        }
+        return {"name": name, "target": target, "state": "BROKEN", "detail": err}
 
     if not target_data.get("fork"):
-        return {
-            "name": name,
-            "target": target,
-            "state": "BLOCKED",
-            "detail": "target is not a fork",
-        }
+        return {"name": name, "target": target, "state": "BLOCKED", "detail": "target is not a fork"}
 
     parent = (target_data.get("parent") or {}).get("full_name")
-
     if not parent or parent.lower() != upstream.lower():
-        return {
-            "name": name,
-            "target": target,
-            "state": "BLOCKED",
-            "detail": f"parent={parent}",
-        }
+        return {"name": name, "target": target, "state": "BLOCKED", "detail": f"parent={parent}"}
 
     fork_branch = target_data.get("default_branch")
-
     upstream_data, err = gh_json(["api", f"repos/{upstream}"])
     if err:
-        return {
-            "name": name,
-            "target": target,
-            "state": "BROKEN",
-            "detail": err,
-        }
+        return {"name": name, "target": target, "state": "BROKEN", "detail": err}
 
     upstream_branch = upstream_data.get("default_branch")
-
     if not fork_branch or not upstream_branch:
-        return {
-            "name": name,
-            "target": target,
-            "state": "BROKEN",
-            "detail": "missing default branch",
-        }
+        return {"name": name, "target": target, "state": "BROKEN", "detail": "missing default branch"}
 
-    endpoint = (
-        f"repos/{upstream}/compare/"
-        f"{upstream_branch}...{owner}:{fork_branch}"
-    )
-
+    endpoint = f"repos/{upstream}/compare/{upstream_branch}...{owner}:{fork_branch}"
     comparison, err = gh_json(["api", endpoint])
     if err:
-        return {
-            "name": name,
-            "target": target,
-            "state": "BROKEN",
-            "detail": err,
-        }
+        return {"name": name, "target": target, "state": "BROKEN", "detail": err}
 
     ahead = int(comparison.get("ahead_by", 0))
     behind = int(comparison.get("behind_by", 0))
@@ -130,65 +100,42 @@ def inspect(repo, owner):
 
 
 def sync(item):
-    code, out, err = run([
-        "gh",
-        "repo",
-        "sync",
-        item["target"],
-        "-b",
-        item["branch"],
-    ])
-
+    code, out, err = run(["gh", "repo", "sync", item["target"], "-b", item["branch"]])
     if code == 0:
         return True, out or "synced"
-
     return False, err or out or "sync failed"
 
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--owner", default="PapiDee09")
-    parser.add_argument(
-        "--apply",
-        action="store_true",
-        help="Actually synchronize safe behind-only forks",
-    )
+    parser.add_argument("--apply", action="store_true", help="Actually synchronize safe behind-only forks")
     args = parser.parse_args()
 
     data = json.loads(REGISTRY.read_text())
+    target_overrides = load_target_overrides()
 
     repos = [
         repo
         for repo in data["repositories"]
         if repo.get("verified")
         and repo.get("mirror_policy") in SAFE_POLICIES
+        and repo.get("sync_policy") == "auto"
     ]
 
-    print(
-        f"{'SYNCING' if args.apply else 'PLANNING'} "
-        f"{len(repos)} safe-policy repositories..."
-    )
+    print(f"{'SYNCING' if args.apply else 'PLANNING'} {len(repos)} safe-policy auto-sync repositories...")
     print()
 
     results = []
-
     for repo in repos:
-        item = inspect(repo, args.owner)
+        item = inspect(repo, args.owner, target_overrides)
         results.append(item)
-
         if item["state"] != "CURRENT":
-            print(
-                f"{item['state']:<12} "
-                f"{item['name']:<30} "
-                f"{item['detail']}"
-            )
+            print(f"{item['state']:<12} {item['name']:<30} {item['detail']}")
 
     ready = [r for r in results if r["state"] == "SYNC_READY"]
     diverged = [r for r in results if r["state"] == "DIVERGED"]
-    broken = [
-        r for r in results
-        if r["state"] in {"BROKEN", "BLOCKED"}
-    ]
+    broken = [r for r in results if r["state"] in {"BROKEN", "BLOCKED"}]
 
     print()
     print("PLAN SUMMARY")
@@ -218,24 +165,15 @@ def main():
     print("=" * 56)
 
     failures = 0
-
     for item in ready:
         ok, detail = sync(item)
-
         if ok:
-            print(
-                f"SYNCED       {item['name']:<30} "
-                f"+{item['behind']} upstream commit(s)"
-            )
+            print(f"SYNCED       {item['name']:<30} +{item['behind']} upstream commit(s)")
         else:
             failures += 1
-            print(
-                f"FAILED       {item['name']:<30} "
-                f"{detail}"
-            )
+            print(f"FAILED       {item['name']:<30} {detail}")
 
     print()
-
     if failures:
         print(f"Completed with {failures} failure(s).")
         sys.exit(3)
