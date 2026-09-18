@@ -4,16 +4,16 @@ Date: 2026-09-18
 
 ## Scope
 
-This review came from the Active & Productive / BigBag foldables product-video problem: remove the baked grey studio background from a 1288×1608, 24 fps, ~4.7 s eyewear fold-motion clip while preserving glossy black frames, lenses, hinges, thin temples, highlights and temporal consistency.
+Review of reusable open-source background-removal, product/object segmentation, and video-matting tools for the builder/media stack.
 
-Observed failures during the live benchmark:
+Priority requirements:
 
-- classical OpenCV / threshold / GrabCut-style masking was not production-usable
-- frame-by-frame SAM3 polygon segmentation found the product, but produced hard/vector-like edges, grey contamination, unstable thin parts and temporal shape drift
-- SAM3 Video Tracker was wired successfully in Roboflow Workflows, but could not run through the normal remote-step execution path
-- VideoBGNinja and UnBG were rejected for this footage because the foreground became partially transparent / ghosted and lost product detail
-
-The immediate requirement is therefore true product/object video segmentation or matting with stable temporal propagation and a soft/refined alpha edge.
+- product/object foreground extraction
+- clean handling of thin geometry and glossy/transparent surfaces
+- temporal consistency for video
+- soft/refined alpha edges rather than coarse polygon masks
+- reusable local, CLI, API, ONNX, or workstation integration paths
+- commercially usable licensing where possible
 
 ## PUSH / benchmark candidates
 
@@ -33,14 +33,13 @@ Why it matters:
 - ONNX model is available
 - MIT license
 
-Current AP acceptance benchmark:
+Acceptance benchmark:
 
-1. Run the existing 1.5 s / 36-frame black fold clip.
-2. Preserve lenses, bridge, hinge hardware and temple tips.
-3. No grey studio spill inside the foreground.
-4. No frame-to-frame mask redraw / jitter.
-5. No transparency loss in black frame surfaces.
-6. If clean, process the full ~4.7 s clip and composite on pure white.
+1. Preserve fine object geometry, transparent/glossy regions and edge detail.
+2. Avoid foreground transparency loss and background spill.
+3. Maintain stable masks through motion.
+4. Produce production-usable alpha output.
+5. Verify a short representative clip before full-video processing.
 
 Promotion remains blocked until this benchmark passes.
 
@@ -61,7 +60,7 @@ Why it matters:
 
 Likely role:
 
-Use as a high-resolution product/still remover and as an edge-refinement candidate if BEN2 gives good temporal object retention but imperfect matte boundaries.
+Use as a high-resolution product/still remover and as an edge-refinement candidate when a temporal segmentation layer gives good object retention but imperfect matte boundaries.
 
 ### Cutie
 
@@ -75,7 +74,7 @@ Why it matters:
 - follow-up to XMem
 - designed for better consistency, robustness and speed
 - accepts an initial object mask and propagates it through video
-- suitable for the exact failure mode seen with independent SAM3 masks: temporal silhouette drift
+- useful where independent frame segmentation causes temporal silhouette drift
 
 Likely role:
 
@@ -118,7 +117,7 @@ Why it matters:
 
 Boundary:
 
-Do not assume rembg frame-by-frame processing is temporally stable enough for fold-motion video without a dedicated propagation layer.
+Do not assume frame-by-frame processing is temporally stable enough for motion video without a dedicated propagation layer.
 
 ## PUSH / reference workstation
 
@@ -142,7 +141,7 @@ Current repository integrates a broad removal / segmentation toolbox including:
 - mask enhancement / extraction / conversion utilities
 - Lucida, described by the project as a BiRefNet fine-tune for transparent objects, camouflage, text/logos, glow/VFX and illustrations
 
-The Lucida direction is particularly relevant to glossy / transparent eyewear and other difficult catalog objects.
+The Lucida direction is especially relevant to glossy / transparent products and other difficult catalog objects.
 
 Boundary:
 
@@ -166,7 +165,7 @@ Classification: RETAIN / REFERENCE — INTERACTIVE VIDEO ROTOSCOPING / MASK BOOT
 
 Useful for generating or correcting first-frame / seed masks and interactive tracking workflows.
 
-## WATCH / not core for object-product removal
+## WATCH / not core for general product removal
 
 ### MatAnyone / MatAnyone 2
 
@@ -182,41 +181,39 @@ Strengths:
 - foreground + alpha video outputs
 - soft matte emphasis rather than segmentation-like hard boundaries
 
-Reasons not to make it core for AP eyewear:
+Reasons not to make it core for general product removal:
 
 - official scope is human video matting
-- object-product footage is out of its intended domain
+- object-product footage is outside its intended domain
 - S-Lab license permits non-commercial redistribution/use by default; commercial redistribution/use requires permission
 
-## SKIP for current AP eyewear benchmark
+## SKIP for general product-object priority
 
 ### RobustVideoMatting
 
 Reason:
-High-quality temporal matting, but explicitly designed around human video matting. Wrong first-choice domain for glossy eyewear product motion.
+High-quality temporal matting, but explicitly designed around human video matting. Not the first-choice domain for product-object motion.
 
 ### BackgroundMattingV2
 
 Reason:
-Human-focused matting and assumes background/reference conditions that do not match the current AP source clip.
+Human-focused matting and background/reference assumptions make it less reusable for arbitrary product footage.
 
 ### MODNet
 
 Existing stack status: KEEP AS PORTRAIT-MATTING REFERENCE
 
 Reason:
-Useful real-time portrait matting implementation and custom-video pipeline, but explicitly portrait/human oriented. Not the preferred engine for product eyewear.
+Useful real-time portrait matting implementation and custom-video pipeline, but explicitly portrait/human oriented.
 
-## Current implementation decision
+## Benchmark order
 
-Immediate benchmark order:
-
-1. BEN2 on the existing 1.5 s black fold clip.
+1. BEN2 on a short representative product/object video clip.
 2. If object retention is good but temporal stability is weak, introduce Cutie propagation.
 3. If temporal tracking is good but edges are still rough, benchmark BiRefNet / HR-matting refinement.
 4. Evaluate Lucida through ComfyUI-RMBG for transparent/glossy-object edge cases.
-5. Only after a clean 1.5 s result should the full ~4.7 s black motion be processed.
-6. Reuse the resulting mask sequence for color variants only when frame geometry/timing is proven identical.
+5. Promote only after reproducible short-clip acceptance tests.
+6. Keep FFmpeg as the final compositing/encoding layer.
 
 ## Admission state
 
