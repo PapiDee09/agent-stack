@@ -77,7 +77,27 @@
       "verified": true,
       "dependency_policy": "safe_default",
       "mirror_eligibility": "legal",
-      "sync_policy": "auto"
+      "sync_policy": "none",
+      "lifecycle_status": "quarantined_pending_removal_approval",
+      "quarantine": {
+        "proposed_at": "2026-09-06",
+        "decision": "pending_user_approval",
+        "original_tier": "reference",
+        "original_sync_policy": "auto",
+        "replacement": "Kimi Code",
+        "signals": [
+          {
+            "type": "upstream_wind_down",
+            "evidence": "MoonshotAI/kimi-cli README states that Kimi CLI is evolving into Kimi Code CLI and will be gradually wound down."
+          },
+          {
+            "type": "superseded_in_stack",
+            "evidence": "Kimi Code already exists as a core runtime in this registry while Kimi CLI is explicitly labeled Legacy and reference-tier."
+          }
+        ],
+        "migration": "Install Kimi Code CLI; upstream states configuration and sessions migrate automatically.",
+        "removal_scope": "Registry removal and fork archival or deletion require explicit user approval."
+      }
     },
     {
       "name": "Anthropic Agent Skills",
