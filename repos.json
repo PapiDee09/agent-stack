@@ -88,7 +88,7 @@
         "signals": [
           {
             "type": "canonical_upstream_archived",
-            "evidence": "MoonshotAI archived MoonshotAI/kimi-cli on 2026-09-22 after the 2026-09-21 retirement commit and migration-only 1.51.0 release directed users to Kimi Code CLI."
+            "evidence": "GitHub reports MoonshotAI/kimi-cli archived as of 2026-09-23; the 2026-09-21 retirement commit and migration-only 1.51.0 release direct users to Kimi Code CLI."
           },
           {
             "type": "superseded_in_stack",
