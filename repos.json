@@ -39,9 +39,9 @@
       "license": "Apache-2.0",
       "mirror_policy": "fork_or_mirror",
       "verified": true,
-      "dependency_policy": "safe_default",
+      "dependency_policy": "review_required",
       "mirror_eligibility": "legal",
-      "sync_policy": "auto"
+      "sync_policy": "review"
     },
     {
       "name": "Claude Code",
@@ -63,9 +63,9 @@
       "license": "MIT",
       "mirror_policy": "fork_or_mirror",
       "verified": true,
-      "dependency_policy": "safe_default",
+      "dependency_policy": "review_required",
       "mirror_eligibility": "legal",
-      "sync_policy": "auto"
+      "sync_policy": "manual"
     },
     {
       "name": "Kimi CLI Legacy",
