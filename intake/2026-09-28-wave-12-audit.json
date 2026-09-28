@@ -1,0 +1,30 @@
+{
+  "date": "2026-09-28",
+  "wave": 12,
+  "owned_before": 279,
+  "owned_after": 289,
+  "created_count": 10,
+  "registry_before": 306,
+  "registry_after": 317,
+  "created": [
+    "evidently",
+    "deepeval",
+    "trulens",
+    "openlit",
+    "uptrain",
+    "prompttools",
+    "weave",
+    "langkit",
+    "garak",
+    "AIF360"
+  ],
+  "held": [
+    {
+      "name": "Phoenix",
+      "upstream": "https://github.com/Arize-ai/phoenix",
+      "license": "Elastic-2.0",
+      "disposition": "registered_reference_only",
+      "note": "Upstream is ELv2; do not treat as normal public mirror."
+    }
+  ]
+}
