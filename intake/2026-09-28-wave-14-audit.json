@@ -1,0 +1,30 @@
+{
+  "date": "2026-09-28",
+  "wave": 14,
+  "owned_before": 299,
+  "owned_after": 312,
+  "created_count": 13,
+  "registry_before": 328,
+  "registry_after": 341,
+  "created": [
+    "https://github.com/release-drafter/release-drafter",
+    "https://github.com/semantic-release/semantic-release",
+    "https://github.com/changesets/changesets",
+    "https://github.com/googleapis/release-please",
+    "https://github.com/goreleaser/goreleaser",
+    "https://github.com/actions/runner",
+    "https://github.com/woodpecker-ci/woodpecker",
+    "https://github.com/tektoncd/pipeline",
+    "https://github.com/tektoncd/chains",
+    "https://github.com/slsa-framework/slsa-github-generator",
+    "https://github.com/sigstore/rekor",
+    "https://github.com/sigstore/fulcio",
+    "https://github.com/CycloneDX/cyclonedx-cli"
+  ],
+  "unresolved": [
+    {
+      "upstream": "https://github.com/actions/actions-runner-controller",
+      "reason": "initial API/upstream check failed during local wave; canonical upstream later verified live and unarchived"
+    }
+  ]
+}
