@@ -1,0 +1,28 @@
+{
+  "date": "2026-09-28",
+  "wave": 13,
+  "status": "partial_due_to_transient_github_connectivity",
+  "owned_before_reported": 289,
+  "owned_after_reported": 0,
+  "note": "The final count failed when api.github.com became unreachable. The -289 delta is invalid and does not indicate deletions.",
+  "verified_created": [
+    "google/osv-scanner",
+    "anchore/syft",
+    "anchore/grype"
+  ],
+  "registered_review_required": [
+    "google/osv-scanner",
+    "anchore/syft",
+    "anchore/grype",
+    "semgrep/semgrep"
+  ],
+  "retry_candidates": [
+    "sigstore/cosign",
+    "ossf/scorecard",
+    "dependency-check/DependencyCheck",
+    "PyCQA/bandit",
+    "bridgecrewio/checkov",
+    "aquasecurity/tfsec",
+    "microsoft/sbom-tool"
+  ]
+}

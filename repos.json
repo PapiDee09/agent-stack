@@ -3834,6 +3834,54 @@
       "dependency_policy": "review_required",
       "mirror_eligibility": "reference_only",
       "sync_policy": "none"
+    },
+    {
+      "name": "osv-scanner",
+      "category": "security-supply-chain",
+      "tier": "optional",
+      "upstream": "https://github.com/google/osv-scanner",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror_preserve_notices",
+      "verified": false,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
+    },
+    {
+      "name": "syft",
+      "category": "security-supply-chain",
+      "tier": "optional",
+      "upstream": "https://github.com/anchore/syft",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror_preserve_notices",
+      "verified": false,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
+    },
+    {
+      "name": "grype",
+      "category": "security-supply-chain",
+      "tier": "optional",
+      "upstream": "https://github.com/anchore/grype",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror_preserve_notices",
+      "verified": false,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
+    },
+    {
+      "name": "semgrep",
+      "category": "code-security",
+      "tier": "optional",
+      "upstream": "https://github.com/semgrep/semgrep",
+      "license": "LGPL-2.1",
+      "mirror_policy": "mirror_with_copyleft_review",
+      "verified": false,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
     }
   ]
 }
