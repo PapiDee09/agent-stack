@@ -4674,6 +4674,78 @@
       "dependency_policy": "review_required",
       "mirror_eligibility": "legal",
       "sync_policy": "review"
+    },
+    {
+      "name": "PgBouncer",
+      "category": "data-platform",
+      "tier": "optional",
+      "upstream": "https://github.com/pgbouncer/pgbouncer",
+      "license": "ISC",
+      "mirror_policy": "fork_or_mirror_preserve_notices",
+      "verified": true,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
+    },
+    {
+      "name": "pgBackRest",
+      "category": "data-platform",
+      "tier": "optional",
+      "upstream": "https://github.com/pgbackrest/pgbackrest",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror_preserve_notices",
+      "verified": true,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
+    },
+    {
+      "name": "PgCat",
+      "category": "data-platform",
+      "tier": "optional",
+      "upstream": "https://github.com/postgresml/pgcat",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror_preserve_notices",
+      "verified": true,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
+    },
+    {
+      "name": "ScyllaDB",
+      "category": "data-platform",
+      "tier": "reference",
+      "upstream": "https://github.com/scylladb/scylladb",
+      "license": "SCYLLADB_SOURCE_AVAILABLE_1.1",
+      "mirror_policy": "reference_only",
+      "verified": true,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "reference_only",
+      "sync_policy": "none"
+    },
+    {
+      "name": "EMQX",
+      "category": "messaging",
+      "tier": "reference",
+      "upstream": "https://github.com/emqx/emqx",
+      "license": "BUSINESS_SOURCE_LICENSE_1.1_CHANGE_TO_APACHE-2.0",
+      "mirror_policy": "reference_only",
+      "verified": true,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "reference_only",
+      "sync_policy": "none"
+    },
+    {
+      "name": "Redis",
+      "category": "data-platform",
+      "tier": "optional",
+      "upstream": "https://github.com/redis/redis",
+      "license": "RSALv2_OR_SSPLv1_OR_AGPLv3_FOR_REDIS_8_PLUS",
+      "mirror_policy": "selective_mirror_with_license_election_and_version_pin",
+      "verified": true,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "selective",
+      "sync_policy": "review"
     }
   ]
 }
