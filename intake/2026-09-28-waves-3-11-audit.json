@@ -1,0 +1,827 @@
+{
+  "date": "2026-09-28",
+  "source_intake": "intake/2026-09-28-waves-3-11.json",
+  "registry_before": 151,
+  "promoted_count": 135,
+  "registry_after": 306,
+  "promotion_mode": "optional_review_required_not_activated",
+  "promoted": [
+    {
+      "name": "headroom",
+      "upstream": "https://github.com/headroomlabs-ai/headroom",
+      "source_wave": 4,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "paperthin",
+      "upstream": "https://github.com/LilMGenius/paperthin",
+      "source_wave": 4,
+      "license": "MIT"
+    },
+    {
+      "name": "multi-agent-coding-system",
+      "upstream": "https://github.com/Danau5tin/multi-agent-coding-system",
+      "source_wave": 4,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "BEN2",
+      "upstream": "https://github.com/PramaLLC/BEN2",
+      "source_wave": 4,
+      "license": "MIT"
+    },
+    {
+      "name": "Wan2.2",
+      "upstream": "https://github.com/Wan-Video/Wan2.2",
+      "source_wave": 4,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "InstantMesh",
+      "upstream": "https://github.com/TencentARC/InstantMesh",
+      "source_wave": 4,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "Grounded-SAM-2",
+      "upstream": "https://github.com/IDEA-Research/Grounded-SAM-2",
+      "source_wave": 4,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "GroundingDINO",
+      "upstream": "https://github.com/IDEA-Research/GroundingDINO",
+      "source_wave": 4,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "segment-anything",
+      "upstream": "https://github.com/facebookresearch/segment-anything",
+      "source_wave": 4,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "Depth-Anything-V2",
+      "upstream": "https://github.com/DepthAnything/Depth-Anything-V2",
+      "source_wave": 4,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "comfyui_controlnet_aux",
+      "upstream": "https://github.com/Fannovel16/comfyui_controlnet_aux",
+      "source_wave": 4,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "rgthree-comfy",
+      "upstream": "https://github.com/rgthree/rgthree-comfy",
+      "source_wave": 4,
+      "license": "MIT"
+    },
+    {
+      "name": "comfy_mtb",
+      "upstream": "https://github.com/melMass/comfy_mtb",
+      "source_wave": 4,
+      "license": "MIT"
+    },
+    {
+      "name": "vtracer",
+      "upstream": "https://github.com/visioncortex/vtracer",
+      "source_wave": 5,
+      "license": "MIT"
+    },
+    {
+      "name": "MobileSAM",
+      "upstream": "https://github.com/ChaoningZhang/MobileSAM",
+      "source_wave": 5,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "Grounded-Segment-Anything",
+      "upstream": "https://github.com/IDEA-Research/Grounded-Segment-Anything",
+      "source_wave": 5,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "dinov2",
+      "upstream": "https://github.com/facebookresearch/dinov2",
+      "source_wave": 5,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "mmdetection",
+      "upstream": "https://github.com/open-mmlab/mmdetection",
+      "source_wave": 5,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "mmsegmentation",
+      "upstream": "https://github.com/open-mmlab/mmsegmentation",
+      "source_wave": 5,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "mmtracking",
+      "upstream": "https://github.com/open-mmlab/mmtracking",
+      "source_wave": 5,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "mmpose",
+      "upstream": "https://github.com/open-mmlab/mmpose",
+      "source_wave": 5,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "mmengine",
+      "upstream": "https://github.com/open-mmlab/mmengine",
+      "source_wave": 5,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "mmcv",
+      "upstream": "https://github.com/open-mmlab/mmcv",
+      "source_wave": 5,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "mmagic",
+      "upstream": "https://github.com/open-mmlab/mmagic",
+      "source_wave": 5,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "detrex",
+      "upstream": "https://github.com/IDEA-Research/detrex",
+      "source_wave": 5,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "DINO",
+      "upstream": "https://github.com/IDEA-Research/DINO",
+      "source_wave": 5,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "CLIP",
+      "upstream": "https://github.com/openai/CLIP",
+      "source_wave": 5,
+      "license": "MIT"
+    },
+    {
+      "name": "SwinIR",
+      "upstream": "https://github.com/JingyunLiang/SwinIR",
+      "source_wave": 5,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "SCUNet",
+      "upstream": "https://github.com/cszn/SCUNet",
+      "source_wave": 5,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "diffusers",
+      "upstream": "https://github.com/huggingface/diffusers",
+      "source_wave": 6,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "transformers",
+      "upstream": "https://github.com/huggingface/transformers",
+      "source_wave": 6,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "peft",
+      "upstream": "https://github.com/huggingface/peft",
+      "source_wave": 6,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "accelerate",
+      "upstream": "https://github.com/huggingface/accelerate",
+      "source_wave": 6,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "langchain",
+      "upstream": "https://github.com/langchain-ai/langchain",
+      "source_wave": 6,
+      "license": "MIT"
+    },
+    {
+      "name": "langgraph",
+      "upstream": "https://github.com/langchain-ai/langgraph",
+      "source_wave": 6,
+      "license": "MIT"
+    },
+    {
+      "name": "llama_index",
+      "upstream": "https://github.com/run-llama/llama_index",
+      "source_wave": 6,
+      "license": "MIT"
+    },
+    {
+      "name": "crewAI",
+      "upstream": "https://github.com/crewAIInc/crewAI",
+      "source_wave": 6,
+      "license": "MIT"
+    },
+    {
+      "name": "semantic-kernel",
+      "upstream": "https://github.com/microsoft/semantic-kernel",
+      "source_wave": 6,
+      "license": "MIT"
+    },
+    {
+      "name": "browser-use",
+      "upstream": "https://github.com/browser-use/browser-use",
+      "source_wave": 6,
+      "license": "MIT"
+    },
+    {
+      "name": "playwright-mcp",
+      "upstream": "https://github.com/microsoft/playwright-mcp",
+      "source_wave": 6,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "python-sdk",
+      "upstream": "https://github.com/modelcontextprotocol/python-sdk",
+      "source_wave": 6,
+      "license": "MIT"
+    },
+    {
+      "name": "openai-agents-python",
+      "upstream": "https://github.com/openai/openai-agents-python",
+      "source_wave": 6,
+      "license": "MIT"
+    },
+    {
+      "name": "openai-cookbook",
+      "upstream": "https://github.com/openai/openai-cookbook",
+      "source_wave": 6,
+      "license": "MIT"
+    },
+    {
+      "name": "uv",
+      "upstream": "https://github.com/astral-sh/uv",
+      "source_wave": 6,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "ruff",
+      "upstream": "https://github.com/astral-sh/ruff",
+      "source_wave": 6,
+      "license": "MIT"
+    },
+    {
+      "name": "pydantic-ai",
+      "upstream": "https://github.com/pydantic/pydantic-ai",
+      "source_wave": 6,
+      "license": "MIT"
+    },
+    {
+      "name": "prefect",
+      "upstream": "https://github.com/PrefectHQ/prefect",
+      "source_wave": 6,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "dagster",
+      "upstream": "https://github.com/dagster-io/dagster",
+      "source_wave": 6,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "swarm",
+      "upstream": "https://github.com/openai/swarm",
+      "source_wave": 7,
+      "license": "MIT"
+    },
+    {
+      "name": "langsmith-sdk",
+      "upstream": "https://github.com/langchain-ai/langsmith-sdk",
+      "source_wave": 7,
+      "license": "MIT"
+    },
+    {
+      "name": "graphrag",
+      "upstream": "https://github.com/microsoft/graphrag",
+      "source_wave": 7,
+      "license": "MIT"
+    },
+    {
+      "name": "TypeChat",
+      "upstream": "https://github.com/microsoft/TypeChat",
+      "source_wave": 7,
+      "license": "MIT"
+    },
+    {
+      "name": "PromptWizard",
+      "upstream": "https://github.com/microsoft/PromptWizard",
+      "source_wave": 7,
+      "license": "MIT"
+    },
+    {
+      "name": "JARVIS",
+      "upstream": "https://github.com/microsoft/JARVIS",
+      "source_wave": 7,
+      "license": "MIT"
+    },
+    {
+      "name": "generative-ai-for-beginners",
+      "upstream": "https://github.com/microsoft/generative-ai-for-beginners",
+      "source_wave": 7,
+      "license": "MIT"
+    },
+    {
+      "name": "ai-agents-for-beginners",
+      "upstream": "https://github.com/microsoft/ai-agents-for-beginners",
+      "source_wave": 7,
+      "license": "MIT"
+    },
+    {
+      "name": "mcp-for-beginners",
+      "upstream": "https://github.com/microsoft/mcp-for-beginners",
+      "source_wave": 7,
+      "license": "MIT"
+    },
+    {
+      "name": "E2B",
+      "upstream": "https://github.com/e2b-dev/E2B",
+      "source_wave": 7,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "modal-client",
+      "upstream": "https://github.com/modal-labs/modal-client",
+      "source_wave": 7,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "dagger",
+      "upstream": "https://github.com/dagger/dagger",
+      "source_wave": 7,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "sops",
+      "upstream": "https://github.com/getsops/sops",
+      "source_wave": 7,
+      "license": "MPL-2.0"
+    },
+    {
+      "name": "openfga",
+      "upstream": "https://github.com/openfga/openfga",
+      "source_wave": 7,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "keto",
+      "upstream": "https://github.com/ory/keto",
+      "source_wave": 7,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "prometheus",
+      "upstream": "https://github.com/prometheus/prometheus",
+      "source_wave": 7,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "jaeger",
+      "upstream": "https://github.com/jaegertracing/jaeger",
+      "source_wave": 7,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "opentelemetry-python",
+      "upstream": "https://github.com/open-telemetry/opentelemetry-python",
+      "source_wave": 7,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "opentelemetry-js",
+      "upstream": "https://github.com/open-telemetry/opentelemetry-js",
+      "source_wave": 7,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "apm-agent-python",
+      "upstream": "https://github.com/elastic/apm-agent-python",
+      "source_wave": 7,
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "moby",
+      "upstream": "https://github.com/moby/moby",
+      "source_wave": 7,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "containerd",
+      "upstream": "https://github.com/containerd/containerd",
+      "source_wave": 7,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "compose",
+      "upstream": "https://github.com/docker/compose",
+      "source_wave": 7,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "helm",
+      "upstream": "https://github.com/helm/helm",
+      "source_wave": 7,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "kustomize",
+      "upstream": "https://github.com/kubernetes-sigs/kustomize",
+      "source_wave": 7,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "crossplane",
+      "upstream": "https://github.com/crossplane/crossplane",
+      "source_wave": 7,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "tflint",
+      "upstream": "https://github.com/terraform-linters/tflint",
+      "source_wave": 7,
+      "license": "MPL-2.0"
+    },
+    {
+      "name": "opentofu",
+      "upstream": "https://github.com/opentofu/opentofu",
+      "source_wave": 7,
+      "license": "MPL-2.0"
+    },
+    {
+      "name": "act",
+      "upstream": "https://github.com/nektos/act",
+      "source_wave": 7,
+      "license": "MIT"
+    },
+    {
+      "name": "earthly",
+      "upstream": "https://github.com/earthly/earthly",
+      "source_wave": 7,
+      "license": "MPL-2.0"
+    },
+    {
+      "name": "pack",
+      "upstream": "https://github.com/buildpacks/pack",
+      "source_wave": 7,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "tiktoken",
+      "upstream": "https://github.com/openai/tiktoken",
+      "source_wave": 8,
+      "license": "MIT"
+    },
+    {
+      "name": "gpt-oss",
+      "upstream": "https://github.com/openai/gpt-oss",
+      "source_wave": 8,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "dspy",
+      "upstream": "https://github.com/stanfordnlp/dspy",
+      "source_wave": 8,
+      "license": "MIT"
+    },
+    {
+      "name": "guardrails",
+      "upstream": "https://github.com/guardrails-ai/guardrails",
+      "source_wave": 8,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "haystack",
+      "upstream": "https://github.com/deepset-ai/haystack",
+      "source_wave": 8,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "mem0",
+      "upstream": "https://github.com/mem0ai/mem0",
+      "source_wave": 8,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "agno",
+      "upstream": "https://github.com/agno-agi/agno",
+      "source_wave": 8,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "camel",
+      "upstream": "https://github.com/camel-ai/camel",
+      "source_wave": 8,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "adk-python",
+      "upstream": "https://github.com/google/adk-python",
+      "source_wave": 8,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "adk-js",
+      "upstream": "https://github.com/google/adk-js",
+      "source_wave": 8,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "gemini-cli",
+      "upstream": "https://github.com/google-gemini/gemini-cli",
+      "source_wave": 8,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "generative-ai",
+      "upstream": "https://github.com/GoogleCloudPlatform/generative-ai",
+      "source_wave": 8,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "openai-python",
+      "upstream": "https://github.com/openai/openai-python",
+      "source_wave": 9,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "openai-node",
+      "upstream": "https://github.com/openai/openai-node",
+      "source_wave": 9,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "openai-go",
+      "upstream": "https://github.com/openai/openai-go",
+      "source_wave": 9,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "openai-java",
+      "upstream": "https://github.com/openai/openai-java",
+      "source_wave": 9,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "anthropic-sdk-python",
+      "upstream": "https://github.com/anthropics/anthropic-sdk-python",
+      "source_wave": 9,
+      "license": "MIT"
+    },
+    {
+      "name": "anthropic-sdk-typescript",
+      "upstream": "https://github.com/anthropics/anthropic-sdk-typescript",
+      "source_wave": 9,
+      "license": "MIT"
+    },
+    {
+      "name": "python-genai",
+      "upstream": "https://github.com/googleapis/python-genai",
+      "source_wave": 9,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "js-genai",
+      "upstream": "https://github.com/googleapis/js-genai",
+      "source_wave": 9,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "client-python",
+      "upstream": "https://github.com/mistralai/client-python",
+      "source_wave": 9,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "client-ts",
+      "upstream": "https://github.com/mistralai/client-ts",
+      "source_wave": 9,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "cohere-python",
+      "upstream": "https://github.com/cohere-ai/cohere-python",
+      "source_wave": 9,
+      "license": "MIT"
+    },
+    {
+      "name": "cohere-typescript",
+      "upstream": "https://github.com/cohere-ai/cohere-typescript",
+      "source_wave": 9,
+      "license": "MIT"
+    },
+    {
+      "name": "ollama",
+      "upstream": "https://github.com/ollama/ollama",
+      "source_wave": 9,
+      "license": "MIT"
+    },
+    {
+      "name": "llama.cpp",
+      "upstream": "https://github.com/ggerganov/llama.cpp",
+      "source_wave": 9,
+      "license": "MIT"
+    },
+    {
+      "name": "FastChat",
+      "upstream": "https://github.com/lm-sys/FastChat",
+      "source_wave": 9,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "sglang",
+      "upstream": "https://github.com/sgl-project/sglang",
+      "source_wave": 9,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "langmem",
+      "upstream": "https://github.com/langchain-ai/langmem",
+      "source_wave": 9,
+      "license": "MIT"
+    },
+    {
+      "name": "deepagents",
+      "upstream": "https://github.com/langchain-ai/deepagents",
+      "source_wave": 9,
+      "license": "MIT"
+    },
+    {
+      "name": "agent-framework",
+      "upstream": "https://github.com/microsoft/agent-framework",
+      "source_wave": 9,
+      "license": "MIT"
+    },
+    {
+      "name": "milvus",
+      "upstream": "https://github.com/milvus-io/milvus",
+      "source_wave": 10,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "chroma",
+      "upstream": "https://github.com/chroma-core/chroma",
+      "source_wave": 10,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "duckdb",
+      "upstream": "https://github.com/duckdb/duckdb",
+      "source_wave": 10,
+      "license": "MIT"
+    },
+    {
+      "name": "clickhouse",
+      "upstream": "https://github.com/clickhouse/clickhouse",
+      "source_wave": 10,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "realtime",
+      "upstream": "https://github.com/supabase/realtime",
+      "source_wave": 10,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "storage",
+      "upstream": "https://github.com/supabase/storage",
+      "source_wave": 10,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "pg_net",
+      "upstream": "https://github.com/supabase/pg_net",
+      "source_wave": 10,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "pg_graphql",
+      "upstream": "https://github.com/supabase/pg_graphql",
+      "source_wave": 10,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "graphql-engine",
+      "upstream": "https://github.com/hasura/graphql-engine",
+      "source_wave": 10,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "drizzle-orm",
+      "upstream": "https://github.com/drizzle-team/drizzle-orm",
+      "source_wave": 10,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "payload",
+      "upstream": "https://github.com/payloadcms/payload",
+      "source_wave": 10,
+      "license": "MIT"
+    },
+    {
+      "name": "appwrite",
+      "upstream": "https://github.com/appwrite/appwrite",
+      "source_wave": 10,
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "sdk-python",
+      "upstream": "https://github.com/temporalio/sdk-python",
+      "source_wave": 11,
+      "license": "MIT"
+    },
+    {
+      "name": "sdk-typescript",
+      "upstream": "https://github.com/temporalio/sdk-typescript",
+      "source_wave": 11,
+      "license": "MIT"
+    },
+    {
+      "name": "airflow",
+      "upstream": "https://github.com/apache/airflow",
+      "source_wave": 11,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "kafka",
+      "upstream": "https://github.com/apache/kafka",
+      "source_wave": 11,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "nats.py",
+      "upstream": "https://github.com/nats-io/nats.py",
+      "source_wave": 11,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "nats.js",
+      "upstream": "https://github.com/nats-io/nats.js",
+      "source_wave": 11,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "polars",
+      "upstream": "https://github.com/pola-rs/polars",
+      "source_wave": 11,
+      "license": "MIT"
+    },
+    {
+      "name": "arrow",
+      "upstream": "https://github.com/apache/arrow",
+      "source_wave": 11,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "delta",
+      "upstream": "https://github.com/delta-io/delta",
+      "source_wave": 11,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "iceberg",
+      "upstream": "https://github.com/apache/iceberg",
+      "source_wave": 11,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "trino",
+      "upstream": "https://github.com/trinodb/trino",
+      "source_wave": 11,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "questdb",
+      "upstream": "https://github.com/questdb/questdb",
+      "source_wave": 11,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "influxdb",
+      "upstream": "https://github.com/influxdata/influxdb",
+      "source_wave": 11,
+      "license": "Apache-2.0"
+    }
+  ],
+  "held_count": 0,
+  "holds": [],
+  "license_resolution": {
+    "resolved_count": 20,
+    "note": "All remaining Wave 3 UNKNOWN license records were resolved from upstream license files. Copyleft entries remain review_required; model/weight or mixed-license projects use selective/code-only mirror policies.",
+    "resolved_at": "2026-09-28"
+  }
+}
