@@ -1,0 +1,42 @@
+{
+  "date": "2026-09-28",
+  "wave": 16,
+  "owned_before": 325,
+  "owned_after": 356,
+  "created_count": 31,
+  "registry_after": 393,
+  "created_count_registered": 31,
+  "resolved_holds": [
+    {
+      "name": "PgBouncer",
+      "license": "ISC",
+      "disposition": "registered_optional_review_required"
+    },
+    {
+      "name": "pgBackRest",
+      "license": "MIT",
+      "disposition": "registered_optional_review_required"
+    },
+    {
+      "name": "PgCat",
+      "canonical_upstream": "https://github.com/postgresml/pgcat",
+      "license": "MIT",
+      "disposition": "registered_optional_review_required; local wave used wrong owner pgcat/pgcat"
+    },
+    {
+      "name": "ScyllaDB",
+      "license": "ScyllaDB Software License Agreement 1.1",
+      "disposition": "reference_only"
+    },
+    {
+      "name": "EMQX",
+      "license": "Business Source License 1.1",
+      "disposition": "reference_only"
+    },
+    {
+      "name": "Redis",
+      "license": "RSALv2 OR SSPLv1 OR AGPLv3 for Redis 8+",
+      "disposition": "selective_review_required_with_license_election_and_version_pin"
+    }
+  ]
+}
