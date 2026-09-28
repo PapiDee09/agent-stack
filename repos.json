@@ -4278,6 +4278,30 @@
       "dependency_policy": "review_required",
       "mirror_eligibility": "legal",
       "sync_policy": "review"
+    },
+    {
+      "name": "pyright",
+      "category": "type-checking",
+      "tier": "optional",
+      "upstream": "https://github.com/microsoft/pyright",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror_preserve_notices",
+      "verified": false,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
+    },
+    {
+      "name": "bun",
+      "category": "dev-runtime",
+      "tier": "optional",
+      "upstream": "https://github.com/oven-sh/bun",
+      "license": "MIT_CORE_WITH_LGPL2_AND_THIRD_PARTY_LINKED_LIBRARIES",
+      "mirror_policy": "mirror_with_license_notes",
+      "verified": false,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "selective",
+      "sync_policy": "review"
     }
   ]
 }
