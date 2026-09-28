@@ -1,0 +1,35 @@
+{
+  "date": "2026-09-28",
+  "wave": 15,
+  "owned_before": 312,
+  "owned_after": 325,
+  "created_count": 13,
+  "registry_after": 356,
+  "created": [
+    "actions/actions-runner-controller",
+    "pnpm/pnpm",
+    "denoland/deno",
+    "vercel/turborepo",
+    "nrwl/nx",
+    "biomejs/biome",
+    "eslint/eslint",
+    "prettier/prettier",
+    "astral-sh/ty",
+    "evanw/esbuild",
+    "swc-project/swc",
+    "parcel-bundler/parcel",
+    "vitejs/vite"
+  ],
+  "resolved_holds": [
+    {
+      "upstream": "https://github.com/microsoft/pyright",
+      "license": "MIT",
+      "disposition": "registered_optional_review_required"
+    },
+    {
+      "upstream": "https://github.com/oven-sh/bun",
+      "license": "MIT core; statically linked LGPL-2 JavaScriptCore/WebKit plus other third-party libraries",
+      "disposition": "registered_selective_review_required"
+    }
+  ]
+}
