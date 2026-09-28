@@ -1,0 +1,19 @@
+{
+  "date": "2026-09-28",
+  "wave": "13B",
+  "owned_before": 292,
+  "owned_after": 299,
+  "created_count": 7,
+  "registry_before": 321,
+  "registry_after": 328,
+  "created": [
+    "https://github.com/sigstore/cosign",
+    "https://github.com/ossf/scorecard",
+    "https://github.com/dependency-check/DependencyCheck",
+    "https://github.com/PyCQA/bandit",
+    "https://github.com/bridgecrewio/checkov",
+    "https://github.com/aquasecurity/tfsec",
+    "https://github.com/microsoft/sbom-tool"
+  ],
+  "promotion_mode": "optional_review_required_not_activated"
+}

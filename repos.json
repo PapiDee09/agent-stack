@@ -3882,6 +3882,90 @@
       "dependency_policy": "review_required",
       "mirror_eligibility": "legal",
       "sync_policy": "review"
+    },
+    {
+      "name": "cosign",
+      "category": "security-supply-chain",
+      "tier": "optional",
+      "upstream": "https://github.com/sigstore/cosign",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror_preserve_notices",
+      "verified": false,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
+    },
+    {
+      "name": "scorecard",
+      "category": "security-supply-chain",
+      "tier": "optional",
+      "upstream": "https://github.com/ossf/scorecard",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror_preserve_notices",
+      "verified": false,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
+    },
+    {
+      "name": "DependencyCheck",
+      "category": "security-supply-chain",
+      "tier": "optional",
+      "upstream": "https://github.com/dependency-check/DependencyCheck",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror_preserve_notices",
+      "verified": false,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
+    },
+    {
+      "name": "bandit",
+      "category": "code-security",
+      "tier": "optional",
+      "upstream": "https://github.com/PyCQA/bandit",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror_preserve_notices",
+      "verified": false,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
+    },
+    {
+      "name": "checkov",
+      "category": "security-supply-chain",
+      "tier": "optional",
+      "upstream": "https://github.com/bridgecrewio/checkov",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror_preserve_notices",
+      "verified": false,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
+    },
+    {
+      "name": "tfsec",
+      "category": "security-supply-chain",
+      "tier": "optional",
+      "upstream": "https://github.com/aquasecurity/tfsec",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror_preserve_notices",
+      "verified": false,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
+    },
+    {
+      "name": "sbom-tool",
+      "category": "security-supply-chain",
+      "tier": "optional",
+      "upstream": "https://github.com/microsoft/sbom-tool",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror_preserve_notices",
+      "verified": false,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
     }
   ]
 }
