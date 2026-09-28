@@ -3,7 +3,7 @@
   "source_intake": "intake/2026-09-28-waves-3-11.json",
   "registry_before": 151,
   "promoted_count": 135,
-  "registry_after": 286,
+  "registry_after": 306,
   "promotion_mode": "optional_review_required_not_activated",
   "promoted": [
     {
@@ -817,127 +817,11 @@
       "license": "Apache-2.0"
     }
   ],
-  "held_count": 20,
-  "holds": [
-    {
-      "name": "reactive-resume",
-      "upstream": "https://github.com/reactive-resume/reactive-resume",
-      "source_wave": 3,
-      "reason": "license_unknown"
-    },
-    {
-      "name": "cobalt",
-      "upstream": "https://github.com/imputnet/cobalt",
-      "source_wave": 3,
-      "reason": "license_unknown"
-    },
-    {
-      "name": "gallery-dl",
-      "upstream": "https://github.com/mikf/gallery-dl",
-      "source_wave": 3,
-      "reason": "license_unknown"
-    },
-    {
-      "name": "rembg",
-      "upstream": "https://github.com/danielgatis/rembg",
-      "source_wave": 3,
-      "reason": "license_unknown"
-    },
-    {
-      "name": "Cutie",
-      "upstream": "https://github.com/hkchengrex/Cutie",
-      "source_wave": 3,
-      "reason": "license_unknown"
-    },
-    {
-      "name": "sam2",
-      "upstream": "https://github.com/facebookresearch/sam2",
-      "source_wave": 3,
-      "reason": "license_unknown"
-    },
-    {
-      "name": "InstantID",
-      "upstream": "https://github.com/instantX-research/InstantID",
-      "source_wave": 3,
-      "reason": "license_unknown"
-    },
-    {
-      "name": "DiffSynth-Studio",
-      "upstream": "https://github.com/modelscope/DiffSynth-Studio",
-      "source_wave": 3,
-      "reason": "license_unknown"
-    },
-    {
-      "name": "VACE",
-      "upstream": "https://github.com/ali-vilab/VACE",
-      "source_wave": 3,
-      "reason": "license_unknown"
-    },
-    {
-      "name": "searxng",
-      "upstream": "https://github.com/searxng/searxng",
-      "source_wave": 3,
-      "reason": "license_unknown"
-    },
-    {
-      "name": "BiRefNet",
-      "upstream": "https://github.com/ZhengPeng7/BiRefNet",
-      "source_wave": 3,
-      "reason": "license_unknown"
-    },
-    {
-      "name": "XMem",
-      "upstream": "https://github.com/hkchengrex/XMem",
-      "source_wave": 3,
-      "reason": "license_unknown"
-    },
-    {
-      "name": "Track-Anything",
-      "upstream": "https://github.com/gaomingqi/Track-Anything",
-      "source_wave": 3,
-      "reason": "license_unknown"
-    },
-    {
-      "name": "RobustVideoMatting",
-      "upstream": "https://github.com/PeterL1n/RobustVideoMatting",
-      "source_wave": 3,
-      "reason": "license_unknown"
-    },
-    {
-      "name": "ControlNet",
-      "upstream": "https://github.com/lllyasviel/ControlNet",
-      "source_wave": 3,
-      "reason": "license_unknown"
-    },
-    {
-      "name": "IP-Adapter",
-      "upstream": "https://github.com/tencent-ailab/IP-Adapter",
-      "source_wave": 3,
-      "reason": "license_unknown"
-    },
-    {
-      "name": "changedetection.io",
-      "upstream": "https://github.com/dgtlmoon/changedetection.io",
-      "source_wave": 3,
-      "reason": "license_unknown"
-    },
-    {
-      "name": "LibreTranslate",
-      "upstream": "https://github.com/LibreTranslate/LibreTranslate",
-      "source_wave": 3,
-      "reason": "license_unknown"
-    },
-    {
-      "name": "ComfyUI-WanVideoWrapper",
-      "upstream": "https://github.com/kijai/ComfyUI-WanVideoWrapper",
-      "source_wave": 3,
-      "reason": "license_unknown"
-    },
-    {
-      "name": "inference",
-      "upstream": "https://github.com/roboflow/inference",
-      "source_wave": 3,
-      "reason": "license_unknown"
-    }
-  ]
+  "held_count": 0,
+  "holds": [],
+  "license_resolution": {
+    "resolved_count": 20,
+    "note": "All remaining Wave 3 UNKNOWN license records were resolved from upstream license files. Copyleft entries remain review_required; model/weight or mixed-license projects use selective/code-only mirror policies.",
+    "resolved_at": "2026-09-28"
+  }
 }
