@@ -4746,6 +4746,78 @@
       "dependency_policy": "review_required",
       "mirror_eligibility": "selective",
       "sync_policy": "review"
+    },
+    {
+      "name": "infinite-skills",
+      "category": "agent-skills",
+      "tier": "optional",
+      "upstream": "https://github.com/Infinite-Labs-AI/infinite-skills",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror_preserve_notices",
+      "verified": false,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
+    },
+    {
+      "name": "webmcp-tools",
+      "category": "agent-tools",
+      "tier": "optional",
+      "upstream": "https://github.com/GoogleChromeLabs/webmcp-tools",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror_preserve_notices",
+      "verified": false,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
+    },
+    {
+      "name": "DeepSeek-V3",
+      "category": "model-code",
+      "tier": "optional",
+      "upstream": "https://github.com/deepseek-ai/DeepSeek-V3",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror_preserve_notices",
+      "verified": false,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
+    },
+    {
+      "name": "kokonutui",
+      "category": "ui-components",
+      "tier": "optional",
+      "upstream": "https://github.com/kokonut-labs/kokonutui",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror_preserve_notices",
+      "verified": false,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
+    },
+    {
+      "name": "AutoHedge",
+      "category": "finance-agents",
+      "tier": "optional",
+      "upstream": "https://github.com/The-Swarm-Corporation/AutoHedge",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror_preserve_notices",
+      "verified": false,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
+    },
+    {
+      "name": "FastAvatar",
+      "category": "avatar",
+      "tier": "optional",
+      "upstream": "https://github.com/hliang2/FastAvatar",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror_preserve_notices",
+      "verified": false,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
     }
   ]
 }
