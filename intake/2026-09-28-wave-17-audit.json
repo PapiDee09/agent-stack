@@ -1,0 +1,24 @@
+{
+  "date": "2026-09-28",
+  "wave": 17,
+  "owned_before": 356,
+  "owned_after": 362,
+  "created_count": 6,
+  "registry_after": 414,
+  "created": [
+    "Infinite-Labs-AI/infinite-skills",
+    "GoogleChromeLabs/webmcp-tools",
+    "deepseek-ai/DeepSeek-V3",
+    "kokonut-labs/kokonutui",
+    "The-Swarm-Corporation/AutoHedge",
+    "hliang2/FastAvatar"
+  ],
+  "license_resolved_count": 15,
+  "no_license_holds": [
+    "xiaoju111a/OpenLovart",
+    "webmcp/webmcp",
+    "by-appkittie/appkittie-openclaw-skill",
+    "gonzalodiez/cinematic-ad-director-pro"
+  ],
+  "note": "Repositories with no explicit upstream license remain HOLD and were not promoted."
+}
