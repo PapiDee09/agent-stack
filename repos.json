@@ -3702,6 +3702,138 @@
       "dependency_policy": "review_required",
       "mirror_eligibility": "selective",
       "sync_policy": "review"
+    },
+    {
+      "name": "evidently",
+      "category": "eval-observability",
+      "tier": "optional",
+      "upstream": "https://github.com/evidentlyai/evidently",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror_preserve_notices",
+      "verified": false,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
+    },
+    {
+      "name": "deepeval",
+      "category": "eval-observability",
+      "tier": "optional",
+      "upstream": "https://github.com/confident-ai/deepeval",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror_preserve_notices",
+      "verified": false,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
+    },
+    {
+      "name": "trulens",
+      "category": "eval-observability",
+      "tier": "optional",
+      "upstream": "https://github.com/truera/trulens",
+      "license": "MIT",
+      "mirror_policy": "fork_or_mirror_preserve_notices",
+      "verified": false,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
+    },
+    {
+      "name": "openlit",
+      "category": "eval-observability",
+      "tier": "optional",
+      "upstream": "https://github.com/openlit/openlit",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror_preserve_notices",
+      "verified": false,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
+    },
+    {
+      "name": "uptrain",
+      "category": "eval-observability",
+      "tier": "optional",
+      "upstream": "https://github.com/uptrain-ai/uptrain",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror_preserve_notices",
+      "verified": false,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
+    },
+    {
+      "name": "prompttools",
+      "category": "eval-observability",
+      "tier": "optional",
+      "upstream": "https://github.com/hegelai/prompttools",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror_preserve_notices",
+      "verified": false,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
+    },
+    {
+      "name": "weave",
+      "category": "eval-observability",
+      "tier": "optional",
+      "upstream": "https://github.com/wandb/weave",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror_preserve_notices",
+      "verified": false,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
+    },
+    {
+      "name": "langkit",
+      "category": "eval-observability",
+      "tier": "optional",
+      "upstream": "https://github.com/whylabs/langkit",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror_preserve_notices",
+      "verified": false,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
+    },
+    {
+      "name": "garak",
+      "category": "ai-security",
+      "tier": "optional",
+      "upstream": "https://github.com/NVIDIA/garak",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror_preserve_notices",
+      "verified": false,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
+    },
+    {
+      "name": "AIF360",
+      "category": "ai-governance",
+      "tier": "optional",
+      "upstream": "https://github.com/Trusted-AI/AIF360",
+      "license": "Apache-2.0",
+      "mirror_policy": "fork_or_mirror_preserve_notices",
+      "verified": false,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "legal",
+      "sync_policy": "review"
+    },
+    {
+      "name": "Phoenix",
+      "category": "eval-observability",
+      "tier": "reference",
+      "upstream": "https://github.com/Arize-ai/phoenix",
+      "license": "Elastic-2.0",
+      "mirror_policy": "reference_only",
+      "verified": true,
+      "dependency_policy": "review_required",
+      "mirror_eligibility": "reference_only",
+      "sync_policy": "none"
     }
   ]
 }
