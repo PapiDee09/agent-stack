@@ -4,6 +4,8 @@ Control plane for the reusable builder/agent stack.
 
 ## Runtime update comparisons
 
+- [6 September 2026: upstream release and security review queue](comparisons/2026-09-06-upstream-review.md)
+  — seven isolated draft update PRs; active pins remain unchanged pending CI and compatibility tests.
 - [5 September 2026: admission decisions and latest runtime candidates](comparisons/2026-09-05-stack-admission.md)
   — Catalyst skills admitted as optional/review-required; runtime promotion held pending live evidence.
 - [3 September 2026: Codex, Claude Code, and Kimi Code](comparisons/2026-09-03-agent-runtimes.md)
@@ -21,7 +23,7 @@ The standing intake and promotion rules are in [ADMISSION_POLICY.md](ADMISSION_P
 
 ## Current GitHub access
 
-The connected GitHub app currently exposes only `PapiDee09/Donald`, `PapiDee09/Obagi-Java-Applications`, and `PapiDee09/Vegaflair`. Direct lookup for `PapiDee09/agent-lab` returned 404. The current connector also does not expose repository creation/fork creation, so no unrelated repo has been repurposed.
+The connected GitHub app has read/write access to the maintained forks and the `PapiDee09/agent-stack` control repository. Upstream updates are staged on isolated branches and draft pull requests; no update is merged automatically.
 
 ## Ownership model
 
